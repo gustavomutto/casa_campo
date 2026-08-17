@@ -1,0 +1,46 @@
+[
+  {
+    "id": "res-001",
+    "casaId": "casa-001",
+    "clienteNombre": "Carlos Mendoza",
+    "rangoFechas": {
+      "fechaEntrada": "2026-08-20T20:00:00Z",
+      "fechaSalida": "2026-08-23T16:00:00Z"
+    },
+    "cantidadHuespedes": 4,
+    "montoTotal": 750000,
+    "estado": {
+      "tipo": "confirmada",
+      "confirmadaPor": "administrador"
+    }
+  },
+  {
+    "id": "res-002",
+    "casaId": "casa-002",
+    "clienteNombre": "Laura Torres",
+    "rangoFechas": {
+      "fechaEntrada": "2026-09-01T20:00:00Z",
+      "fechaSalida": "2026-09-05T16:00:00Z"
+    },
+    "cantidadHuespedes": 6,
+    "montoTotal": 1200000,
+    "estado": {
+      "tipo": "pendiente"
+    }
+  },
+  {
+    "id": "res-003",
+    "casaId": "casa-003",
+    "clienteNombre": "Andrés Gómez",
+    "rangoFechas": {
+      "fechaEntrada": "2026-09-10T20:00:00Z",
+      "fechaSalida": "2026-09-12T16:00:00Z"
+    },
+    "cantidadHuespedes": 2,
+    "montoTotal": 400000,
+    "estado": {
+      "tipo": "cancelada",
+      "motivo": "El cliente solicitó cancelar la reserva."
+    }
+  }
+]
