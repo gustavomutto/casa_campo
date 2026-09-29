@@ -35,7 +35,7 @@ let cached = { sig: null, transport: null };
 function getTransport(c) {
   const sig = [c.host, c.port, c.user, c.pass].join('|');
   if (cached.sig !== sig) {
-    cached = { sig, transport: nodemailer.createTransport({ host: c.host, port: c.port, secure: c.port === 465, auth: { user: c.user, pass: c.pass } }) };
+    cached = { sig, transport: nodemailer.createTransport({ host: c.host, port: c.port, secure: c.port === 465, auth: { user: c.user, pass: c.pass }, connectionTimeout: 15000, greetingTimeout: 15000, socketTimeout: 30000 }) };
   }
   return cached.transport;
 }
@@ -89,11 +89,31 @@ async function bookingConfirmed(b, house) {
     `<h2 style="margin-top:0">¡Tu reserva está confirmada, ${e(b.guest_name.split(' ')[0])}!</h2>
      <p>Recibimos tu pago. Estos son los detalles:</p>${bookingTable(b, house)}
      ${btn(bookingLink(b), 'Ver mi reserva')}
-     ${house.map_url ? `<p>Ubicación: <a href="${e(house.map_url)}">abrir en el mapa</a></p>` : ''}`);
+     ${arrivalBlock(house)}`);
   await send(notifyEmail(), `Nueva reserva ${b.code} · ${house.name}`,
     `<h2 style="margin-top:0">Nueva reserva pagada</h2>${bookingTable(b, house)}
      <p>Huésped: ${e(b.guest_name)} · ${e(b.guest_email)} · ${e(b.guest_phone)}</p>
      ${btn(config.baseUrl + '/admin/', 'Abrir panel')}`);
+}
+
+// Bloque "Cómo llegar" para los correos: botones de Google Maps y Waze + indicaciones escritas
+function arrivalBlock(house) {
+  const { directionLinks } = require('./location');
+  const hasCoords = house.latitude != null;
+  if (!hasCoords && !house.arrival_instructions) return '';
+  const l = hasCoords ? directionLinks(house.latitude, house.longitude) : null;
+  const small = (href, label, bg) => `<a href="${e(href)}" style="display:inline-block;background:${bg};color:#fff;padding:10px 16px;border-radius:999px;text-decoration:none;font-weight:bold;margin:4px">${label}</a>`;
+  return `<h3 style="margin:22px 0 8px">📍 Cómo llegar</h3>
+    ${l ? `<p style="text-align:center">${small(l.google, 'Abrir en Google Maps', '#1a73e8')}${small(l.waze, 'Abrir en Waze', '#33ccff')}</p>` : ''}
+    ${house.arrival_instructions ? `<p style="white-space:pre-line;background:#f3f5f1;padding:12px 14px;border-radius:10px">${e(house.arrival_instructions)}</p>` : ''}`;
+}
+
+async function arrivalReminder(b, house) {
+  await send(b.guest_email, `¡Mañana llegas a ${house.name}! Cómo llegar`,
+    `<h2 style="margin-top:0">Te esperamos mañana, ${e(b.guest_name.split(' ')[0])} 🌿</h2>
+     <p>Llegada desde las <b>${e(house.checkin_time)}</b> · Salida hasta las <b>${e(house.checkout_time)}</b>.</p>
+     ${arrivalBlock(house)}
+     ${btn(bookingLink(b), 'Ver mi reserva')}`);
 }
 
 async function balancePaid(b, house) {
@@ -113,4 +133,4 @@ async function adminAlert(subject, html) {
   await send(notifyEmail(), subject, html);
 }
 
-module.exports = { send, sendStrict, emailConfig, notifyEmail, bookingConfirmed, balancePaid, reviewRequest, adminAlert, bookingLink };
+module.exports = { arrivalReminder, send, sendStrict, emailConfig, notifyEmail, bookingConfirmed, balancePaid, reviewRequest, adminAlert, bookingLink };

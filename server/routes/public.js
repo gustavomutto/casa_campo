@@ -10,6 +10,7 @@ const { publicHouse } = require('../houses');
 const payments = require('../payments');
 const ical = require('../ical');
 const AMENITIES = require('../amenities');
+const { directionLinks } = require('../location');
 
 const router = express.Router();
 
@@ -140,7 +141,12 @@ router.get('/api/bookings/:code', (req, res) => {
       canReview: b.status === 'completed' && !review && !!b.review_token, reviewToken: b.status === 'completed' && !review ? b.review_token : null,
     },
     house: { slug: h.slug, name: h.name, location: h.location, checkinTime: h.checkin_time, checkoutTime: h.checkout_time,
-      mapUrl: ['confirmed', 'completed'].includes(b.status) ? h.map_url : '', cover: publicHouse(h).cover },
+      cover: publicHouse(h).cover,
+      // Cómo llegar: solo para reservas pagadas
+      arrival: ['confirmed', 'completed'].includes(b.status) ? {
+        instructions: h.arrival_instructions,
+        ...(h.latitude != null ? directionLinks(h.latitude, h.longitude) : {}),
+      } : null },
     paymentsMode: config.paymentsMode,
   });
 });

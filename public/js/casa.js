@@ -41,7 +41,8 @@
       <div class="detail-head">
         <h1>${esc(house.name)}</h1>
         <div class="sub">${stars(house.rating)} <span>·</span> <span><i class="fa-solid fa-location-dot"></i> ${esc(house.location)}</span>
-          ${videos ? `<span>·</span><span><i class="fa-solid fa-video"></i> ${videos} ${videos === 1 ? 'video' : 'videos'}</span>` : ''}</div>
+          ${videos ? `<span>·</span><span><i class="fa-solid fa-video"></i> ${videos} ${videos === 1 ? 'video' : 'videos'}</span>` : ''}
+          ${house.tourUrl ? `<span>·</span><a href="#recorrido"><i class="fa-solid fa-vr-cardboard"></i> Recorrido 360°</a>` : ''}</div>
       </div>
       ${gallery}
       <div class="detail-grid">
@@ -54,6 +55,9 @@
               <span class="fact"><i class="fa-solid fa-bath"></i> ${house.bathrooms} baños</span>
             </div>
           </div>
+          ${house.tourUrl ? `<div class="detail-block" id="recorrido"><h2><i class="fa-solid fa-vr-cardboard"></i> Recorrido virtual 360°</h2>
+            <p class="small muted" style="margin:-6px 0 12px">Arrastra para mirar alrededor y toca los puntos para caminar por la casa.</p>
+            <div class="tour-frame"><iframe src="${esc(house.tourUrl)}" title="Recorrido virtual" loading="lazy" allow="fullscreen; xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen></iframe></div></div>` : ''}
           <div class="detail-block prose"><h2>Sobre este alojamiento</h2>${house.description.split(/\n{2,}/).map(p => `<p>${esc(p)}</p>`).join('')}</div>
           ${house.amenities.length ? `<div class="detail-block"><h2>Lo que ofrece este lugar</h2><div class="amenities">
             ${house.amenities.map(a => `<div><i class="fa-solid ${esc(a.icon)}"></i>${esc(a.label)}</div>`).join('')}</div></div>` : ''}
@@ -75,7 +79,9 @@
               <p>${esc(r.comment)}</p>${r.hostReply ? `<div class="reply"><b>Respuesta del anfitrión:</b> ${esc(r.hostReply)}</div>` : ''}</div>`).join('')}</div>`
               : '<p class="muted">Aún no hay reseñas. Solo los huéspedes que se hospedan pueden dejar una, así que todas son verificadas.</p>'}
           </div>
-          ${house.mapUrl ? `<div class="detail-block"><h2>Ubicación</h2><p>${esc(house.location)}</p><p style="margin-top:8px" class="small muted">La ubicación exacta se comparte al confirmar la reserva.</p></div>` : ''}
+          <div class="detail-block" id="ubicacion"><h2>Ubicación</h2><p><i class="fa-solid fa-location-dot"></i> ${esc(house.location)}</p>
+            ${house.approxMap ? `<div class="map-frame"><iframe src="${esc(house.approxMap)}" title="Zona aproximada" loading="lazy"></iframe></div>` : ''}
+            <p style="margin-top:8px" class="small muted"><i class="fa-solid fa-lock"></i> Por seguridad mostramos la zona aproximada. Al confirmar la reserva recibes la ubicación exacta, botones para abrir Google Maps o Waze y las indicaciones para llegar.</p></div>
         </div>
         <aside><div class="card book-card" id="bookCard"></div></aside>
       </div>

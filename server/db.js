@@ -186,6 +186,17 @@ CREATE TABLE IF NOT EXISTS reviews (
 );
 `);
 
+// ---------- Migraciones: columnas nuevas en bases ya existentes (no borra datos)
+function addColumn(table, column, def) {
+  const cols = db.prepare(`PRAGMA table_info(${table})`).all().map(c => c.name);
+  if (!cols.includes(column)) db.exec(`ALTER TABLE ${table} ADD COLUMN ${column} ${def}`);
+}
+addColumn('houses', 'latitude', 'REAL');
+addColumn('houses', 'longitude', 'REAL');
+addColumn('houses', 'arrival_instructions', "TEXT NOT NULL DEFAULT ''");
+addColumn('houses', 'tour_url', "TEXT NOT NULL DEFAULT ''");
+addColumn('bookings', 'arrival_email_sent', 'INTEGER NOT NULL DEFAULT 0');
+
 function getSetting(key, fallback = '') {
   const row = db.prepare('SELECT value FROM settings WHERE key = ?').get(key);
   return row ? row.value : fallback;

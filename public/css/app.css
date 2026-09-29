@@ -308,3 +308,15 @@ input, select, textarea { font: inherit; color: inherit; }
 @keyframes sk { to { background-position: -200% 0; } }
 .spinner { width: 22px; height: 22px; border: 3px solid var(--green-100); border-top-color: var(--green-700); border-radius: 50%; animation: spin .8s linear infinite; display: inline-block; }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------- Mapas, cómo llegar y recorrido 360 */
+.map-frame { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16 / 9; background: var(--green-50); margin-top: 12px; }
+.map-frame iframe, .tour-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+.tour-frame { border-radius: var(--radius); overflow: hidden; aspect-ratio: 16 / 9; background: #111; }
+@media (max-width: 600px) { .tour-frame { aspect-ratio: 4 / 5; } }
+.nav-apps { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+@media (max-width: 480px) { .nav-apps { grid-template-columns: 1fr; } }
+.btn-waze { background: #33ccff; color: #0b2a36; }
+.btn-waze:hover { background: #1fb8ec; }
+.arrival-steps { margin-top: 14px; background: var(--green-50); border-radius: var(--radius-sm); padding: 12px 14px; }
+.arrival-steps p { white-space: pre-line; color: var(--ink-2); margin-top: 4px; }

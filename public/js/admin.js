@@ -291,8 +291,20 @@
           <div class="grid-2">${f('hLoc', 'Ubicación (municipio, departamento)', inp('hLoc', v.location, 'maxlength="120"'))}${f('hBadge', 'Etiqueta en la portada (opcional)', inp('hBadge', v.badge, 'maxlength="30" placeholder="Destacado, Nuevo, Ideal familias…"'))}</div>
           ${f('hShort', 'Descripción corta', inp('hShort', v.short_desc, 'maxlength="200"'), 'Una frase para el listado.')}
           ${f('hDesc', 'Descripción completa', `<textarea id="hDesc" maxlength="6000" rows="7">${esc(v.description)}</textarea>`, 'Deja una línea en blanco para separar párrafos.')}
-          ${f('hMap', 'Enlace de Google Maps (se comparte solo al confirmar)', inp('hMap', v.map_url, 'maxlength="500" placeholder="https://maps.app.goo.gl/…"'))}
           <label class="check"><input type="checkbox" id="hActive" ${v.active ? 'checked' : ''}> <span>Publicada (visible y reservable en la web)</span></label>
+        </div>
+        <div class="form-section"><h2><i class="fa-solid fa-map-location-dot"></i> Ubicación y cómo llegar</h2>
+          <p class="muted">El público solo ve la zona aproximada. Al huésped con reserva pagada le mostramos la ubicación exacta con botones de Google Maps y Waze, y se la enviamos por correo al confirmar y el día antes de llegar.</p>
+          ${f('hMap', 'Ubicación exacta de la casa', inp('hMap', v.map_url, 'maxlength="500" placeholder="Enlace de Google Maps o coordenadas: 10.4235, -73.5791"'),
+            'En Google Maps: busca la casa, <b>mantén presionado</b> sobre la entrada hasta que salga un pin rojo, copia los números que aparecen arriba y pégalos aquí. También sirve el botón "Compartir" → copiar enlace.')}
+          ${v.directions ? `<div class="map-frame"><iframe src="${esc(v.directions.embed)}" title="Vista previa" loading="lazy"></iframe></div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px"><a class="btn btn-ghost btn-sm" target="_blank" href="${esc(v.directions.google)}"><i class="fa-brands fa-google"></i> Probar en Google Maps</a><a class="btn btn-ghost btn-sm" target="_blank" href="${esc(v.directions.waze)}"><i class="fa-brands fa-waze"></i> Probar en Waze</a></div>` : ''}
+          ${f('hArrival', 'Indicaciones para llegar (se envían al huésped confirmado)', `<textarea id="hArrival" maxlength="4000" rows="5" placeholder="Ej: Desde Valledupar toma la vía a Pueblo Bello (45 min). Pasando el peaje, a 2 km gira a la derecha en la tienda La Esperanza. Portón verde con el letrero Casa Los Pinos. El último tramo es destapado, apto para carro normal. Al llegar llama al 300…">${esc(v.arrival_instructions || '')}</textarea>`,
+            'Puedes incluir: referencias, estado de la vía, dónde parquear, a quién llamar al llegar, clave del portón o del wifi.')}
+        </div>
+        <div class="form-section"><h2><i class="fa-solid fa-vr-cardboard"></i> Recorrido virtual 360° (opcional)</h2>
+          <p class="muted">Para que el huésped "camine" por la casa desde el celular. Pega el enlace de Matterport, Kuula, Momento360, Panoee o de Street View ("insertar mapa").</p>
+          ${f('hTour', 'Enlace del recorrido', inp('hTour', v.tour_url || '', 'maxlength="500" placeholder="https://my.matterport.com/show/?m=…  o  https://kuula.co/share/collection/…"'))}
         </div>
         <div class="form-section"><h2>Capacidad</h2>
           <div class="grid-4">${f('hGuests', 'Huéspedes máx.', inp('hGuests', v.max_guests, 'type="number" min="1" max="100"'))}${f('hBedr', 'Habitaciones', inp('hBedr', v.bedrooms, 'type="number" min="0"'))}${f('hBeds', 'Camas', inp('hBeds', v.beds, 'type="number" min="0"'))}${f('hBath', 'Baños', inp('hBath', v.bathrooms, 'type="number" min="0"'))}</div>
@@ -328,7 +340,7 @@
       e.preventDefault();
       const body = {
         name: $('#hName').value, location: $('#hLoc').value, badge: $('#hBadge').value, short_desc: $('#hShort').value, description: $('#hDesc').value,
-        map_url: $('#hMap').value.trim(), active: $('#hActive').checked,
+        map_url: $('#hMap').value.trim(), arrival_instructions: $('#hArrival').value, tour_url: $('#hTour').value.trim(), active: $('#hActive').checked,
         max_guests: $('#hGuests').value, bedrooms: $('#hBedr').value, beds: $('#hBeds').value, bathrooms: $('#hBath').value,
         price_night: $('#hPrice').value, price_weekend: $('#hWeekend').value, cleaning_fee: $('#hClean').value || 0,
         min_nights: $('#hMin').value || 1, deposit_percent: $('#hDeposit').value, cleaning_buffer_days: $('#hBuffer').value,
@@ -338,6 +350,7 @@
       const r = isNew ? await call('/api/admin/houses', { method: 'POST', body }) : await call(`/api/admin/houses/${h.id}`, { method: 'PUT', body });
       toast(isNew ? 'Casa creada. Ahora sube fotos y videos.' : 'Cambios guardados');
       if (isNew) location.hash = `casa/${r.house.id}`;
+      else if (body.map_url !== (h.map_url || '')) { const y = window.scrollY; await renderHouseEditor(String(h.id)); window.scrollTo(0, y); }
     }));
 
     if (isNew) return;

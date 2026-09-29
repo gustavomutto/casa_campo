@@ -14,6 +14,7 @@ const { ACTIVE_BOOKING_SQL } = require('../availability');
 const AMENITIES = require('../amenities');
 const mailer = require('../mailer');
 const { encrypt } = require('../secret');
+const { resolveLocation, validateTourUrl, directionLinks } = require('../location');
 
 const router = express.Router();
 
@@ -77,7 +78,7 @@ router.get('/api/admin/dashboard', (req, res) => {
 });
 
 // ------------------------------------------------------------ Casas
-function houseInput(body, existing = {}) {
+async function houseInput(body, existing = {}) {
   const b = body || {};
   const amenities = Array.isArray(b.amenities) ? b.amenities.filter(k => AMENITIES[k]) : JSON.parse(existing.amenities || '[]');
   const out = {
@@ -99,11 +100,18 @@ function houseInput(body, existing = {}) {
     cleaning_buffer_days: U.int(b.cleaning_buffer_days || 0, { min: 0, max: 7, field: 'días de limpieza' }),
     deposit_percent: U.int(b.deposit_percent || 100, { min: 10, max: 100, field: '% a pagar al reservar' }),
     badge: U.str(b.badge, { max: 30, field: 'etiqueta' }),
-    map_url: U.str(b.map_url, { max: 500, field: 'mapa' }),
+    map_url: U.str(b.map_url, { max: 500, field: 'ubicación en el mapa' }),
+    arrival_instructions: U.str(b.arrival_instructions, { max: 4000, field: 'indicaciones de llegada' }),
+    tour_url: validateTourUrl(U.str(b.tour_url, { max: 500, field: 'recorrido virtual' })),
     active: b.active === false || b.active === 0 ? 0 : 1,
     amenities: JSON.stringify(amenities),
   };
-  if (out.map_url && !/^https:\/\//.test(out.map_url)) throw new HttpError(400, 'El enlace del mapa debe empezar por https://');
+  // Ubicación exacta: coordenadas o enlace de Google Maps → latitud/longitud
+  if (!out.map_url) { out.latitude = null; out.longitude = null; }
+  else if (out.map_url !== existing.map_url || existing.latitude == null) {
+    const c = await resolveLocation(out.map_url);
+    out.latitude = c.lat; out.longitude = c.lng;
+  }
   return out;
 }
 
@@ -112,6 +120,7 @@ function adminHouse(h) {
     ...h, amenities: JSON.parse(h.amenities || '[]'), media: mediaFor(h.id), rating: ratingFor(h.id),
     seasons: db.prepare('SELECT * FROM seasons WHERE house_id = ? ORDER BY start_date').all(h.id),
     ical_export_url: `${config.baseUrl}/ical/${h.ical_token}.ics`,
+    directions: h.latitude != null ? directionLinks(h.latitude, h.longitude) : null,
     feeds: db.prepare('SELECT * FROM ical_feeds WHERE house_id = ? ORDER BY id').all(h.id)
       .map(f => ({ ...f, export_url: `${config.baseUrl}/ical/${h.ical_token}.ics?para=${f.id}` })),
   };
@@ -125,8 +134,8 @@ router.get('/api/admin/houses/:id', (req, res) => {
   if (!h) throw new HttpError(404, 'Casa no encontrada.');
   res.json({ house: adminHouse(h), amenities: AMENITIES });
 });
-router.post('/api/admin/houses', (req, res) => {
-  const data = houseInput(req.body);
+router.post('/api/admin/houses', async (req, res) => {
+  const data = await houseInput(req.body);
   let slug = U.slugify(data.name); let i = 2;
   while (db.prepare('SELECT 1 FROM houses WHERE slug = ?').get(slug)) slug = `${U.slugify(data.name)}-${i++}`;
   const pos = db.prepare('SELECT COALESCE(MAX(position),0)+1 AS p FROM houses').get().p;
@@ -135,10 +144,10 @@ router.post('/api/admin/houses', (req, res) => {
     .run({ ...data, slug, pos, tok: U.randomToken(24) });
   res.status(201).json({ house: adminHouse(db.prepare('SELECT * FROM houses WHERE id = ?').get(info.lastInsertRowid)) });
 });
-router.put('/api/admin/houses/:id', (req, res) => {
+router.put('/api/admin/houses/:id', async (req, res) => {
   const h = db.prepare('SELECT * FROM houses WHERE id = ?').get(Number(req.params.id));
   if (!h) throw new HttpError(404, 'Casa no encontrada.');
-  const data = houseInput(req.body, h);
+  const data = await houseInput(req.body, h);
   db.prepare(`UPDATE houses SET ${Object.keys(data).map(c => `${c} = @${c}`).join(', ')}, updated_at = datetime('now') WHERE id = @id`).run({ ...data, id: h.id });
   res.json({ house: adminHouse(db.prepare('SELECT * FROM houses WHERE id = ?').get(h.id)) });
 });

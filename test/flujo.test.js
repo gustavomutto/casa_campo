@@ -244,4 +244,40 @@ test('correo configurable desde el panel; la contraseña se guarda cifrada y nun
   // Sin cambiar la contraseña (campo vacío) se conserva
   await req('PUT', '/api/admin/email', { cookie, headers: H, body: { user: 'otro@gmail.com', password: '', notifyEmail: 'socio@gmail.com' } });
   assert.equal((await req('GET', '/api/admin/email', { cookie })).json.hasPassword, true);
+  await req('PUT', '/api/admin/email', { cookie, headers: H, body: { user: 'mutto546@gmail.com', removePassword: true } });
+});
+
+test('cómo llegar: coordenadas privadas hasta confirmar la reserva, Google Maps/Waze para el huésped', async () => {
+  const { parseCoords } = require('../server/location');
+  assert.deepEqual(parseCoords('10.4235, -73.5791'), { lat: 10.4235, lng: -73.5791 });
+  assert.deepEqual(parseCoords('https://www.google.com/maps/place/Casa/@10.41,-73.57,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!8m2!3d10.4235112!4d-73.5791234'), { lat: 10.4235112, lng: -73.5791234 });
+  assert.equal(parseCoords('hola'), null);
+
+  const login = await req('POST', '/api/admin/login', { body: { username: 'admin', password: 'prueba-segura-123' } });
+  const cookie = login.headers.get('set-cookie').split(';')[0];
+  const H = { 'X-Requested-With': 'fetch' };
+  const cur = (await req('GET', '/api/admin/houses/1', { cookie })).json.house;
+  const body = { ...cur, amenities: cur.amenities, map_url: '10.4235112, -73.5791234', arrival_instructions: 'Portón verde. Llamar al llegar.', tour_url: 'https://my.matterport.com/show/?m=abc123' };
+  const put = await req('PUT', '/api/admin/houses/1', { cookie, headers: H, body });
+  assert.equal(put.status, 200, put.text);
+  assert.equal(put.json.house.latitude, 10.4235112);
+  // Recorrido de un sitio no permitido → rechazado
+  const bad = await req('PUT', '/api/admin/houses/1', { cookie, headers: H, body: { ...body, tour_url: 'https://evil.example.com/tour' } });
+  assert.equal(bad.status, 400);
+
+  // Público: solo zona aproximada, nunca las coordenadas exactas
+  const pub = await req('GET', '/api/houses/casa-pueblo-bello');
+  assert.doesNotMatch(pub.text, /10\.4235|73\.5791/);
+  assert.match(pub.json.house.approxMap, /openstreetmap/);
+  assert.equal(pub.json.house.tourUrl, 'https://my.matterport.com/show/?m=abc123');
+
+  // Reserva pendiente: sin ubicación. Pagada: con Google Maps, Waze e indicaciones
+  const r = await req('POST', '/api/bookings', { body: guest({ checkin: day(100), checkout: day(102) }) });
+  const pending = await req('GET', `/api/bookings/${r.json.code}?t=${r.json.token}`);
+  assert.equal(pending.json.house.arrival, null);
+  await req('POST', `/api/bookings/${r.json.code}/demo-approve`, { body: { t: r.json.token, reference: r.json.checkout.reference } });
+  const ok = await req('GET', `/api/bookings/${r.json.code}?t=${r.json.token}`);
+  assert.match(ok.json.house.arrival.google, /destination=10\.4235112,-73\.5791234/);
+  assert.match(ok.json.house.arrival.waze, /waze\.com\/ul\?ll=10\.4235112,-73\.5791234/);
+  assert.equal(ok.json.house.arrival.instructions, 'Portón verde. Llamar al llegar.');
 });

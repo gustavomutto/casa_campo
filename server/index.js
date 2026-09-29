@@ -27,7 +27,7 @@ app.use(helmet({
       'font-src': ["'self'"],
       'img-src': ["'self'", 'data:', 'blob:', 'https://i.ytimg.com'],
       'media-src': ["'self'", 'blob:'],
-      'frame-src': ['https://www.youtube-nocookie.com'],
+      'frame-src': ['https://www.youtube-nocookie.com', 'https://www.openstreetmap.org', 'https://my.matterport.com', 'https://kuula.co', 'https://www.kuula.co', 'https://momento360.com', 'https://tour.panoee.com', 'https://www.google.com'],
       'form-action': ["'self'", 'https://checkout.wompi.co'],
       'connect-src': ["'self'"],
       'upgrade-insecure-requests': config.isProd ? [] : null,
@@ -88,6 +88,13 @@ async function dailyJobs() {
     const h = db.prepare('SELECT * FROM houses WHERE id = ?').get(b.house_id);
     await mailer.reviewRequest(b, h);
     db.prepare('UPDATE bookings SET review_email_sent = 1 WHERE id = ?').run(b.id);
+  }
+  // Recordatorio con "cómo llegar" el día antes de la llegada
+  const tomorrow = U.addDays(t, 1);
+  for (const b of db.prepare(`SELECT * FROM bookings WHERE status = 'confirmed' AND arrival_email_sent = 0 AND checkin <= ? AND checkin >= ?`).all(tomorrow, t)) {
+    const h = db.prepare('SELECT * FROM houses WHERE id = ?').get(b.house_id);
+    await mailer.arrivalReminder(b, h);
+    db.prepare('UPDATE bookings SET arrival_email_sent = 1 WHERE id = ?').run(b.id);
   }
   refreshCleaningTasks();
 }

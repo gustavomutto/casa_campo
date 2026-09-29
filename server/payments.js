@@ -117,12 +117,12 @@ async function applyTransaction(tx) {
     const house = db.prepare('SELECT * FROM houses WHERE id = ?').get(after.booking.house_id);
     refreshCleaningTasks();
     if (after.booking.status === 'conflict' && after.wasStatus !== 'conflict') {
-      await mailer.adminAlert(`⚠️ Pago recibido con fechas ocupadas · ${after.booking.code}`,
+      void mailer.adminAlert(`⚠️ Pago recibido con fechas ocupadas · ${after.booking.code}`,
         `<p>El huésped ${e(after.booking.guest_name)} pagó ${cop(payment.amount)} por ${e(house.name)} (${after.booking.checkin} → ${after.booking.checkout}), pero las fechas se ocuparon mientras pagaba. Contáctalo para reubicarlo o reembolsar desde el panel de Wompi.</p>`);
     } else if (after.purpose === 'balance') {
-      await mailer.balancePaid(after.booking, house);
+      void mailer.balancePaid(after.booking, house);
     } else {
-      await mailer.bookingConfirmed(after.booking, house);
+      void mailer.bookingConfirmed(after.booking, house);
     }
   }
   return result;

@@ -118,3 +118,4 @@ table.t tr.click:hover td { background: var(--green-50); }
 .clean-task .who { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 .clean-task .who input { width: 170px; padding: 7px 10px; }
 @media (max-width: 640px) { .clean-task { grid-template-columns: 1fr; } }
+.form-section .map-frame { aspect-ratio: auto; height: 260px; }

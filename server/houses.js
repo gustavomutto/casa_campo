@@ -1,6 +1,7 @@
 'use strict';
 const { db } = require('./db');
 const AMENITIES = require('./amenities');
+const { approxEmbed } = require('./location');
 
 function mediaFor(houseId) {
   return db.prepare('SELECT id, kind, file, thumb, url, caption, width, height, position FROM media WHERE house_id = ? ORDER BY position, id').all(houseId)
@@ -33,7 +34,10 @@ function publicHouse(h, { full = false } = {}) {
     ...base,
     description: h.description, houseRules: h.house_rules, cleaningFee: h.cleaning_fee,
     minNights: h.min_nights, checkinTime: h.checkin_time, checkoutTime: h.checkout_time,
-    depositPercent: h.deposit_percent, mapUrl: h.map_url, media,
+    depositPercent: h.deposit_percent, media,
+    // Solo la zona aproximada: la ubicación exacta se entrega al huésped cuando su reserva está confirmada
+    approxMap: h.latitude != null ? approxEmbed(h.latitude, h.longitude) : null,
+    tourUrl: h.tour_url || null,
     reviews: db.prepare(`SELECT author, rating, comment, host_reply, created_at FROM reviews
        WHERE house_id = ? AND visible = 1 ORDER BY created_at DESC LIMIT 50`).all(h.id)
       .map(r => ({ author: r.author, rating: r.rating, comment: r.comment, hostReply: r.host_reply, date: r.created_at.slice(0, 10) })),
