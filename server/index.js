@@ -56,7 +56,11 @@ app.get(['/admin', '/admin/', '/admin/index.html'], (req, res, next) => {
   res.set('Cache-Control', 'no-store');
   next();
 });
-app.use(express.static(path.join(__dirname, '..', 'public'), { extensions: ['html'], maxAge: config.isProd ? '1h' : 0 }));
+// Sin caché larga para HTML/JS/CSS: tras cada actualización todos ven la versión nueva (el navegador valida con ETag)
+app.use(express.static(path.join(__dirname, '..', 'public'), {
+  extensions: ['html'],
+  setHeaders: (res, file) => { res.setHeader('Cache-Control', /\.(png|svg|jpg|webp|woff2?)$/.test(file) ? 'public, max-age=86400' : 'no-cache'); },
+}));
 
 // Errores
 app.use('/api', (req, res) => res.status(404).json({ error: 'No encontrado.' }));

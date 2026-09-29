@@ -259,6 +259,7 @@
           <div><b>${esc(h.name)}</b> ${h.active ? '' : '<span class="pill gray">Oculta</span>'}
             <div class="small muted">${esc(h.location)} · ${cop(h.price_night)}/noche · ${h.max_guests} huésp. · ${h.media.length} fotos/videos</div>
             <div class="small" style="margin-top:4px">${h.feeds.length ? `<span class="pill"><i class="fa-solid fa-link"></i> ${h.feeds.map(f => esc(f.name)).join(', ')}</span>` : '<span class="pill warn">Sin conectar a Airbnb/Booking</span>'}
+              ${h.latitude != null ? ' <span class="pill"><i class="fa-solid fa-location-dot"></i> Ubicación lista</span>' : ' <span class="pill warn"><i class="fa-solid fa-location-dot"></i> Falta ubicación</span>'}
               ${h.rating.count ? ` <span class="pill gray">★ ${h.rating.average} (${h.rating.count})</span>` : ''}</div></div>
           <div class="actions" style="display:flex;gap:8px"><a class="btn btn-ghost btn-sm" href="/casa.html?c=${encodeURIComponent(h.slug)}" target="_blank"><i class="fa-solid fa-eye"></i> Ver</a><a class="btn btn-primary btn-sm" href="#casa/${h.id}"><i class="fa-solid fa-pen"></i> Editar</a></div>
         </div>`;
@@ -295,6 +296,9 @@
         </div>
         <div class="form-section"><h2><i class="fa-solid fa-map-location-dot"></i> Ubicación y cómo llegar</h2>
           <p class="muted">El público solo ve la zona aproximada. Al huésped con reserva pagada le mostramos la ubicación exacta con botones de Google Maps y Waze, y se la enviamos por correo al confirmar y el día antes de llegar.</p>
+          ${!isNew ? (v.latitude != null
+            ? `<div class="alert alert-ok" style="margin-bottom:14px"><i class="fa-solid fa-circle-check"></i><span>Ubicación guardada. Los huéspedes ven la zona en la página de la casa y, al pagar, el mapa exacto con Google Maps y Waze.</span></div>`
+            : `<div class="alert alert-warn" style="margin-bottom:14px"><i class="fa-solid fa-triangle-exclamation"></i><span><b>Falta la ubicación.</b> Mientras no la pongas, los huéspedes no verán mapa ni botones de "Cómo llegar". Pégala abajo y pulsa <b>Guardar cambios</b>.</span></div>`) : ''}
           ${f('hMap', 'Ubicación exacta de la casa', inp('hMap', v.map_url, 'maxlength="500" placeholder="Enlace de Google Maps o coordenadas: 10.4235, -73.5791"'),
             'En Google Maps: busca la casa, <b>mantén presionado</b> sobre la entrada hasta que salga un pin rojo, copia los números que aparecen arriba y pégalos aquí. También sirve el botón "Compartir" → copiar enlace.')}
           ${v.directions ? `<div class="map-frame"><iframe src="${esc(v.directions.embed)}" title="Vista previa" loading="lazy"></iframe></div>
@@ -350,7 +354,7 @@
       const r = isNew ? await call('/api/admin/houses', { method: 'POST', body }) : await call(`/api/admin/houses/${h.id}`, { method: 'PUT', body });
       toast(isNew ? 'Casa creada. Ahora sube fotos y videos.' : 'Cambios guardados');
       if (isNew) location.hash = `casa/${r.house.id}`;
-      else if (body.map_url !== (h.map_url || '')) { const y = window.scrollY; await renderHouseEditor(String(h.id)); window.scrollTo(0, y); }
+      else { const y = window.scrollY; await renderHouseEditor(String(h.id)); window.scrollTo(0, y); }
     }));
 
     if (isNew) return;

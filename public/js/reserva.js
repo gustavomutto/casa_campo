@@ -87,17 +87,18 @@
           ${(b.status === 'pending_payment' && !processing) || b.status === 'expired' ? `<button class="btn btn-accent" id="payNow"><i class="fa-solid fa-lock"></i> ${b.status === 'expired' ? 'Intentar de nuevo' : 'Pagar'} ${cop(b.deposit)}</button>` : ''}
           ${b.status === 'confirmed' && b.balance > 0 ? `<button class="btn btn-accent" id="payNow"><i class="fa-solid fa-lock"></i> Pagar saldo ${cop(b.balance)}</button>` : ''}
           ${['confirmed', 'completed'].includes(b.status) ? `<a class="btn btn-ghost" target="_blank" rel="noopener" href="${esc(gcalLink(b, h))}"><i class="fa-regular fa-calendar-plus"></i> Agregar a mi calendario</a>` : ''}
-          ${h.arrival && h.arrival.google ? '<a class="btn btn-ghost" href="#como-llegar"><i class="fa-solid fa-map-location-dot"></i> Cómo llegar</a>' : ''}
+          ${h.arrival ? '<a class="btn btn-ghost" href="#como-llegar"><i class="fa-solid fa-map-location-dot"></i> Cómo llegar</a>' : ''}
           ${b.canReview ? `<a class="btn btn-primary" href="/resena.html?token=${encodeURIComponent(b.reviewToken)}"><i class="fa-solid fa-star"></i> Dejar mi reseña</a>` : ''}
         </div>
       </div>
-      ${h.arrival && (h.arrival.google || h.arrival.instructions) ? `<div class="card card-pad" id="como-llegar" style="margin-top:16px">
+      ${h.arrival ? `<div class="card card-pad" id="como-llegar" style="margin-top:16px">
         <h3 style="font-size:1.1rem;margin-bottom:12px"><i class="fa-solid fa-map-location-dot" style="color:var(--green-700)"></i> Cómo llegar</h3>
         ${h.arrival.embed ? `<div class="map-frame"><iframe src="${esc(h.arrival.embed)}" title="Ubicación de la casa" loading="lazy"></iframe></div>` : ''}
         ${h.arrival.google ? `<div class="nav-apps">
           <a class="btn btn-primary" target="_blank" rel="noopener" href="${esc(h.arrival.google)}"><i class="fa-brands fa-google"></i> Abrir en Google Maps</a>
           <a class="btn btn-waze" target="_blank" rel="noopener" href="${esc(h.arrival.waze)}"><i class="fa-brands fa-waze"></i> Abrir en Waze</a></div>` : ''}
         ${h.arrival.instructions ? `<div class="arrival-steps"><b>Indicaciones del anfitrión</b><p>${esc(h.arrival.instructions)}</p></div>` : ''}
+        ${!h.arrival.google && !h.arrival.instructions ? `<p><i class="fa-solid fa-location-dot"></i> ${esc(h.location)}</p><p class="small muted" style="margin-top:6px">El anfitrión te compartirá la ubicación exacta y las indicaciones antes de tu llegada.</p>` : ''}
         <p class="small muted" style="margin-top:10px">Llegada desde las ${esc(h.checkinTime)}. El día antes te enviamos un recordatorio con esta información.</p>
       </div>` : ''}
       ${b.payments.length ? `<div class="card card-pad" style="margin-top:16px"><h3 style="font-size:1rem;margin-bottom:10px">Pagos</h3>

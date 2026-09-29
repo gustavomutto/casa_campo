@@ -7,8 +7,22 @@ function valid(lat, lng) {
 }
 
 /** Extrae coordenadas de "10.4235, -73.5791" o de un enlace largo de Google Maps. */
+function dmsToDec(d, m, sec, hemi) {
+  const v = Number(d) + Number(m) / 60 + Number(sec || 0) / 3600;
+  return /[SWO]/i.test(hemi) ? -v : v;
+}
+
 function parseCoords(text) {
-  const s = decodeURIComponent(String(text || ''));
+  let s = String(text || '');
+  for (let i = 0; i < 3; i++) { try { const d = decodeURIComponent(s); if (d === s) break; s = d; } catch { break; } }
+  // Formato grados-minutos-segundos que muestra Google: 10°25'24.6"N 73°34'44.8"W
+  const dms = s.match(/(\d{1,3})°\s*(\d{1,2})['′]\s*(\d{1,2}(?:[.,]\d+)?)?["″]?\s*([NS])[\s,]+(\d{1,3})°\s*(\d{1,2})['′]\s*(\d{1,2}(?:[.,]\d+)?)?["″]?\s*([EWO])/i);
+  if (dms) {
+    const lat = dmsToDec(dms[1], dms[2], (dms[3] || '0').replace(',', '.'), dms[4]);
+    const lng = dmsToDec(dms[5], dms[6], (dms[7] || '0').replace(',', '.'), dms[8]);
+    if (valid(lat, lng)) return { lat: Math.round(lat * 1e7) / 1e7, lng: Math.round(lng * 1e7) / 1e7 };
+  }
+  s = s.replace(/(-?\d+),(\d+)\s*,\s*(-?\d+),(\d+)/, '$1.$2, $3.$4'); // "10,4235, -73,5791" (coma decimal)
   const patterns = [
     /!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/,            // pin exacto dentro de la URL
     /[?&](?:q|query|ll|destination|daddr)=(-?\d+\.\d+)\s*,\s*(-?\d+\.\d+)/,
