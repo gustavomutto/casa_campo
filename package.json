@@ -1,0 +1,31 @@
+{
+  "name": "casas-campestres",
+  "version": "2.0.0",
+  "description": "Plataforma de reservas de casas campestres: pagos en línea con Wompi, sincronización iCal con Airbnb/Booking, panel de administración y limpiezas.",
+  "main": "server/index.js",
+  "private": true,
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "crear-admin": "node scripts/crear-admin.js",
+    "test": "node --test test/*.test.js"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fontsource/plus-jakarta-sans": "^5.3.0",
+    "@fortawesome/fontawesome-free": "^7.3.1",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "multer": "^2.4.0",
+    "nodemailer": "^10.0.12",
+    "sharp": "^0.35.5"
+  }
+}

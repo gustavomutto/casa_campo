@@ -1,0 +1,26 @@
+'use strict';
+// Catálogo de comodidades: clave -> [etiqueta, icono Font Awesome]
+module.exports = {
+  wifi: ['Wifi', 'fa-wifi'],
+  piscina: ['Piscina', 'fa-person-swimming'],
+  jacuzzi: ['Jacuzzi', 'fa-hot-tub-person'],
+  asador: ['Zona de asados / BBQ', 'fa-fire-burner'],
+  cocina: ['Cocina equipada', 'fa-kitchen-set'],
+  parqueadero: ['Parqueadero', 'fa-square-parking'],
+  tv: ['TV', 'fa-tv'],
+  aire: ['Aire acondicionado', 'fa-snowflake'],
+  ventilador: ['Ventiladores', 'fa-fan'],
+  agua_caliente: ['Agua caliente', 'fa-shower'],
+  lavadora: ['Lavadora', 'fa-soap'],
+  jardin: ['Jardín / zonas verdes', 'fa-tree'],
+  terraza: ['Terraza con vista', 'fa-mountain-sun'],
+  chimenea: ['Chimenea / fogata', 'fa-fire'],
+  hamacas: ['Hamacas', 'fa-umbrella-beach'],
+  ropa_cama: ['Ropa de cama y toallas', 'fa-bed'],
+  mascotas: ['Se admiten mascotas', 'fa-paw'],
+  juegos: ['Zona de juegos', 'fa-futbol'],
+  rio: ['Acceso a río / quebrada', 'fa-water'],
+  planta: ['Planta eléctrica', 'fa-bolt'],
+  sonido: ['Equipo de sonido', 'fa-music'],
+  cancha: ['Cancha deportiva', 'fa-volleyball'],
+};

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Panel · Casas Campestres</title>
+  <link rel="stylesheet" href="/vendor/font/400.css"><link rel="stylesheet" href="/vendor/font/600.css"><link rel="stylesheet" href="/vendor/font/700.css"><link rel="stylesheet" href="/vendor/font/800.css">
+  <link rel="stylesheet" href="/vendor/fa/css/all.min.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body class="admin">
+  <aside class="side">
+    <a class="brand" href="/" target="_blank" title="Ver sitio"><span class="brand-mark"><i class="fa-solid fa-leaf"></i></span><span>Panel</span></a>
+    <nav class="side-nav" id="sideNav">
+      <a href="#resumen" data-s="resumen"><i class="fa-solid fa-gauge"></i><span>Resumen</span></a>
+      <a href="#calendario" data-s="calendario"><i class="fa-solid fa-calendar-days"></i><span>Calendario</span></a>
+      <a href="#reservas" data-s="reservas"><i class="fa-solid fa-receipt"></i><span>Reservas</span></a>
+      <a href="#casas" data-s="casas"><i class="fa-solid fa-house"></i><span>Casas</span></a>
+      <a href="#limpieza" data-s="limpieza"><i class="fa-solid fa-broom"></i><span>Limpieza</span></a>
+      <a href="#sincronizacion" data-s="sincronizacion"><i class="fa-solid fa-arrows-rotate"></i><span>Airbnb / Booking</span></a>
+      <a href="#resenas" data-s="resenas"><i class="fa-solid fa-star"></i><span>Reseñas</span></a>
+      <a href="#ajustes" data-s="ajustes"><i class="fa-solid fa-gear"></i><span>Ajustes</span></a>
+    </nav>
+    <div class="side-foot">
+      <span class="small muted" id="whoami"></span>
+      <button class="btn btn-ghost btn-sm" id="logout"><i class="fa-solid fa-right-from-bracket"></i> Salir</button>
+    </div>
+  </aside>
+  <main class="main" id="view"><div class="center" style="padding:80px"><span class="spinner"></span></div></main>
+  <script src="/js/common.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>

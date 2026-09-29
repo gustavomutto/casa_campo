@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casas Campestres · Reserva tu descanso en la naturaleza</title>
+  <meta name="description" content="Casas campestres con piscina, jacuzzi y zonas verdes. Mira fotos, disponibilidad real y reserva en línea con pago seguro.">
+  <link rel="stylesheet" href="/vendor/font/400.css"><link rel="stylesheet" href="/vendor/font/600.css"><link rel="stylesheet" href="/vendor/font/700.css"><link rel="stylesheet" href="/vendor/font/800.css">
+  <link rel="stylesheet" href="/vendor/fa/css/all.min.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <section class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="container">
+      <h1>Escápate de la rutina, reserva en minutos</h1>
+      <p>Casas campestres con disponibilidad en tiempo real y pago 100% en línea.</p>
+      <form class="search" id="searchForm" autocomplete="off">
+        <div class="search-part" id="searchDates" tabindex="0" role="button">
+          <small>Fechas</small><span id="searchDatesLabel">Llegada — Salida</span>
+        </div>
+        <label class="search-part">
+          <small>Huéspedes</small>
+          <select id="searchGuests" aria-label="Huéspedes"></select>
+        </label>
+        <button class="btn btn-accent" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Buscar</button>
+      </form>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="casas">
+      <div class="container">
+        <div class="section-title">
+          <div><h2 id="listTitle">Nuestras casas</h2><p class="muted" id="listSub">Elige tu próximo destino de descanso</p></div>
+          <button class="btn btn-ghost btn-sm hidden" id="clearSearch"><i class="fa-solid fa-xmark"></i> Quitar fechas</button>
+        </div>
+        <div class="houses-grid" id="houses">
+          <div class="skeleton" style="height:320px"></div><div class="skeleton" style="height:320px"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="features">
+          <div class="feature"><i class="fa-solid fa-calendar-check"></i><h3>Disponibilidad real</h3><p>El calendario se sincroniza con Airbnb y Booking: lo que ves libre, está libre.</p></div>
+          <div class="feature"><i class="fa-solid fa-shield-halved"></i><h3>Pago seguro</h3><p>Tarjeta, PSE o Nequi a través de Wompi (Bancolombia). Nunca vemos los datos de tu tarjeta.</p></div>
+          <div class="feature"><i class="fa-solid fa-bolt"></i><h3>Confirmación inmediata</h3><p>Tu reserva queda confirmada apenas se aprueba el pago y te llega al correo.</p></div>
+          <div class="feature"><i class="fa-solid fa-star"></i><h3>Reseñas verificadas</h3><p>Solo pueden opinar huéspedes que realmente se hospedaron.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="/js/common.js"></script>
+  <script src="/js/calendar.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>
