@@ -1,0 +1,77 @@
+[
+  {
+    "id": "res-001",
+    "casaId": "casa-001",
+    "clienteId": "cli-001",
+    "clienteNombre": "Carlos Mendoza",
+    "rangoFechas": {"fechaEntrada": "2026-10-09T00:00:00.000Z", "fechaSalida": "2026-10-12T00:00:00.000Z"},
+    "cantidadHuespedes": 4,
+    "montoTotal": 1050000,
+    "estado": {"tipo": "finalizada"},
+    "pagos": [
+      {"id": "res-001-pago-1", "monto": 315000, "fecha": "2026-09-20T15:00:00.000Z", "metodo": "transferencia"},
+      {"id": "res-001-pago-2", "monto": 735000, "fecha": "2026-10-12T14:00:00.000Z", "metodo": "efectivo"}
+    ]
+  },
+  {
+    "id": "res-002",
+    "casaId": "casa-002",
+    "clienteId": "cli-002",
+    "clienteNombre": "Laura Torres",
+    "rangoFechas": {"fechaEntrada": "2026-10-25T00:00:00.000Z", "fechaSalida": "2026-10-30T00:00:00.000Z"},
+    "cantidadHuespedes": 10,
+    "montoTotal": 2400000,
+    "estado": {"tipo": "en_curso"},
+    "pagos": [
+      {"id": "res-002-pago-1", "monto": 1200000, "fecha": "2026-10-01T16:30:00.000Z", "metodo": "tarjeta"}
+    ]
+  },
+  {
+    "id": "res-003",
+    "casaId": "casa-003",
+    "clienteId": "cli-003",
+    "clienteNombre": "Andrés Gómez",
+    "rangoFechas": {"fechaEntrada": "2026-11-06T00:00:00.000Z", "fechaSalida": "2026-11-08T00:00:00.000Z"},
+    "cantidadHuespedes": 2,
+    "montoTotal": 440000,
+    "estado": {"tipo": "cancelada", "motivo": "El cliente solicitó cancelar la reserva."},
+    "pagos": []
+  },
+  {
+    "id": "res-004",
+    "casaId": "casa-001",
+    "clienteId": "cli-004",
+    "clienteNombre": "María Fernanda Ríos",
+    "rangoFechas": {"fechaEntrada": "2026-11-13T00:00:00.000Z", "fechaSalida": "2026-11-16T00:00:00.000Z"},
+    "cantidadHuespedes": 6,
+    "montoTotal": 1050000,
+    "estado": {"tipo": "confirmada", "confirmadaPor": "admin"},
+    "pagos": [
+      {"id": "res-004-pago-1", "monto": 500000, "fecha": "2026-10-20T13:00:00.000Z", "metodo": "transferencia"}
+    ]
+  },
+  {
+    "id": "res-005",
+    "casaId": "casa-004",
+    "clienteId": "cli-005",
+    "clienteNombre": "José Luis Pérez",
+    "rangoFechas": {"fechaEntrada": "2026-12-20T00:00:00.000Z", "fechaSalida": "2026-12-27T00:00:00.000Z"},
+    "cantidadHuespedes": 14,
+    "montoTotal": 4914000,
+    "estado": {"tipo": "pendiente"},
+    "pagos": []
+  },
+  {
+    "id": "res-006",
+    "casaId": "casa-002",
+    "clienteId": "cli-001",
+    "clienteNombre": "Carlos Mendoza",
+    "rangoFechas": {"fechaEntrada": "2026-11-20T00:00:00.000Z", "fechaSalida": "2026-11-23T00:00:00.000Z"},
+    "cantidadHuespedes": 8,
+    "montoTotal": 1440000,
+    "estado": {"tipo": "pendiente"},
+    "pagos": [
+      {"id": "res-006-pago-1", "monto": 200000, "fecha": "2026-10-26T18:00:00.000Z", "metodo": "efectivo"}
+    ]
+  }
+]

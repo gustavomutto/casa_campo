@@ -1,0 +1,7 @@
+[
+  {"id": "casa-001", "nombre": "Finca El Remanso", "municipio": "Valledupar", "capacidadMaxima": 8, "precioNoche": 350000, "descripcion": "Piscina, kiosco y zona de asados a orillas del río Guatapurí.", "activa": true},
+  {"id": "casa-002", "nombre": "Casa Los Mangos", "municipio": "La Paz", "capacidadMaxima": 12, "precioNoche": 480000, "descripcion": "Casa amplia con cancha múltiple y árboles frutales.", "activa": true},
+  {"id": "casa-003", "nombre": "Cabaña Sierra Nevada", "municipio": "Pueblo Bello", "capacidadMaxima": 4, "precioNoche": 220000, "descripcion": "Cabaña de montaña con vista a la Sierra Nevada.", "activa": true},
+  {"id": "casa-004", "nombre": "Villa Manaure", "municipio": "Manaure Balcón del Cesar", "capacidadMaxima": 15, "precioNoche": 650000, "descripcion": "Villa campestre con clima fresco, chimenea y senderos.", "activa": true},
+  {"id": "casa-005", "nombre": "Finca La Esperanza", "municipio": "Agustín Codazzi", "capacidadMaxima": 6, "precioNoche": 280000, "descripcion": "En mantenimiento hasta nuevo aviso.", "activa": false}
+]
