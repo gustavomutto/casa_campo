@@ -1,8 +1,36 @@
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-    import json,sys;d=json.load(sys.stdin);print(next((a['browser_download_url'] for r in d for a in r.get('assets',[]) if a['name'].endswith('.jar')), ''))
-                                                 ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<string>", line 1, in <genexpr>
-    import json,sys;d=json.load(sys.stdin);print(next((a['browser_download_url'] for r in d for a in r.get('assets',[]) if a['name'].endswith('.jar')), ''))
-                                                                                                     ^^^^^
-AttributeError: 'str' object has no attribute 'get'
+Plugin: https://github.com/insideapp-fr/sonar-flutter/releases/download/0.5.3-SNAPSHOT/sonar-flutter-plugin-0.5.3-SNAPSHOT.jar
+total 7312
+drwxr-xr-x  2 runner runner    4096 Oct 27 20:52 .
+drwxr-xr-x 17 runner runner    4096 Oct 27 20:52 ..
+-rw-r--r--  1 runner runner 7478739 Oct 27 20:52 sonar-flutter-plugin.jar
+Unable to find image 'sonarqube:9.9-community' locally
+9.9-community: Pulling from library/sonarqube
+f3929ce9ef98: Pulling fs layer
+1df735f481ad: Pulling fs layer
+eb27e3a98da1: Pulling fs layer
+5d5a1fad7028: Pulling fs layer
+c7ad1fe61e07: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+e24a8b9e652f: Pulling fs layer
+60d98d907669: Pulling fs layer
+4f4fb700ef54: Already exists
+1df735f481ad: Download complete
+c7ad1fe61e07: Download complete
+5d5a1fad7028: Download complete
+f3929ce9ef98: Download complete
+e24a8b9e652f: Download complete
+600f318704dc: Download complete
+60d98d907669: Download complete
+ce2bd68be4fc: Download complete
+60d98d907669: Pull complete
+eb27e3a98da1: Download complete
+e24a8b9e652f: Pull complete
+1df735f481ad: Pull complete
+5d5a1fad7028: Pull complete
+f3929ce9ef98: Pull complete
+4f4fb700ef54: Pull complete
+c7ad1fe61e07: Pull complete
+eb27e3a98da1: Pull complete
+Digest: sha256:f709975ab31d2d08f5a3ae2dc73a31ee011afc8cf28845082c17c55d45df9df5
+Status: Downloaded newer image for sonarqube:9.9-community
+68e00a4bd9bb860825d32278720e3452b633df7ea6b72cd035b02498dc2db9bb
