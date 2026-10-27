@@ -1,0 +1,74 @@
+                                    |Lines      |Functions 
+Filename                            |Rate    Num|Rate  Num
+==========================================================
+[lib/app/]
+app.dart                            | 100%    12|    -   0
+dependencias.dart                   |93.3%    30|    -   0
+inicio_page.dart                    | 100%    34|    -   0
+widgets.dart                        |87.0%    69|    -   0
+
+[lib/core/]
+almacenamiento.dart                 |47.1%    17|    -   0
+errores.dart                        |33.3%     6|    -   0
+formato.dart                        | 100%    25|    -   0
+json.dart                           | 100%    35|    -   0
+reloj.dart                          | 0.0%     1|    -   0
+repositorio_json_local.dart         |97.8%    46|    -   0
+validadores.dart                    | 100%    45|    -   0
+
+[lib/features/autenticacion/data/]
+usuarios_locales.dart               | 100%    11|    -   0
+
+[lib/features/autenticacion/domain/]
+cifrado.dart                        | 100%     3|    -   0
+servicio_autenticacion.dart         | 100%    25|    -   0
+usuario.dart                        | 100%     2|    -   0
+
+[lib/features/autenticacion/presentation/]
+login_page.dart                     |94.4%    71|    -   0
+
+[lib/features/casas/data/]
+casas_locales.dart                  | 100%    12|    -   0
+
+[lib/features/casas/domain/]
+casa.dart                           |60.9%    46|    -   0
+servicio_casas.dart                 | 100%    54|    -   0
+
+[lib/features/casas/presentation/]
+casa_form_page.dart                 |66.7%    72|    -   0
+casas_page.dart                     |60.7%    61|    -   0
+
+[lib/features/clientes/data/]
+clientes_locales.dart               | 100%    12|    -   0
+
+[lib/features/clientes/domain/]
+cliente.dart                        |66.7%    24|    -   0
+servicio_clientes.dart              | 100%    44|    -   0
+
+[lib/features/clientes/presentation/]
+cliente_form_page.dart              |95.4%    65|    -   0
+clientes_page.dart                  |91.2%    57|    -   0
+
+[lib/features/reportes/domain/]
+servicio_reportes.dart              | 100%    28|    -   0
+
+[lib/features/reportes/presentation/]
+reportes_page.dart                  |72.5%    80|    -   0
+
+[lib/features/reservas/]
+data/reservas_locales.dart          | 100%    20|    -   0
+domain/calculadora_tarifa.dart      | 100%    17|    -   0
+domain/estado_reserva.dart          | 100%    51|    -   0
+domain/pago.dart                    | 100%    25|    -   0
+domain/rango_fechas.dart            | 100%    30|    -   0
+domain/reserva.dart                 | 100%    73|    -   0
+domain/servicio_disponibilidad.dart | 100%    12|    -   0
+domain/servicio_reservas.dart       | 100%    84|    -   0
+presentation/disp...ilidad_page.dart|80.0%    85|    -   0
+presentation/rese...etalle_page.dart|79.0%   181|    -   0
+presentation/reserva_form_page.dart |92.9%   127|    -   0
+presentation/reservas_page.dart     |92.6%    95|    -   0
+==========================================================
+                              Total:|88.5%  1787|    -   0
+Message summary:
+  no messages were reported

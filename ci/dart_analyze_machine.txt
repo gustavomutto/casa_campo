@@ -1,0 +1,2 @@
+ERROR|COMPILE_TIME_ERROR|UNDEFINED_IDENTIFIER|/home/runner/work/casa_campo/casa_campo/lib/main.dart|13|5|16|Undefined name 'SemanticsBinding'.
+INFO|HINT|UNNECESSARY_IMPORT|/home/runner/work/casa_campo/casa_campo/lib/app/dependencias.dart|3|8|53|The import of 'package:casa_campo/core/repositorio_json_local.dart' is unnecessary because all of the used elements are also provided by the import of 'package:casa_campo/features/reservas/data/reservas_locales.dart'.

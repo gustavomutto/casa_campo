@@ -1,0 +1,1 @@
+genhtml coverage/lcov.info -o reportes/cobertura_html --title 'Casa Campo - Cobertura'
