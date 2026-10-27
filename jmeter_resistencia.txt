@@ -8,20 +8,20 @@ WARNING: Please consider reporting this to the maintainers of class com.thoughtw
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 Creating summariser <summary>
 Created the tree successfully using pruebas/jmeter/plan_resistencia.jmx
-Starting standalone test @ 2026 Oct 27 20:09:37 UTC (1793131777076)
+Starting standalone test @ 2026 Oct 27 20:41:44 UTC (1793133704512)
 Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
-summary +    886 in 00:00:23 =   38.8/s Avg:     0 Min:     0 Max:    22 Err:   886 (100.00%) Active: 25 Started: 25 Finished: 0
-summary +   1500 in 00:00:30 =   49.9/s Avg:     0 Min:     0 Max:     2 Err:  1500 (100.00%) Active: 25 Started: 25 Finished: 0
-summary =   2386 in 00:00:53 =   45.1/s Avg:     0 Min:     0 Max:    22 Err:  2386 (100.00%)
-summary +   1500 in 00:00:30 =   49.9/s Avg:     0 Min:     0 Max:     4 Err:  1500 (100.00%) Active: 25 Started: 25 Finished: 0
-summary =   3886 in 00:01:23 =   46.9/s Avg:     0 Min:     0 Max:    22 Err:  3886 (100.00%)
-summary +   1495 in 00:00:30 =   49.9/s Avg:     0 Min:     0 Max:     3 Err:  1495 (100.00%) Active: 25 Started: 25 Finished: 0
-summary =   5381 in 00:01:53 =   47.7/s Avg:     0 Min:     0 Max:    22 Err:  5381 (100.00%)
-summary +   1500 in 00:00:30 =   49.9/s Avg:     0 Min:     0 Max:     2 Err:  1500 (100.00%) Active: 25 Started: 25 Finished: 0
-summary =   6881 in 00:02:23 =   48.2/s Avg:     0 Min:     0 Max:    22 Err:  6881 (100.00%)
-summary +   1500 in 00:00:30 =   50.0/s Avg:     0 Min:     0 Max:     2 Err:  1500 (100.00%) Active: 25 Started: 25 Finished: 0
-summary =   8381 in 00:02:53 =   48.5/s Avg:     0 Min:     0 Max:    22 Err:  8381 (100.00%)
-summary +    357 in 00:00:07 =   50.2/s Avg:     0 Min:     0 Max:     1 Err:   357 (100.00%) Active: 0 Started: 25 Finished: 25
-summary =   8738 in 00:03:00 =   48.5/s Avg:     0 Min:     0 Max:    22 Err:  8738 (100.00%)
-Tidying up ...    @ 2026 Oct 27 20:12:37 UTC (1793131957195)
+summary +    516 in 00:00:15 =   33.4/s Avg:     1 Min:     0 Max:    26 Err:     0 (0.00%) Active: 25 Started: 25 Finished: 0
+summary +   1495 in 00:00:30 =   49.9/s Avg:     0 Min:     0 Max:    11 Err:     0 (0.00%) Active: 25 Started: 25 Finished: 0
+summary =   2011 in 00:00:45 =   44.3/s Avg:     1 Min:     0 Max:    26 Err:     0 (0.00%)
+summary +   1498 in 00:00:30 =   49.9/s Avg:     0 Min:     0 Max:    10 Err:     0 (0.00%) Active: 25 Started: 25 Finished: 0
+summary =   3509 in 00:01:15 =   46.5/s Avg:     1 Min:     0 Max:    26 Err:     0 (0.00%)
+summary +   1496 in 00:00:30 =   49.9/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%) Active: 25 Started: 25 Finished: 0
+summary =   5005 in 00:01:45 =   47.5/s Avg:     0 Min:     0 Max:    26 Err:     0 (0.00%)
+summary +   1495 in 00:00:30 =   49.8/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%) Active: 25 Started: 25 Finished: 0
+summary =   6500 in 00:02:15 =   48.0/s Avg:     0 Min:     0 Max:    26 Err:     0 (0.00%)
+summary +   1499 in 00:00:30 =   50.0/s Avg:     0 Min:     0 Max:     9 Err:     0 (0.00%) Active: 25 Started: 25 Finished: 0
+summary =   7999 in 00:02:45 =   48.4/s Avg:     0 Min:     0 Max:    26 Err:     0 (0.00%)
+summary +    728 in 00:00:15 =   49.8/s Avg:     0 Min:     0 Max:     8 Err:     0 (0.00%) Active: 0 Started: 25 Finished: 25
+summary =   8727 in 00:03:00 =   48.5/s Avg:     0 Min:     0 Max:    26 Err:     0 (0.00%)
+Tidying up ...    @ 2026 Oct 27 20:44:44 UTC (1793133884630)
 ... end of run

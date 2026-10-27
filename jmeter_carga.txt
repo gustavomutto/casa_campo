@@ -8,12 +8,14 @@ WARNING: Please consider reporting this to the maintainers of class com.thoughtw
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 Creating summariser <summary>
 Created the tree successfully using pruebas/jmeter/plan_rendimiento.jmx
-Starting standalone test @ 2026 Oct 27 20:07:27 UTC (1793131647428)
+Starting standalone test @ 2026 Oct 27 20:39:34 UTC (1793133574809)
 Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
-summary +     11 in 00:00:03 =    4.2/s Avg:     3 Min:     0 Max:    26 Err:    11 (100.00%) Active: 5 Started: 5 Finished: 0
-summary +   1730 in 00:00:30 =   57.9/s Avg:     0 Min:     0 Max:     2 Err:  1730 (100.00%) Active: 45 Started: 50 Finished: 5
-summary =   1741 in 00:00:33 =   53.5/s Avg:     0 Min:     0 Max:    26 Err:  1741 (100.00%)
-summary +   1259 in 00:00:27 =   46.8/s Avg:     0 Min:     0 Max:     3 Err:  1259 (100.00%) Active: 0 Started: 50 Finished: 50
-summary =   3000 in 00:00:59 =   50.5/s Avg:     0 Min:     0 Max:    26 Err:  3000 (100.00%)
-Tidying up ...    @ 2026 Oct 27 20:08:26 UTC (1793131706967)
+summary +      1 in 00:00:01 =    1.4/s Avg:    39 Min:    39 Max:    39 Err:     0 (0.00%) Active: 2 Started: 2 Finished: 0
+summary +   1046 in 00:00:24 =   42.9/s Avg:     1 Min:     0 Max:    18 Err:     0 (0.00%) Active: 42 Started: 42 Finished: 0
+summary =   1047 in 00:00:25 =   41.7/s Avg:     1 Min:     0 Max:    39 Err:     0 (0.00%)
+summary +   1913 in 00:00:30 =   63.7/s Avg:     0 Min:     0 Max:    10 Err:     0 (0.00%) Active: 8 Started: 50 Finished: 42
+summary =   2960 in 00:00:55 =   53.7/s Avg:     1 Min:     0 Max:    39 Err:     0 (0.00%)
+summary +     40 in 00:00:04 =    9.1/s Avg:     0 Min:     0 Max:     5 Err:     0 (0.00%) Active: 0 Started: 50 Finished: 50
+summary =   3000 in 00:01:00 =   50.4/s Avg:     1 Min:     0 Max:    39 Err:     0 (0.00%)
+Tidying up ...    @ 2026 Oct 27 20:40:34 UTC (1793133634424)
 ... end of run
