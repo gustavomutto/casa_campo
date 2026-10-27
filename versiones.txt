@@ -1,5 +1,5 @@
-Google Chrome 155.0.8059.39 
-ChromeDriver 155.0.8059.39 (3ff7ac5a9224be9156d7f8703a06e22890aafd34-refs/branch-heads/8059@{#935})
+Google Chrome 156.0.8078.47 
+ChromeDriver 156.0.8078.47 (1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775-refs/branch-heads/8078@{#1313})
 
 Copyright (c) 1999-2024 The Apache Software Foundation
 

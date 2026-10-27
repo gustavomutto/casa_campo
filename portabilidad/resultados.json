@@ -5,9 +5,10 @@
     "vista": "movil",
     "ancho": 390,
     "alto": 844,
-    "carga_login_s": 0.89,
-    "resultado": "Fallido",
-    "error": "Page.wait_for_function: Timeout 30000ms exceeded.",
+    "carga_login_s": 0.63,
+    "login_s": 0.13,
+    "captura": "chromium_movil.png",
+    "resultado": "Exitoso",
     "errores_js": 0
   },
   {
@@ -16,9 +17,10 @@
     "vista": "tableta",
     "ancho": 768,
     "alto": 1024,
-    "carga_login_s": 0.84,
-    "resultado": "Fallido",
-    "error": "Page.wait_for_function: Timeout 30000ms exceeded.",
+    "carga_login_s": 0.57,
+    "login_s": 0.1,
+    "captura": "chromium_tableta.png",
+    "resultado": "Exitoso",
     "errores_js": 0
   },
   {
@@ -27,9 +29,10 @@
     "vista": "escritorio",
     "ancho": 1366,
     "alto": 768,
-    "carga_login_s": 0.9,
-    "resultado": "Fallido",
-    "error": "Page.wait_for_function: Timeout 30000ms exceeded.",
+    "carga_login_s": 0.58,
+    "login_s": 0.1,
+    "captura": "chromium_escritorio.png",
+    "resultado": "Exitoso",
     "errores_js": 0
   },
   {
@@ -38,8 +41,8 @@
     "vista": "movil",
     "ancho": 390,
     "alto": 844,
-    "carga_login_s": 1.23,
-    "login_s": 0.18,
+    "carga_login_s": 1.2,
+    "login_s": 0.11,
     "captura": "firefox_movil.png",
     "resultado": "Exitoso",
     "errores_js": 0
@@ -50,8 +53,8 @@
     "vista": "tableta",
     "ancho": 768,
     "alto": 1024,
-    "carga_login_s": 0.92,
-    "login_s": 0.17,
+    "carga_login_s": 0.91,
+    "login_s": 0.15,
     "captura": "firefox_tableta.png",
     "resultado": "Exitoso",
     "errores_js": 0
@@ -62,8 +65,8 @@
     "vista": "escritorio",
     "ancho": 1366,
     "alto": 768,
-    "carga_login_s": 0.92,
-    "login_s": 0.22,
+    "carga_login_s": 0.9,
+    "login_s": 0.13,
     "captura": "firefox_escritorio.png",
     "resultado": "Exitoso",
     "errores_js": 0
@@ -74,9 +77,10 @@
     "vista": "movil",
     "ancho": 390,
     "alto": 844,
-    "carga_login_s": 2.04,
-    "resultado": "Fallido",
-    "error": "Page.wait_for_function: Timeout 30000ms exceeded.",
+    "carga_login_s": 1.22,
+    "login_s": 0.21,
+    "captura": "webkit_movil.png",
+    "resultado": "Exitoso",
     "errores_js": 0
   },
   {
@@ -85,8 +89,8 @@
     "vista": "tableta",
     "ancho": 768,
     "alto": 1024,
-    "carga_login_s": 1.44,
-    "login_s": 0.34,
+    "carga_login_s": 0.86,
+    "login_s": 0.12,
     "captura": "webkit_tableta.png",
     "resultado": "Exitoso",
     "errores_js": 0
@@ -97,9 +101,10 @@
     "vista": "escritorio",
     "ancho": 1366,
     "alto": 768,
-    "carga_login_s": 0.94,
-    "resultado": "Fallido",
-    "error": "Page.wait_for_function: Timeout 30000ms exceeded.",
+    "carga_login_s": 0.84,
+    "login_s": 0.13,
+    "captura": "webkit_escritorio.png",
+    "resultado": "Exitoso",
     "errores_js": 0
   }
 ]

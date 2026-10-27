@@ -39,7 +39,7 @@ ZAP by [Checkmarx](https://checkmarx.com/).
 
 | Name | Risk Level | Number of Instances |
 | --- | --- | --- |
-| Content Security Policy (CSP) Header Not Set | Medium | Systemic |
+| Content Security Policy (CSP) Header Not Set | Medium | 5 |
 | Missing Anti-clickjacking Header | Medium | 1 |
 | Cross-Origin-Embedder-Policy Header Missing or Invalid | Low | 1 |
 | Cross-Origin-Opener-Policy Header Missing or Invalid | Low | 1 |
@@ -84,6 +84,13 @@ Content Security Policy (CSP) is an added layer of security that helps to detect
   * Attack: ``
   * Evidence: ``
   * Other Info: ``
+* URL: http://localhost:8080/favicon.ico
+  * Node Name: `http://localhost:8080/favicon.ico`
+  * Method: `GET`
+  * Parameter: ``
+  * Attack: ``
+  * Evidence: ``
+  * Other Info: ``
 * URL: http://localhost:8080/robots.txt
   * Node Name: `http://localhost:8080/robots.txt`
   * Method: `GET`
@@ -99,8 +106,8 @@ Content Security Policy (CSP) is an added layer of security that helps to detect
   * Evidence: ``
   * Other Info: ``
 
-Instances: Systemic
 
+Instances: 5
 
 ### Solution
 
@@ -748,8 +755,8 @@ The response contents are storable by caching components such as proxy servers, 
   * Attack: ``
   * Evidence: ``
   * Other Info: `In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.`
-* URL: http://localhost:8080/casa_campo/icons/Icon-192.png
-  * Node Name: `http://localhost:8080/casa_campo/icons/Icon-192.png`
+* URL: http://localhost:8080/robots.txt
+  * Node Name: `http://localhost:8080/robots.txt`
   * Method: `GET`
   * Parameter: ``
   * Attack: ``

@@ -80,9 +80,10 @@ WARN-NEW: Server Leaks Version Information via "Server" HTTP Response Header Fie
 	http://localhost:8080/casa_campo/ (200 OK)
 	http://localhost:8080/robots.txt (404 Not Found)
 	http://localhost:8080/sitemap.xml (404 Not Found)
-WARN-NEW: Content Security Policy (CSP) Header Not Set [10038] x 4 
+WARN-NEW: Content Security Policy (CSP) Header Not Set [10038] x 5 
 	http://localhost:8080/ (403 Forbidden)
 	http://localhost:8080/casa_campo/ (200 OK)
+	http://localhost:8080/favicon.ico (404 Not Found)
 	http://localhost:8080/robots.txt (404 Not Found)
 	http://localhost:8080/sitemap.xml (404 Not Found)
 WARN-NEW: Non-Storable Content [10049] x 6 
@@ -90,7 +91,7 @@ WARN-NEW: Non-Storable Content [10049] x 6
 	http://localhost:8080/casa_campo (301 Moved Permanently)
 	http://localhost:8080/casa_campo/ (200 OK)
 	http://localhost:8080/casa_campo/favicon.png (200 OK)
-	http://localhost:8080/casa_campo/icons/Icon-192.png (200 OK)
+	http://localhost:8080/robots.txt (404 Not Found)
 WARN-NEW: Permissions Policy Header Not Set [10063] x 5 
 	http://localhost:8080/ (403 Forbidden)
 	http://localhost:8080/casa_campo/ (200 OK)

@@ -28,7 +28,7 @@ ZAP by [Checkmarx](https://checkmarx.com/).
 | Info | Informational | https://gustavomutto.github.io | Percentage of endpoints with content type text/html | 55 % |
 | Info | Informational | https://gustavomutto.github.io | Percentage of endpoints with method GET | 100 % |
 | Info | Informational | https://gustavomutto.github.io | Count of total endpoints | 9    |
-| Info | Informational | https://gustavomutto.github.io | Percentage of slow responses | 16 % |
+| Info | Informational | https://gustavomutto.github.io | Percentage of slow responses | 8 % |
 
 
 
@@ -774,13 +774,6 @@ The content was retrieved from a shared cache. If the response data is sensitive
   * Attack: ``
   * Evidence: `HIT`
   * Other Info: ``
-* URL: https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js
-  * Node Name: `https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js`
-  * Method: `GET`
-  * Parameter: ``
-  * Attack: ``
-  * Evidence: `HIT`
-  * Other Info: ``
 * URL: https://gustavomutto.github.io/
   * Node Name: `https://gustavomutto.github.io/`
   * Method: `GET`
@@ -795,8 +788,8 @@ The content was retrieved from a shared cache. If the response data is sensitive
   * Attack: ``
   * Evidence: `Age: 0`
   * Other Info: `The presence of the 'Age' header indicates that a HTTP/1.1 compliant caching server is in use.`
-* URL: https://gustavomutto.github.io/casa_campo/favicon.png
-  * Node Name: `https://gustavomutto.github.io/casa_campo/favicon.png`
+* URL: https://gustavomutto.github.io/casa_campo/
+  * Node Name: `https://gustavomutto.github.io/casa_campo/`
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
@@ -872,15 +865,15 @@ The response contents are storable by caching components such as proxy servers, 
   * Attack: ``
   * Evidence: `max-age=600`
   * Other Info: ``
-* URL: https://gustavomutto.github.io/casa_campo/favicon.png
-  * Node Name: `https://gustavomutto.github.io/casa_campo/favicon.png`
+* URL: https://gustavomutto.github.io/robots.txt
+  * Node Name: `https://gustavomutto.github.io/robots.txt`
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
-  * Evidence: `max-age=600`
-  * Other Info: ``
-* URL: https://gustavomutto.github.io/robots.txt
-  * Node Name: `https://gustavomutto.github.io/robots.txt`
+  * Evidence: ``
+  * Other Info: `In the absence of an explicitly specified caching lifetime directive in the response, a liberal lifetime heuristic of 1 year was assumed. This is permitted by rfc7234.`
+* URL: https://gustavomutto.github.io/sitemap.xml
+  * Node Name: `https://gustavomutto.github.io/sitemap.xml`
   * Method: `GET`
   * Parameter: ``
   * Attack: ``

@@ -1,9 +1,9 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.14.4, pytest-9.1.1, pluggy-1.7.0 -- /usr/bin/python3
 cachedir: .pytest_cache
-metadata: {'Python': '3.14.4', 'Platform': 'Linux-7.0.0-1017-azure-x86_64-with-glibc2.43', 'Packages': {'pytest': '9.1.1', 'pluggy': '1.7.0'}, 'Plugins': {'html': '4.2.0', 'metadata': '3.1.1', 'platformdirs': '4.13.0', 'typeguard': '4.4.4'}, 'CI': 'true', 'JAVA_HOME': '/usr/lib/jvm/temurin-25-jdk-amd64'}
+metadata: {'Python': '3.14.4', 'Platform': 'Linux-7.0.0-1017-azure-x86_64-with-glibc2.43', 'Packages': {'pytest': '9.1.1', 'pluggy': '1.7.0'}, 'Plugins': {'metadata': '3.1.1', 'html': '4.2.0', 'platformdirs': '4.13.5', 'typeguard': '4.4.4'}, 'CI': 'true', 'JAVA_HOME': '/usr/lib/jvm/temurin-25-jdk-amd64'}
 rootdir: /home/runner/work/casa_campo/casa_campo
-plugins: html-4.2.0, metadata-3.1.1, platformdirs-4.13.0, typeguard-4.4.4
+plugins: metadata-3.1.1, html-4.2.0, platformdirs-4.13.5, typeguard-4.4.4
 collecting ... collected 13 items
 
 pruebas/aceptacion/test_aceptacion.py::test_ca01_inicio_sesion_exitoso PASSED [  7%]
@@ -21,4 +21,4 @@ pruebas/aceptacion/test_aceptacion.py::test_ca12_registrar_casa PASSED   [ 92%]
 pruebas/aceptacion/test_aceptacion.py::test_ca13_reportes PASSED         [100%]
 
 - Generated html report: file:///home/runner/work/casa_campo/casa_campo/reportes/aceptacion/reporte_selenium.html -
-======================== 13 passed in 165.07s (0:02:45) ========================
+======================== 13 passed in 154.76s (0:02:34) ========================
