@@ -1,0 +1,2 @@
+Building Windows application...                                    77.8s
+√ Built build\windows\x64\runner\Release\casa_campo.exe
