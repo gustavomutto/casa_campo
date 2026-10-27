@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import json,sys;d=json.load(sys.stdin);print(next((a['browser_download_url'] for r in d for a in r.get('assets',[]) if a['name'].endswith('.jar')), ''))
+                                                 ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 1, in <genexpr>
+    import json,sys;d=json.load(sys.stdin);print(next((a['browser_download_url'] for r in d for a in r.get('assets',[]) if a['name'].endswith('.jar')), ''))
+                                                                                                     ^^^^^
+AttributeError: 'str' object has no attribute 'get'
