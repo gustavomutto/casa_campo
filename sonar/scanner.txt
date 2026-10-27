@@ -1,14 +1,14 @@
 Unable to find image 'sonarsource/sonar-scanner-cli:5' locally
 5: Pulling from sonarsource/sonar-scanner-cli
-4f4fb700ef54: Pulling fs layer
-abe98265d206: Pulling fs layer
-c49a83759257: Pulling fs layer
 3c854c8cbf46: Pulling fs layer
+abe98265d206: Pulling fs layer
 4f4fb700ef54: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+c49a83759257: Pulling fs layer
 4f4fb700ef54: Already exists
 4f4fb700ef54: Pull complete
-c49a83759257: Download complete
 3c854c8cbf46: Download complete
+c49a83759257: Download complete
 3c854c8cbf46: Pull complete
 abe98265d206: Download complete
 c49a83759257: Pull complete
@@ -24,31 +24,31 @@ INFO: User cache: /opt/sonar-scanner/.sonar/cache
 INFO: Analyzing on SonarQube server 9.9.8.100196
 INFO: Default locale: "en_US", source code encoding: "UTF-8"
 INFO: Load global settings
-INFO: Load global settings (done) | time=191ms
-INFO: Server id: 147B411E-AaF_KFeapvM6e8HD7OZj
+INFO: Load global settings (done) | time=225ms
+INFO: Server id: 147B411E-AaF_LPtKgXedQjbzj0qD
 INFO: User cache: /opt/sonar-scanner/.sonar/cache
 INFO: Load/download plugins
 INFO: Load plugins index
-INFO: Load plugins index (done) | time=143ms
-INFO: Load/download plugins (done) | time=3073ms
+INFO: Load plugins index (done) | time=151ms
+INFO: Load/download plugins (done) | time=3106ms
 INFO: Process project properties
-INFO: Process project properties (done) | time=7ms
+INFO: Process project properties (done) | time=8ms
 INFO: Execute project builders
-INFO: Execute project builders (done) | time=1ms
+INFO: Execute project builders (done) | time=2ms
 INFO: Project key: casa_campo
 INFO: Base dir: /usr/src
 INFO: Working dir: /usr/src/.scannerwork
 INFO: Load project settings for component key: 'casa_campo'
-INFO: Load project settings for component key: 'casa_campo' (done) | time=253ms
+INFO: Load project settings for component key: 'casa_campo' (done) | time=225ms
 INFO: Load quality profiles
-INFO: Load quality profiles (done) | time=195ms
+INFO: Load quality profiles (done) | time=201ms
 INFO: Load active rules
-INFO: Load active rules (done) | time=4712ms
+INFO: Load active rules (done) | time=4838ms
 INFO: Load analysis cache
-INFO: Load analysis cache (404) | time=138ms
+INFO: Load analysis cache (404) | time=193ms
 WARN: Property 'sonar.password' is deprecated. It will not be supported in the future. Please instead use the 'sonar.login' parameter with a token.
 INFO: Load project repositories
-INFO: Load project repositories (done) | time=154ms
+INFO: Load project repositories (done) | time=128ms
 INFO: Indexing files...
 INFO: Project configuration:
 INFO: 60 files indexed
@@ -56,18 +56,18 @@ INFO: 0 files ignored because of scm ignore settings
 INFO: Quality profile for dart: dartanalyzer
 INFO: ------------- Run sensors on module Casa Campo
 INFO: Load metrics repository
-INFO: Load metrics repository (done) | time=131ms
+INFO: Load metrics repository (done) | time=135ms
 INFO: Sensor JaCoCo XML Report Importer [jacoco]
 INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
 INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
 INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=2ms
 INFO: Sensor CSS Rules [javascript]
 INFO: No CSS, PHP, HTML or VueJS files are found in the project. CSS analysis is skipped.
-INFO: Sensor CSS Rules [javascript] (done) | time=0ms
+INFO: Sensor CSS Rules [javascript] (done) | time=1ms
 INFO: Sensor C# Project Type Information [csharp]
 INFO: Sensor C# Project Type Information [csharp] (done) | time=1ms
 INFO: Sensor C# Analysis Log [csharp]
-INFO: Sensor C# Analysis Log [csharp] (done) | time=13ms
+INFO: Sensor C# Analysis Log [csharp] (done) | time=8ms
 INFO: Sensor C# Properties [csharp]
 INFO: Sensor C# Properties [csharp] (done) | time=0ms
 INFO: Sensor Dart sensor [flutter]
@@ -86,14 +86,14 @@ WARN: Duplication reported for 'test/unit/reserva_test.dart' will be ignored bec
 WARN: Duplication reported for 'test/unit/repositorios_locales_test.dart' will be ignored because it's a test file.
 WARN: Duplication reported for 'test/integracion/integracion_hilos_test.dart' will be ignored because it's a test file.
 WARN: Duplication reported for 'test/unit/disponibilidad_reportes_test.dart' will be ignored because it's a test file.
-INFO: Sensor Dart sensor [flutter] (done) | time=1825ms
+INFO: Sensor Dart sensor [flutter] (done) | time=1511ms
 INFO: Sensor Dart pubspec.yaml sensor [flutter]
 INFO: Sensor Dart pubspec.yaml sensor [flutter] (done) | time=1ms
 INFO: Sensor Dart analysis sensor [flutter]
 INFO: Detected Flutter project with version 1.0.0+1
 INFO: Analysing report from reportes/sonar/dart_analyze.txt
 INFO: Recording 0 issues
-INFO: Sensor Dart analysis sensor [flutter] (done) | time=52ms
+INFO: Sensor Dart analysis sensor [flutter] (done) | time=39ms
 INFO: Sensor Flutter unit tests [flutter]
 ERROR: Unable to find test file /home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart
 ERROR: Unable to find test file /home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart
@@ -109,7 +109,7 @@ ERROR: Unable to find test file /home/runner/work/casa_campo/casa_campo/test/wid
 ERROR: Unable to find test file /home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart
 ERROR: Unable to find test file /home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart
 ERROR: Unable to find test file /home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart
-INFO: Sensor Flutter unit tests [flutter] (done) | time=66ms
+INFO: Sensor Flutter unit tests [flutter] (done) | time=43ms
 INFO: Sensor Flutter Coverage [flutter]
 INFO: Analysing [/usr/src/coverage/lcov.info]
 INFO: Sensor Flutter Coverage [flutter] (done) | time=26ms
@@ -118,26 +118,26 @@ INFO: Sensor HTML [web] (done) | time=3ms
 INFO: Sensor TextAndSecretsSensor [text]
 INFO: 60 source files to be analyzed
 INFO: 60/60 source files have been analyzed
-INFO: Sensor TextAndSecretsSensor [text] (done) | time=218ms
+INFO: Sensor TextAndSecretsSensor [text] (done) | time=161ms
 INFO: Sensor VB.NET Project Type Information [vbnet]
-INFO: Sensor VB.NET Project Type Information [vbnet] (done) | time=0ms
+INFO: Sensor VB.NET Project Type Information [vbnet] (done) | time=1ms
 INFO: Sensor VB.NET Analysis Log [vbnet]
-INFO: Sensor VB.NET Analysis Log [vbnet] (done) | time=10ms
+INFO: Sensor VB.NET Analysis Log [vbnet] (done) | time=9ms
 INFO: Sensor VB.NET Properties [vbnet]
 INFO: Sensor VB.NET Properties [vbnet] (done) | time=0ms
 INFO: Sensor IaC Docker Sensor [iac]
 INFO: 0 source files to be analyzed
 INFO: 0/0 source files have been analyzed
-INFO: Sensor IaC Docker Sensor [iac] (done) | time=47ms
+INFO: Sensor IaC Docker Sensor [iac] (done) | time=83ms
 INFO: ------------- Run sensors on project
 INFO: Sensor Analysis Warnings import [csharp]
-INFO: Sensor Analysis Warnings import [csharp] (done) | time=2ms
+INFO: Sensor Analysis Warnings import [csharp] (done) | time=1ms
 INFO: Sensor Zero Coverage Sensor
 INFO: Sensor Zero Coverage Sensor (done) | time=1ms
 INFO: SCM Publisher SCM provider for this project is: git
 INFO: SCM Publisher 60 source files to be analyzed
 WARN: Shallow clone detected, no blame information will be provided. You can convert to non-shallow with 'git fetch --unshallow'.
-INFO: SCM Publisher 0/60 source files have been analyzed (done) | time=4ms
+INFO: SCM Publisher 0/60 source files have been analyzed (done) | time=3ms
 WARN: Missing blame information for the following files:
 WARN:   * lib/features/reservas/data/reservas_locales.dart
 WARN:   * lib/core/validadores.dart
@@ -202,17 +202,17 @@ WARN:   * lib/features/reservas/domain/estado_reserva.dart
 WARN: This may lead to missing/broken features in SonarQube
 INFO: CPD Executor 6 files had no CPD blocks
 INFO: CPD Executor Calculating CPD for 39 files
-INFO: CPD Executor CPD calculation finished (done) | time=26ms
-INFO: Analysis report generated in 84ms, dir size=446.9 kB
-INFO: Analysis report compressed in 99ms, zip size=157.4 kB
-INFO: Analysis report uploaded in 183ms
+INFO: CPD Executor CPD calculation finished (done) | time=31ms
+INFO: Analysis report generated in 88ms, dir size=446.9 kB
+INFO: Analysis report compressed in 85ms, zip size=157.4 kB
+INFO: Analysis report uploaded in 165ms
 INFO: ANALYSIS SUCCESSFUL, you can find the results at: http://localhost:9000/dashboard?id=casa_campo
 INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
-INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AaF_KZf4pvM6e8HD7Yyt
-INFO: Analysis total time: 10.618 s
+INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AaF_Lj5YgXedQjbzj_DN
+INFO: Analysis total time: 10.298 s
 INFO: ------------------------------------------------------------------------
 INFO: EXECUTION SUCCESS
 INFO: ------------------------------------------------------------------------
-INFO: Total time: 15.200s
-INFO: Final Memory: 34M/128M
+INFO: Total time: 14.769s
+INFO: Final Memory: 34M/134M
 INFO: ------------------------------------------------------------------------

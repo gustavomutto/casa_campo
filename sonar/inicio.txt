@@ -1,75 +1,76 @@
 Plugin: https://github.com/insideapp-fr/sonar-flutter/releases/download/0.5.3-SNAPSHOT/sonar-flutter-plugin-0.5.3-SNAPSHOT.jar
 total 7312
-drwxr-xr-x  2 runner runner    4096 Oct 27 20:58 .
-drwxr-xr-x 17 runner runner    4096 Oct 27 20:58 ..
--rw-r--r--  1 runner runner 7478739 Oct 27 20:58 sonar-flutter-plugin.jar
+drwxr-xr-x  2 runner runner    4096 Oct 27 21:03 .
+drwxr-xr-x 17 runner runner    4096 Oct 27 21:03 ..
+-rw-r--r--  1 runner runner 7478739 Oct 27 21:03 sonar-flutter-plugin.jar
 Unable to find image 'sonarqube:9.9-community' locally
 9.9-community: Pulling from library/sonarqube
+e24a8b9e652f: Pulling fs layer
 4f4fb700ef54: Pulling fs layer
+f3929ce9ef98: Pulling fs layer
+1df735f481ad: Pulling fs layer
+c7ad1fe61e07: Pulling fs layer
+5d5a1fad7028: Pulling fs layer
 60d98d907669: Pulling fs layer
 eb27e3a98da1: Pulling fs layer
-5d5a1fad7028: Pulling fs layer
-f3929ce9ef98: Pulling fs layer
-e24a8b9e652f: Pulling fs layer
-c7ad1fe61e07: Pulling fs layer
-1df735f481ad: Pulling fs layer
-5d5a1fad7028: Download complete
 4f4fb700ef54: Already exists
 1df735f481ad: Download complete
+5d5a1fad7028: Download complete
 c7ad1fe61e07: Download complete
 e24a8b9e652f: Download complete
-600f318704dc: Download complete
 ce2bd68be4fc: Download complete
-f3929ce9ef98: Download complete
+600f318704dc: Download complete
 60d98d907669: Download complete
-eb27e3a98da1: Download complete
+f3929ce9ef98: Download complete
 60d98d907669: Pull complete
+eb27e3a98da1: Download complete
 e24a8b9e652f: Pull complete
-5d5a1fad7028: Pull complete
 1df735f481ad: Pull complete
+5d5a1fad7028: Pull complete
 f3929ce9ef98: Pull complete
 4f4fb700ef54: Pull complete
 c7ad1fe61e07: Pull complete
 eb27e3a98da1: Pull complete
 Digest: sha256:f709975ab31d2d08f5a3ae2dc73a31ee011afc8cf28845082c17c55d45df9df5
 Status: Downloaded newer image for sonarqube:9.9-community
-b124cda0df6f243c652d630a384e40d14086ce97398b2fb1a40c7d389017bc7b
+f369cb789e95c0a5673b3e32c06176d65a383c5768dd7184240e190d297322fa
 estado=
 estado=
+estado=STARTING
 estado=STARTING
 estado=STARTING
 estado=STARTING
 estado=STARTING
 estado=STARTING
 estado=UP
-2026.10.27 20:58:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [30s] to [-1]
-2026.10.27 20:58:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [30s] to [-1]
-2026.10.27 20:58:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [-1] to [30s]
-2026.10.27 20:58:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [-1] to [30s]
-2026.10.27 20:58:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [views/view] done | time=89ms
-2026.10.27 20:58:57 INFO  web[][o.s.s.e.IndexerStartupTask] Trigger asynchronous indexing of type [issues/auth/issue]...
-2026.10.27 20:58:57 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] 0 pending indexation task found to be deleted...
-2026.10.27 20:58:57 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] 0 completed indexation task found to be deleted...
-2026.10.27 20:58:57 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] Indexation task deletion complete.
-2026.10.27 20:58:57 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] Deleting tasks characteristics...
-2026.10.27 20:58:57 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] Tasks characteristics deletion complete.
-2026.10.27 20:58:57 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] 0 branch found in need of issue sync.
-2026.10.27 20:58:57 INFO  web[][o.s.s.e.IndexerStartupTask] Trigger asynchronous indexing of type [issues/auth/issue] done | time=32ms
-2026.10.27 20:58:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [components/auth],[projectmeasures/auth],[issues/auth]...
-2026.10.27 20:58:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [components/auth],[projectmeasures/auth],[issues/auth] done | time=90ms
-2026.10.27 20:58:57 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning is enabled.
-2026.10.27 20:58:57 INFO  web[][o.s.s.p.p.PlatformLevelStartup] Running Community Edition
-2026.10.27 20:58:57 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
-2026.10.27 20:58:57 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[COMPUTE_ENGINE] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -Dcom.redhat.fips=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-9.9.8.100196.jar:/opt/sonarqube/lib/jdbc/h2/h2-2.1.214.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process16690572617880296073properties
-2026.10.27 20:58:57 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning will be disabled as there are no more projects in warning.
+2026.10.27 21:04:02 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] 0 branch found in need of issue sync.
+2026.10.27 21:04:02 INFO  web[][o.s.s.e.IndexerStartupTask] Trigger asynchronous indexing of type [issues/auth/issue] done | time=39ms
+2026.10.27 21:04:02 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [components/auth],[projectmeasures/auth],[issues/auth]...
+2026.10.27 21:04:03 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [components/auth],[projectmeasures/auth],[issues/auth] done | time=84ms
+2026.10.27 21:04:03 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning is enabled.
+2026.10.27 21:04:03 INFO  web[][o.s.s.p.p.PlatformLevelStartup] Running Community Edition
+2026.10.27 21:04:03 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2026.10.27 21:04:03 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[COMPUTE_ENGINE] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -Dcom.redhat.fips=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-9.9.8.100196.jar:/opt/sonarqube/lib/jdbc/h2/h2-2.1.214.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process4778768447129152074properties
+2026.10.27 21:04:03 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning will be disabled as there are no more projects in warning.
 WARNING: A terminally deprecated method in java.lang.System has been called
 WARNING: System::setSecurityManager has been called by org.sonar.process.PluginSecurityManager (file:/opt/sonarqube/lib/sonar-application-9.9.8.100196.jar)
 WARNING: Please consider reporting this to the maintainers of org.sonar.process.PluginSecurityManager
 WARNING: System::setSecurityManager will be removed in a future release
-2026.10.27 20:58:58 INFO  ce[][o.s.p.ProcessEntryPoint] Starting Compute Engine
-2026.10.27 20:58:58 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
-2026.10.27 20:58:58 WARN  app[][startup] ####################################################################################################################
-2026.10.27 20:58:58 WARN  app[][startup] Default Administrator credentials are still being used. Make sure to change the password or deactivate the account.
-2026.10.27 20:58:58 WARN  app[][startup] ####################################################################################################################
-2026.10.27 20:58:58 INFO  web[][o.s.s.p.Platform] Web Server is operational
-{"project":{"key":"casa_campo","name":"Casa Campo","qualifier":"TRK","visibility":"public"}}{"login":"admin","name":"ci","token":"squ_6b20a8b50facac8f96137f6e1550605a0f464ee7","createdAt":"2026-10-27T20:59:00+0000","type":"USER_TOKEN"}
+2026.10.27 21:04:03 INFO  ce[][o.s.p.ProcessEntryPoint] Starting Compute Engine
+2026.10.27 21:04:03 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2026.10.27 21:04:03 WARN  app[][startup] ####################################################################################################################
+2026.10.27 21:04:03 WARN  app[][startup] Default Administrator credentials are still being used. Make sure to change the password or deactivate the account.
+2026.10.27 21:04:03 WARN  app[][startup] ####################################################################################################################
+2026.10.27 21:04:03 INFO  web[][o.s.s.p.Platform] Web Server is operational
+2026.10.27 21:04:03 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar;NON_KEYWORDS=VALUE
+2026.10.27 21:04:03 INFO  ce[][c.z.h.HikariDataSource] HikariPool-1 - Starting...
+2026.10.27 21:04:03 INFO  ce[][c.z.h.p.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://127.0.0.1:9092/sonar user=
+2026.10.27 21:04:03 INFO  ce[][c.z.h.HikariDataSource] HikariPool-1 - Start completed.
+2026.10.27 21:04:04 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2026.10.27 21:04:04 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+2026.10.27 21:04:05 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2026.10.27 21:04:05 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2026.10.27 21:04:05 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is started
+2026.10.27 21:04:06 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2026.10.27 21:04:06 INFO  app[][o.s.a.SchedulerImpl] SonarQube is operational
+{"project":{"key":"casa_campo","name":"Casa Campo","qualifier":"TRK","visibility":"public"}}{"login":"admin","name":"ci","token":"squ_a4029a4b10ff59b47b5a5f9dfa20cb913aa0e535","createdAt":"2026-10-27T21:04:09+0000","type":"USER_TOKEN"}
