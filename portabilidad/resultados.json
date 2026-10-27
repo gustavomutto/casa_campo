@@ -1,0 +1,110 @@
+[
+  {
+    "navegador": "chromium",
+    "version": "156.0.8078.4",
+    "vista": "movil",
+    "ancho": 390,
+    "alto": 844,
+    "carga_login_s": 1.16,
+    "login_s": 0.16,
+    "captura": "chromium_movil.png",
+    "resultado": "Exitoso",
+    "errores_js": 0
+  },
+  {
+    "navegador": "chromium",
+    "version": "156.0.8078.4",
+    "vista": "tableta",
+    "ancho": 768,
+    "alto": 1024,
+    "carga_login_s": 0.76,
+    "login_s": 0.13,
+    "captura": "chromium_tableta.png",
+    "resultado": "Exitoso",
+    "errores_js": 0
+  },
+  {
+    "navegador": "chromium",
+    "version": "156.0.8078.4",
+    "vista": "escritorio",
+    "ancho": 1366,
+    "alto": 768,
+    "carga_login_s": 0.75,
+    "login_s": 0.14,
+    "captura": "chromium_escritorio.png",
+    "resultado": "Exitoso",
+    "errores_js": 0
+  },
+  {
+    "navegador": "firefox",
+    "version": "157.0",
+    "vista": "movil",
+    "ancho": 390,
+    "alto": 844,
+    "carga_login_s": 1.32,
+    "login_s": 0.16,
+    "captura": "firefox_movil.png",
+    "resultado": "Exitoso",
+    "errores_js": 0
+  },
+  {
+    "navegador": "firefox",
+    "version": "157.0",
+    "vista": "tableta",
+    "ancho": 768,
+    "alto": 1024,
+    "carga_login_s": 0.95,
+    "login_s": 0.22,
+    "captura": "firefox_tableta.png",
+    "resultado": "Exitoso",
+    "errores_js": 0
+  },
+  {
+    "navegador": "firefox",
+    "version": "157.0",
+    "vista": "escritorio",
+    "ancho": 1366,
+    "alto": 768,
+    "carga_login_s": 0.91,
+    "login_s": 0.17,
+    "captura": "firefox_escritorio.png",
+    "resultado": "Exitoso",
+    "errores_js": 0
+  },
+  {
+    "navegador": "webkit",
+    "version": "27.2",
+    "vista": "movil",
+    "ancho": 390,
+    "alto": 844,
+    "carga_login_s": 1.63,
+    "login_s": 0.33,
+    "captura": "webkit_movil.png",
+    "resultado": "Exitoso",
+    "errores_js": 0
+  },
+  {
+    "navegador": "webkit",
+    "version": "27.2",
+    "vista": "tableta",
+    "ancho": 768,
+    "alto": 1024,
+    "carga_login_s": 1.42,
+    "login_s": 0.25,
+    "captura": "webkit_tableta.png",
+    "resultado": "Exitoso",
+    "errores_js": 0
+  },
+  {
+    "navegador": "webkit",
+    "version": "27.2",
+    "vista": "escritorio",
+    "ancho": 1366,
+    "alto": 768,
+    "carga_login_s": 0.94,
+    "login_s": 0.22,
+    "captura": "webkit_escritorio.png",
+    "resultado": "Exitoso",
+    "errores_js": 0
+  }
+]

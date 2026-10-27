@@ -1,0 +1,10 @@
+navegador,version,vista,ancho,alto,carga_login_s,login_s,resultado,errores_js,captura,error
+chromium,156.0.8078.4,movil,390,844,1.16,0.16,Exitoso,0,chromium_movil.png,
+chromium,156.0.8078.4,tableta,768,1024,0.76,0.13,Exitoso,0,chromium_tableta.png,
+chromium,156.0.8078.4,escritorio,1366,768,0.75,0.14,Exitoso,0,chromium_escritorio.png,
+firefox,157.0,movil,390,844,1.32,0.16,Exitoso,0,firefox_movil.png,
+firefox,157.0,tableta,768,1024,0.95,0.22,Exitoso,0,firefox_tableta.png,
+firefox,157.0,escritorio,1366,768,0.91,0.17,Exitoso,0,firefox_escritorio.png,
+webkit,27.2,movil,390,844,1.63,0.33,Exitoso,0,webkit_movil.png,
+webkit,27.2,tableta,768,1024,1.42,0.25,Exitoso,0,webkit_tableta.png,
+webkit,27.2,escritorio,1366,768,0.94,0.22,Exitoso,0,webkit_escritorio.png,
