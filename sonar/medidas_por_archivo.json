@@ -1,0 +1,1790 @@
+{
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 500,
+        "total": 45
+    },
+    "baseComponent": {
+        "key": "casa_campo",
+        "name": "Casa Campo",
+        "qualifier": "TRK",
+        "measures": []
+    },
+    "components": [
+        {
+            "key": "casa_campo:lib/core/almacenamiento.dart",
+            "name": "almacenamiento.dart",
+            "qualifier": "FIL",
+            "path": "lib/core/almacenamiento.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "59"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "31"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "4"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "47.1",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/app/app.dart",
+            "name": "app.dart",
+            "qualifier": "FIL",
+            "path": "lib/app/app.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "42"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "27"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/domain/calculadora_tarifa.dart",
+            "name": "calculadora_tarifa.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/domain/calculadora_tarifa.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "62"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "31"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "7"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "8"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/casas/domain/casa.dart",
+            "name": "casa.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/casas/domain/casa.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "90"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "70"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "1"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "2"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "60.9",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/casas/presentation/casa_form_page.dart",
+            "name": "casa_form_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/casas/presentation/casa_form_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "178"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "130"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "66.7",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/casas/data/casas_locales.dart",
+            "name": "casas_locales.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/casas/data/casas_locales.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "32"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "23"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/casas/presentation/casas_page.dart",
+            "name": "casas_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/casas/presentation/casas_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "139"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "89"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "59.7",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/casas/domain/casas_repository.dart",
+            "name": "casas_repository.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/casas/domain/casas_repository.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "12"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "6"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/autenticacion/domain/cifrado.dart",
+            "name": "cifrado.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/autenticacion/domain/cifrado.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "12"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "5"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "2"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "1"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/clientes/domain/cliente.dart",
+            "name": "cliente.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/clientes/domain/cliente.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "53"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "39"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "10"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "66.7",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/clientes/presentation/cliente_form_page.dart",
+            "name": "cliente_form_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/clientes/presentation/cliente_form_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "163"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "118"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "95.4",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/clientes/data/clientes_locales.dart",
+            "name": "clientes_locales.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/clientes/data/clientes_locales.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "32"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "23"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/clientes/presentation/clientes_page.dart",
+            "name": "clientes_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/clientes/presentation/clientes_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "135"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "86"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "91.4",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/clientes/domain/clientes_repository.dart",
+            "name": "clientes_repository.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/clientes/domain/clientes_repository.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "12"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "6"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/app/dependencias.dart",
+            "name": "dependencias.dart",
+            "qualifier": "FIL",
+            "path": "lib/app/dependencias.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "110"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "80"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "3"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "4"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "93.3",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/presentation/disponibilidad_page.dart",
+            "name": "disponibilidad_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/presentation/disponibilidad_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "207"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "144"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "1"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "80.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/core/errores.dart",
+            "name": "errores.dart",
+            "qualifier": "FIL",
+            "path": "lib/core/errores.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "25"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "12"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "4"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "2"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "33.3",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/domain/estado_reserva.dart",
+            "name": "estado_reserva.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/domain/estado_reserva.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "163"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "94"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "6"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "36"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/core/formato.dart",
+            "name": "formato.dart",
+            "qualifier": "FIL",
+            "path": "lib/core/formato.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "61"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "30"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "7"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "15"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/app/inicio_page.dart",
+            "name": "inicio_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/app/inicio_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "117"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "83"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "1"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/core/json.dart",
+            "name": "json.dart",
+            "qualifier": "FIL",
+            "path": "lib/core/json.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "118"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "62"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "2"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "7"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/autenticacion/presentation/login_page.dart",
+            "name": "login_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/autenticacion/presentation/login_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "179"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "129"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "94.4",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/main.dart",
+            "name": "main.dart",
+            "qualifier": "FIL",
+            "path": "lib/main.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "25"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "14"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "2"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "2"
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/domain/pago.dart",
+            "name": "pago.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/domain/pago.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "68"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "44"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "1"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/domain/rango_fechas.dart",
+            "name": "rango_fechas.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/domain/rango_fechas.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "71"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "40"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "5"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "13"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/core/reloj.dart",
+            "name": "reloj.dart",
+            "qualifier": "FIL",
+            "path": "lib/core/reloj.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "6"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "2"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "2"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "1"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "0.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reportes/presentation/reportes_page.dart",
+            "name": "reportes_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reportes/presentation/reportes_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "204"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "143"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "72.5",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/core/repositorio_json_local.dart",
+            "name": "repositorio_json_local.dart",
+            "qualifier": "FIL",
+            "path": "lib/core/repositorio_json_local.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "136"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "78"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "7"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "97.8",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/domain/reserva.dart",
+            "name": "reserva.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/domain/reserva.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "140"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "104"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/presentation/reserva_detalle_page.dart",
+            "name": "reserva_detalle_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/presentation/reserva_detalle_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "462"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "312"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "80.8",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/presentation/reserva_form_page.dart",
+            "name": "reserva_form_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/presentation/reserva_form_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "296"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "210"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "92.9",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/data/reservas_locales.dart",
+            "name": "reservas_locales.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/data/reservas_locales.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "54"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "38"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/presentation/reservas_page.dart",
+            "name": "reservas_page.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/presentation/reservas_page.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "230"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "151"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "92.7",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/domain/reservas_repository.dart",
+            "name": "reservas_repository.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/domain/reservas_repository.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "16"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "8"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/autenticacion/domain/servicio_autenticacion.dart",
+            "name": "servicio_autenticacion.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/autenticacion/domain/servicio_autenticacion.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "81"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "52"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "1"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "10"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/casas/domain/servicio_casas.dart",
+            "name": "servicio_casas.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/casas/domain/servicio_casas.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "162"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "102"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "5"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "4"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/clientes/domain/servicio_clientes.dart",
+            "name": "servicio_clientes.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/clientes/domain/servicio_clientes.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "115"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "71"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "3"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "10"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/domain/servicio_disponibilidad.dart",
+            "name": "servicio_disponibilidad.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/domain/servicio_disponibilidad.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "53"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "31"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "2"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reportes/domain/servicio_reportes.dart",
+            "name": "servicio_reportes.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reportes/domain/servicio_reportes.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "99"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "67"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "1"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "1"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/reservas/domain/servicio_reservas.dart",
+            "name": "servicio_reservas.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/reservas/domain/servicio_reservas.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "294"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "179"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "9"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/autenticacion/domain/usuario.dart",
+            "name": "usuario.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/autenticacion/domain/usuario.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "29"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "18"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "1"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/autenticacion/data/usuarios_locales.dart",
+            "name": "usuarios_locales.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/autenticacion/data/usuarios_locales.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "42"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "27"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "1"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/features/autenticacion/domain/usuarios_repository.dart",
+            "name": "usuarios_repository.dart",
+            "qualifier": "FIL",
+            "path": "lib/features/autenticacion/domain/usuarios_repository.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "6"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "3"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "0"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/core/validadores.dart",
+            "name": "validadores.dart",
+            "qualifier": "FIL",
+            "path": "lib/core/validadores.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "180"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "87"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "12"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "0"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "100.0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        },
+        {
+            "key": "casa_campo:lib/app/widgets.dart",
+            "name": "widgets.dart",
+            "qualifier": "FIL",
+            "path": "lib/app/widgets.dart",
+            "language": "dart",
+            "measures": [
+                {
+                    "metric": "lines",
+                    "value": "193"
+                },
+                {
+                    "metric": "ncloc",
+                    "value": "125"
+                },
+                {
+                    "metric": "comment_lines",
+                    "value": "3"
+                },
+                {
+                    "metric": "complexity",
+                    "value": "1"
+                },
+                {
+                    "metric": "coverage",
+                    "value": "87.0",
+                    "bestValue": false
+                },
+                {
+                    "metric": "code_smells",
+                    "value": "0",
+                    "bestValue": true
+                },
+                {
+                    "metric": "cognitive_complexity",
+                    "value": "0",
+                    "bestValue": true
+                }
+            ]
+        }
+    ]
+}
