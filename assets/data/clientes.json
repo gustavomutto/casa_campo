@@ -1,0 +1,7 @@
+[
+  {"id": "cli-001", "documento": "1065123456", "nombreCompleto": "Carlos Mendoza", "telefono": "3004567890", "correo": "carlos.mendoza@correo.com"},
+  {"id": "cli-002", "documento": "1065987654", "nombreCompleto": "Laura Torres", "telefono": "3157654321", "correo": "laura.torres@correo.com"},
+  {"id": "cli-003", "documento": "77182934", "nombreCompleto": "Andrés Gómez", "telefono": "3112223344", "correo": "andres.gomez@correo.com"},
+  {"id": "cli-004", "documento": "49778812", "nombreCompleto": "María Fernanda Ríos", "telefono": "3209998877", "correo": "mafe.rios@correo.com"},
+  {"id": "cli-005", "documento": "1003456789", "nombreCompleto": "José Luis Pérez", "telefono": "3015556677", "correo": "joseluis.perez@correo.com"}
+]

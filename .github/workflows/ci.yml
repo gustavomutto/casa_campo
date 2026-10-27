@@ -1,0 +1,122 @@
+name: CI - Pruebas, cobertura y despliegue
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/**', '**.md']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pruebas:
+    name: Análisis, pruebas y build web
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Preparar carpeta de reportes
+        run: |
+          mkdir -p reportes
+          flutter --version | tee reportes/flutter_version.txt
+          sudo apt-get update -qq && sudo apt-get install -y -qq lcov cloc > /dev/null
+
+      - name: Dependencias
+        run: flutter pub get
+
+      - name: Análisis estático (flutter analyze)
+        run: |
+          set +e
+          flutter analyze 2>&1 | tee reportes/analyze.txt
+          echo "exit=${PIPESTATUS[0]}" > reportes/analyze_exit.txt
+          dart analyze --format=machine > reportes/dart_analyze_machine.txt 2>&1
+          true
+
+      - name: Pruebas unitarias
+        run: |
+          set +e
+          flutter test test/unit --reporter expanded 2>&1 | tee reportes/pruebas_unitarias.txt
+          echo "exit=${PIPESTATUS[0]}" > reportes/pruebas_unitarias_exit.txt
+          true
+
+      - name: Pruebas de widgets
+        run: |
+          set +e
+          flutter test test/widget --reporter expanded 2>&1 | tee reportes/pruebas_widgets.txt
+          echo "exit=${PIPESTATUS[0]}" > reportes/pruebas_widgets_exit.txt
+          true
+
+      - name: Pruebas de integración
+        run: |
+          set +e
+          flutter test test/integracion --reporter expanded 2>&1 | tee reportes/pruebas_integracion.txt
+          echo "exit=${PIPESTATUS[0]}" > reportes/pruebas_integracion_exit.txt
+          true
+
+      - name: Suite completa con cobertura
+        run: |
+          set +e
+          flutter test --coverage --machine > reportes/pruebas_machine.json 2> reportes/pruebas_machine_err.txt
+          echo "exit=$?" > reportes/pruebas_cobertura_exit.txt
+          lcov --summary coverage/lcov.info 2>&1 | tee reportes/cobertura_resumen.txt
+          lcov --list coverage/lcov.info 2>&1 | tee reportes/cobertura_por_archivo.txt
+          genhtml coverage/lcov.info -o reportes/cobertura_html --title "Casa Campo - Cobertura" > /dev/null
+          cp coverage/lcov.info reportes/lcov.info
+          true
+
+      - name: Fiabilidad - 10 ejecuciones consecutivas de la suite
+        run: |
+          set +e
+          echo "corrida,resultado,segundos" > reportes/fiabilidad_corridas.csv
+          for i in $(seq 1 10); do
+            inicio=$(date +%s.%N)
+            flutter test --reporter compact > /tmp/corrida_$i.txt 2>&1
+            codigo=$?
+            fin=$(date +%s.%N)
+            echo "$i,$codigo,$(echo "$fin - $inicio" | bc)" >> reportes/fiabilidad_corridas.csv
+            tail -n 1 /tmp/corrida_$i.txt >> reportes/fiabilidad_resumen.txt
+          done
+          true
+
+      - name: Tamaño del código (cloc)
+        run: |
+          cloc lib --by-file --quiet > reportes/cloc_lib_por_archivo.txt
+          cloc lib --quiet > reportes/cloc_lib.txt
+          cloc test --quiet > reportes/cloc_test.txt
+          cloc lib --json --quiet > reportes/cloc_lib.json
+          find lib -name '*.dart' | xargs wc -l > reportes/wc_lib.txt
+
+      - name: Build web
+        run: |
+          flutter build web --release --base-href /casa_campo/ --no-web-resources-cdn 2>&1 | tee reportes/build_web.txt
+          du -sh build/web > reportes/tamano_build_web.txt
+          du -ah build/web | sort -h | tail -n 15 >> reportes/tamano_build_web.txt
+
+      - name: Publicar reportes en la rama 'reportes'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: reportes
+          publish_dir: ./reportes
+          destination_dir: ci
+          keep_files: true
+          enable_jekyll: true
+          commit_message: "Reportes de CI"
+
+      - name: Desplegar en GitHub Pages (rama gh-pages)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./build/web
+          commit_message: "Despliegue web"

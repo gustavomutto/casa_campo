@@ -6,4 +6,10 @@ abstract interface class ReservasRepository {
   Future<Reserva?> obtenerPorId(String id);
 
   Future<List<Reserva>> obtenerPendientes();
+
+  Future<List<Reserva>> obtenerPorCasa(String casaId);
+
+  Future<void> guardar(Reserva reserva);
+
+  Future<String> siguienteId();
 }
