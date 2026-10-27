@@ -36,7 +36,7 @@ servicio_casas.dart                 | 100%    54|    -   0
 
 [lib/features/casas/presentation/]
 casa_form_page.dart                 |66.7%    72|    -   0
-casas_page.dart                     |60.7%    61|    -   0
+casas_page.dart                     |59.7%    62|    -   0
 
 [lib/features/clientes/data/]
 clientes_locales.dart               | 100%    12|    -   0
@@ -47,7 +47,7 @@ servicio_clientes.dart              | 100%    44|    -   0
 
 [lib/features/clientes/presentation/]
 cliente_form_page.dart              |95.4%    65|    -   0
-clientes_page.dart                  |91.2%    57|    -   0
+clientes_page.dart                  |91.4%    58|    -   0
 
 [lib/features/reportes/domain/]
 servicio_reportes.dart              | 100%    28|    -   0
@@ -65,10 +65,10 @@ domain/reserva.dart                 | 100%    73|    -   0
 domain/servicio_disponibilidad.dart | 100%    12|    -   0
 domain/servicio_reservas.dart       | 100%    84|    -   0
 presentation/disp...ilidad_page.dart|80.0%    85|    -   0
-presentation/rese...etalle_page.dart|79.0%   181|    -   0
+presentation/rese...etalle_page.dart|80.8%   182|    -   0
 presentation/reserva_form_page.dart |92.9%   127|    -   0
-presentation/reservas_page.dart     |92.6%    95|    -   0
+presentation/reservas_page.dart     |92.7%    96|    -   0
 ==========================================================
-                              Total:|88.5%  1787|    -   0
+                              Total:|88.7%  1791|    -   0
 Message summary:
   no messages were reported

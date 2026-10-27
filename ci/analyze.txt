@@ -1,6 +1,2 @@
 Analyzing casa_campo...                                         
-
-   info • The import of 'package:casa_campo/core/repositorio_json_local.dart' is unnecessary because all of the used elements are also provided by the import of 'package:casa_campo/features/reservas/data/reservas_locales.dart'. Try removing the import directive • lib/app/dependencias.dart:3:8 • unnecessary_import
-  error • Undefined name 'SemanticsBinding'. Try correcting the name to one that is defined, or defining the name • lib/main.dart:13:5 • undefined_identifier
-
-2 issues found. (ran in 5.9s)
+No issues found! (ran in 7.9s)

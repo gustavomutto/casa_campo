@@ -6,7 +6,7 @@
    179 lib/core/validadores.dart
     60 lib/core/formato.dart
     41 lib/app/app.dart
-   110 lib/app/dependencias.dart
+   109 lib/app/dependencias.dart
    192 lib/app/widgets.dart
    116 lib/app/inicio_page.dart
     80 lib/features/autenticacion/domain/servicio_autenticacion.dart
@@ -19,7 +19,7 @@
     52 lib/features/clientes/domain/cliente.dart
     11 lib/features/clientes/domain/clientes_repository.dart
    162 lib/features/clientes/presentation/cliente_form_page.dart
-   132 lib/features/clientes/presentation/clientes_page.dart
+   134 lib/features/clientes/presentation/clientes_page.dart
     31 lib/features/clientes/data/clientes_locales.dart
     61 lib/features/reservas/domain/calculadora_tarifa.dart
     15 lib/features/reservas/domain/reservas_repository.dart
@@ -31,8 +31,8 @@
    139 lib/features/reservas/domain/reserva.dart
    206 lib/features/reservas/presentation/disponibilidad_page.dart
    295 lib/features/reservas/presentation/reserva_form_page.dart
-   459 lib/features/reservas/presentation/reserva_detalle_page.dart
-   227 lib/features/reservas/presentation/reservas_page.dart
+   461 lib/features/reservas/presentation/reserva_detalle_page.dart
+   229 lib/features/reservas/presentation/reservas_page.dart
     53 lib/features/reservas/data/reservas_locales.dart
     98 lib/features/reportes/domain/servicio_reportes.dart
    203 lib/features/reportes/presentation/reportes_page.dart
@@ -40,7 +40,7 @@
     89 lib/features/casas/domain/casa.dart
     11 lib/features/casas/domain/casas_repository.dart
    177 lib/features/casas/presentation/casa_form_page.dart
-   136 lib/features/casas/presentation/casas_page.dart
+   138 lib/features/casas/presentation/casas_page.dart
     31 lib/features/casas/data/casas_locales.dart
-    23 lib/main.dart
-  4910 total
+    24 lib/main.dart
+  4918 total

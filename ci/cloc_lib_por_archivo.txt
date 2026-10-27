@@ -1,11 +1,11 @@
-github.com/AlDanial/cloc v 2.06  T=0.02 s (2372.3 files/s, 258842.6 lines/s)
+github.com/AlDanial/cloc v 2.06  T=0.03 s (1568.0 files/s, 171359.6 lines/s)
 ----------------------------------------------------------------------------------------------------------------
 File                                                                         blank        comment           code
 ----------------------------------------------------------------------------------------------------------------
-lib/features/reservas/presentation/reserva_detalle_page.dart                    48              0            411
+lib/features/reservas/presentation/reserva_detalle_page.dart                    48              0            413
 lib/features/reservas/presentation/reserva_form_page.dart                       24              0            271
 lib/features/reservas/domain/servicio_reservas.dart                             55              9            229
-lib/features/reservas/presentation/reservas_page.dart                           24              0            203
+lib/features/reservas/presentation/reservas_page.dart                           24              0            205
 lib/features/reportes/presentation/reportes_page.dart                           16              0            187
 lib/features/reservas/presentation/disponibilidad_page.dart                     18              1            187
 lib/features/autenticacion/presentation/login_page.dart                         11              0            167
@@ -14,13 +14,13 @@ lib/features/casas/presentation/casa_form_page.dart                             
 lib/features/clientes/presentation/cliente_form_page.dart                       15              0            147
 lib/features/casas/domain/servicio_casas.dart                                   29              5            127
 lib/features/reservas/domain/reserva.dart                                       17              0            122
+lib/features/casas/presentation/casas_page.dart                                 17              0            121
 lib/core/validadores.dart                                                       47             12            120
-lib/features/casas/presentation/casas_page.dart                                 17              0            119
-lib/features/clientes/presentation/clientes_page.dart                           15              0            117
+lib/features/clientes/presentation/clientes_page.dart                           15              0            119
 lib/features/reservas/domain/estado_reserva.dart                                44              6            112
 lib/app/inicio_page.dart                                                         9              1            106
 lib/core/repositorio_json_local.dart                                            31              7             97
-lib/app/dependencias.dart                                                       13              3             94
+lib/app/dependencias.dart                                                       13              3             93
 lib/features/clientes/domain/servicio_clientes.dart                             23              3             88
 lib/core/json.dart                                                              29              2             86
 lib/features/casas/domain/casa.dart                                              7              1             81
@@ -39,7 +39,7 @@ lib/features/autenticacion/data/usuarios_locales.dart                           
 lib/features/casas/data/casas_locales.dart                                       6              0             25
 lib/features/clientes/data/clientes_locales.dart                                 6              0             25
 lib/features/autenticacion/domain/usuario.dart                                   6              1             21
-lib/main.dart                                                                    4              2             17
+lib/main.dart                                                                    4              2             18
 lib/core/errores.dart                                                            6              4             14
 lib/features/reservas/domain/reservas_repository.dart                            6              0              9
 lib/features/casas/domain/casas_repository.dart                                  4              0              7
@@ -48,5 +48,5 @@ lib/features/autenticacion/domain/cifrado.dart                                  
 lib/features/autenticacion/domain/usuarios_repository.dart                       1              0              4
 lib/core/reloj.dart                                                              1              2              2
 ----------------------------------------------------------------------------------------------------------------
-SUM:                                                                           711             93           4106
+SUM:                                                                           711             93           4114
 ----------------------------------------------------------------------------------------------------------------
