@@ -1,0 +1,47 @@
+erDiagram
+USUARIO {
+  string id PK
+  string nombre_usuario UK
+  string nombre_completo
+  string rol "administrador | recepcionista"
+  string hash_clave "SHA-256"
+}
+CLIENTE {
+  string id PK
+  string documento UK "6 a 10 dígitos"
+  string nombre_completo
+  string telefono "10 dígitos"
+  string correo
+}
+CASA {
+  string id PK
+  string nombre UK
+  string municipio
+  int capacidad_maxima "1 a 30"
+  int precio_noche "50.000 a 5.000.000"
+  string descripcion
+  bool activa
+}
+RESERVA {
+  string id PK
+  string casa_id FK
+  string cliente_id FK
+  date fecha_entrada
+  date fecha_salida
+  int cantidad_huespedes
+  int monto_total
+  string estado "pendiente | confirmada | en_curso | finalizada | cancelada"
+  string confirmada_por
+  string motivo_cancelacion
+}
+PAGO {
+  string id PK
+  string reserva_id FK
+  int monto
+  datetime fecha
+  string metodo "efectivo | transferencia | tarjeta"
+}
+CLIENTE ||--o{ RESERVA : "realiza"
+CASA ||--o{ RESERVA : "es reservada en"
+RESERVA ||--o{ PAGO : "recibe"
+USUARIO ||--o{ RESERVA : "confirma"

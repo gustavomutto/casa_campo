@@ -1,0 +1,30 @@
+digraph G {
+rankdir=TB; fontname="DejaVu Sans"; labelloc=t; fontsize=16;
+label="Grafo de flujo: validarDocumento()  V(G) = 5   (E=13, N=10, E-N+2=5)";
+node [shape=circle, fontname="DejaVu Sans", fontsize=13, width=0.5, fixedsize=true, style=filled, fillcolor="#e8f5e9", color="#2e7d32"];
+edge [fontname="DejaVu Sans", fontsize=10, color="#333333"];
+"1" [fillcolor="#e8f5e9"];
+"2" [fillcolor="#fff3e0"];
+"3" [fillcolor="#ffebee"];
+"4" [fillcolor="#fff3e0"];
+"5" [fillcolor="#ffebee"];
+"6a" [fillcolor="#fff3e0"];
+"6b" [fillcolor="#fff3e0"];
+"7" [fillcolor="#ffebee"];
+"8" [fillcolor="#ffebee"];
+"1" -> "2" [label=""];
+"2" -> "3" [label="V"];
+"2" -> "4" [label="F"];
+"4" -> "5" [label="V"];
+"4" -> "6a" [label="F"];
+"6a" -> "7" [label="V"];
+"6a" -> "6b" [label="F"];
+"6b" -> "7" [label="V"];
+"6b" -> "8" [label="F"];
+"Fin" [shape=doublecircle, width=0.6, fillcolor="#eeeeee"];
+"3" -> "Fin" [style=dashed];
+"5" -> "Fin" [style=dashed];
+"7" -> "Fin" [style=dashed];
+"8" -> "Fin" [style=dashed];
+leyenda [shape=plaintext, fixedsize=false, style="", label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="2" BGCOLOR="#fafafa"><TR><TD COLSPAN="2"><B>Nodos</B></TD></TR><TR><TD ALIGN="RIGHT"><B>1</B></TD><TD ALIGN="LEFT">requerido = validarRequerido(valor)</TD></TR><TR><TD ALIGN="RIGHT"><B>2</B></TD><TD ALIGN="LEFT">¿requerido != null?</TD></TR><TR><TD ALIGN="RIGHT"><B>3</B></TD><TD ALIGN="LEFT">return "obligatorio"</TD></TR><TR><TD ALIGN="RIGHT"><B>4</B></TD><TD ALIGN="LEFT">texto = valor.trim(); ¿no son solo dígitos?</TD></TR><TR><TD ALIGN="RIGHT"><B>5</B></TD><TD ALIGN="LEFT">return "solo números"</TD></TR><TR><TD ALIGN="RIGHT"><B>6a</B></TD><TD ALIGN="LEFT">¿longitud &lt; 6?</TD></TR><TR><TD ALIGN="RIGHT"><B>6b</B></TD><TD ALIGN="LEFT">¿longitud &gt; 10?</TD></TR><TR><TD ALIGN="RIGHT"><B>7</B></TD><TD ALIGN="LEFT">return "entre 6 y 10 dígitos"</TD></TR><TR><TD ALIGN="RIGHT"><B>8</B></TD><TD ALIGN="LEFT">return null (válido)</TD></TR></TABLE>>];
+}

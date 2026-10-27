@@ -39,7 +39,9 @@ class _ReservaDetallePageState extends State<ReservaDetallePage> {
   }
 
   void _recargar() {
-    setState(() => _datos = _cargar());
+    setState(() {
+      _datos = _cargar();
+    });
   }
 
   Future<void> _ejecutar(

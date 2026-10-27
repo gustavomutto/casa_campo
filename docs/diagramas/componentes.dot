@@ -1,0 +1,24 @@
+digraph G {
+  rankdir=TB; compound=true; fontname="DejaVu Sans"; fontsize=13;
+  node [fontname="DejaVu Sans", fontsize=12, shape=component, style=filled, fillcolor="#e8f5e9", color="#2e7d32"];
+  edge [fontname="DejaVu Sans", fontsize=10, color="#444444"];
+  navegador [label="Navegador web / Android / Windows / Linux\n(Flutter Engine + CanvasKit)", shape=box3d, fillcolor="#e3f2fd", color="#1565c0"];
+  subgraph cluster_ui { label="«capa» Presentación (lib/app, */presentation)"; style="rounded,filled"; fillcolor="#fafafa"; color="#888888";
+    app [label="CasaCampoApp\nInicioPage"]; login [label="LoginPage"]; ui_res [label="Reservas UI\n(lista, formulario, detalle,\ndisponibilidad)"]; ui_cli [label="Clientes UI"]; ui_cas [label="Casas UI"]; ui_rep [label="Reportes UI"]; di [label="Dependencias\n(inyección + SesionController)"];
+  }
+  subgraph cluster_dom { label="«capa» Dominio (*/domain)"; style="rounded,filled"; fillcolor="#fafafa"; color="#888888";
+    s_aut [label="ServicioAutenticacion"]; s_res [label="ServicioReservas"]; s_dis [label="ServicioDisponibilidad"]; tarifa [label="CalculadoraTarifa"]; s_cli [label="ServicioClientes"]; s_cas [label="ServicioCasas"]; s_rep [label="ServicioReportes"]; core [label="core: validadores,\nformato, errores"];
+  }
+  subgraph cluster_dat { label="«capa» Datos (*/data, core)"; style="rounded,filled"; fillcolor="#fafafa"; color="#888888";
+    r_usu [label="UsuariosLocales"]; r_json [label="RepositorioJsonLocal<T>\nCasas / Clientes / ReservasLocales"]; alm [label="Almacenamiento\n(AlmacenamientoPreferencias)"];
+  }
+  sp [label="shared_preferences\n(localStorage en web)", shape=cylinder, fillcolor="#fff3e0", color="#e65100"];
+  assets [label="assets/data/*.json\n(datos semilla)", shape=folder, fillcolor="#fff3e0", color="#e65100"];
+  crypto [label="package:crypto\n(SHA-256)", shape=box, fillcolor="#fff3e0", color="#e65100"];
+  navegador -> app;
+  app -> login; app -> ui_res; app -> ui_cli; app -> ui_cas; app -> ui_rep; app -> di [style=dashed];
+  login -> s_aut; ui_res -> s_res; ui_res -> s_dis; ui_cli -> s_cli; ui_cas -> s_cas; ui_rep -> s_rep;
+  s_res -> s_dis; s_res -> tarifa; s_res -> core; s_cli -> core; s_cas -> core; s_aut -> core;
+  s_aut -> r_usu; s_aut -> crypto; s_res -> r_json; s_dis -> r_json; s_cli -> r_json; s_cas -> r_json; s_rep -> r_json;
+  r_json -> alm; r_json -> assets [label="carga inicial"]; alm -> sp;
+}

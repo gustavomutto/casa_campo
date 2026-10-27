@@ -1,0 +1,25 @@
+sequenceDiagram
+autonumber
+actor R as Recepcionista / Administrador
+participant D as ReservaDetallePage
+participant SR as ServicioReservas
+participant RR as ReservasRepository
+R->>D: Pulsa "Registrar pago", ingresa monto y método
+D->>SR: registrarPago(reservaId, monto, metodo)
+SR->>RR: obtenerPorId(reservaId)
+RR-->>SR: Reserva
+alt Reserva cancelada/finalizada, monto <= 0 o monto > saldo
+  SR-->>D: ErrorDeNegocio / ErrorDeValidacion
+  D-->>R: Mensaje de error
+else Pago válido
+  SR->>RR: guardar(reserva con nuevo Pago)
+  SR-->>D: Reserva actualizada
+  D-->>R: "Pago registrado", saldo actualizado
+end
+R->>D: Pulsa "Confirmar"
+D->>SR: confirmar(reservaId, usuario)
+SR->>RR: obtenerPorId(reservaId)
+SR->>SR: ¿Pendiente? ¿pagado >= 30 %?
+SR->>RR: guardar(reserva Confirmada)
+SR-->>D: Reserva confirmada
+D-->>R: Muestra botón "Iniciar estadía"

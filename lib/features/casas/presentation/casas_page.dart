@@ -27,7 +27,9 @@ class _CasasPageState extends State<CasasPage> {
   }
 
   void _recargar() {
-    setState(() => _casas = _cargar());
+    setState(() {
+      _casas = _cargar();
+    });
   }
 
   Future<void> _abrirFormulario([Casa? casa]) async {

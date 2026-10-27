@@ -1,0 +1,32 @@
+digraph G {
+rankdir=TB; fontname="DejaVu Sans"; labelloc=t; fontsize=16;
+label="Grafo de flujo: CalculadoraTarifa.calcular()  V(G) = 5   (E=14, N=11, E-N+2=5)";
+node [shape=circle, fontname="DejaVu Sans", fontsize=13, width=0.5, fixedsize=true, style=filled, fillcolor="#e8f5e9", color="#2e7d32"];
+edge [fontname="DejaVu Sans", fontsize=10, color="#333333"];
+"1" [fillcolor="#fff3e0"];
+"2" [fillcolor="#ffebee"];
+"3" [fillcolor="#e8f5e9"];
+"4" [fillcolor="#fff3e0"];
+"5" [fillcolor="#fff3e0"];
+"6" [fillcolor="#e8f5e9"];
+"7" [fillcolor="#e8f5e9"];
+"8" [fillcolor="#fff3e0"];
+"9" [fillcolor="#e8f5e9"];
+"10" [fillcolor="#ffebee"];
+"1" -> "2" [label="V"];
+"1" -> "3" [label="F"];
+"3" -> "4" [label=""];
+"4" -> "5" [label="V"];
+"5" -> "6" [label="V"];
+"5" -> "7" [label="F"];
+"6" -> "4" [label=""];
+"7" -> "4" [label=""];
+"4" -> "8" [label="F"];
+"8" -> "9" [label="V"];
+"8" -> "10" [label="F"];
+"9" -> "10" [label=""];
+"Fin" [shape=doublecircle, width=0.6, fillcolor="#eeeeee"];
+"2" -> "Fin" [style=dashed];
+"10" -> "Fin" [style=dashed];
+leyenda [shape=plaintext, fixedsize=false, style="", label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="2" BGCOLOR="#fafafa"><TR><TD COLSPAN="2"><B>Nodos</B></TD></TR><TR><TD ALIGN="RIGHT"><B>1</B></TD><TD ALIGN="LEFT">¿precioNoche &lt;= 0?</TD></TR><TR><TD ALIGN="RIGHT"><B>2</B></TD><TD ALIGN="LEFT">throw ArgumentError</TD></TR><TR><TD ALIGN="RIGHT"><B>3</B></TD><TD ALIGN="LEFT">total = 0</TD></TR><TR><TD ALIGN="RIGHT"><B>4</B></TD><TD ALIGN="LEFT">¿quedan noches en rango.noches?</TD></TR><TR><TD ALIGN="RIGHT"><B>5</B></TD><TD ALIGN="LEFT">¿esTemporadaAlta(noche)?</TD></TR><TR><TD ALIGN="RIGHT"><B>6</B></TD><TD ALIGN="LEFT">total += precio * 1,20</TD></TR><TR><TD ALIGN="RIGHT"><B>7</B></TD><TD ALIGN="LEFT">total += precio</TD></TR><TR><TD ALIGN="RIGHT"><B>8</B></TD><TD ALIGN="LEFT">¿cantidadNoches &gt;= 7?</TD></TR><TR><TD ALIGN="RIGHT"><B>9</B></TD><TD ALIGN="LEFT">total -= 10 %</TD></TR><TR><TD ALIGN="RIGHT"><B>10</B></TD><TD ALIGN="LEFT">return total</TD></TR></TABLE>>];
+}

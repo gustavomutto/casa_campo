@@ -1,0 +1,32 @@
+digraph G {
+rankdir=TB; fontname="DejaVu Sans"; labelloc=t; fontsize=16;
+label="Grafo de flujo: ServicioReservas.registrarPago()  V(G) = 5   (E=14, N=11, E-N+2=5)";
+node [shape=circle, fontname="DejaVu Sans", fontsize=13, width=0.5, fixedsize=true, style=filled, fillcolor="#e8f5e9", color="#2e7d32"];
+edge [fontname="DejaVu Sans", fontsize=10, color="#333333"];
+"1" [fillcolor="#e8f5e9"];
+"2" [fillcolor="#fff3e0"];
+"3" [fillcolor="#ffebee"];
+"4" [fillcolor="#fff3e0"];
+"5" [fillcolor="#ffebee"];
+"6" [fillcolor="#fff3e0"];
+"7" [fillcolor="#ffebee"];
+"8" [fillcolor="#fff3e0"];
+"9" [fillcolor="#ffebee"];
+"10" [fillcolor="#e8f5e9"];
+"1" -> "2" [label=""];
+"2" -> "3" [label="V"];
+"2" -> "4" [label="F"];
+"4" -> "5" [label="V"];
+"4" -> "6" [label="F"];
+"6" -> "7" [label="V"];
+"6" -> "8" [label="F"];
+"8" -> "9" [label="V"];
+"8" -> "10" [label="F"];
+"Fin" [shape=doublecircle, width=0.6, fillcolor="#eeeeee"];
+"3" -> "Fin" [style=dashed];
+"5" -> "Fin" [style=dashed];
+"7" -> "Fin" [style=dashed];
+"9" -> "Fin" [style=dashed];
+"10" -> "Fin" [style=dashed];
+leyenda [shape=plaintext, fixedsize=false, style="", label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="2" BGCOLOR="#fafafa"><TR><TD COLSPAN="2"><B>Nodos</B></TD></TR><TR><TD ALIGN="RIGHT"><B>1</B></TD><TD ALIGN="LEFT">reserva = reservas.obtenerPorId(id)</TD></TR><TR><TD ALIGN="RIGHT"><B>2</B></TD><TD ALIGN="LEFT">¿reserva == null?</TD></TR><TR><TD ALIGN="RIGHT"><B>3</B></TD><TD ALIGN="LEFT">throw la reserva no existe</TD></TR><TR><TD ALIGN="RIGHT"><B>4</B></TD><TD ALIGN="LEFT">¿!reserva.estado.esActiva?</TD></TR><TR><TD ALIGN="RIGHT"><B>5</B></TD><TD ALIGN="LEFT">throw reserva cancelada o finalizada</TD></TR><TR><TD ALIGN="RIGHT"><B>6</B></TD><TD ALIGN="LEFT">¿monto &lt;= 0?</TD></TR><TR><TD ALIGN="RIGHT"><B>7</B></TD><TD ALIGN="LEFT">throw monto debe ser &gt; 0</TD></TR><TR><TD ALIGN="RIGHT"><B>8</B></TD><TD ALIGN="LEFT">¿monto &gt; saldoPendiente?</TD></TR><TR><TD ALIGN="RIGHT"><B>9</B></TD><TD ALIGN="LEFT">throw monto supera el saldo</TD></TR><TR><TD ALIGN="RIGHT"><B>10</B></TD><TD ALIGN="LEFT">agregar Pago; guardar; return reserva</TD></TR></TABLE>>];
+}

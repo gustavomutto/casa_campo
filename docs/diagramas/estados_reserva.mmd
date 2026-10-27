@@ -1,0 +1,10 @@
+stateDiagram-v2
+direction LR
+[*] --> Pendiente : crearReserva()
+Pendiente --> Confirmada : confirmar() [pagado >= 30 %]
+Pendiente --> Cancelada : cancelar(motivo)
+Confirmada --> EnCurso : iniciarEstadia()
+Confirmada --> Cancelada : cancelar(motivo)
+EnCurso --> Finalizada : finalizar() [saldo = 0]
+Finalizada --> [*]
+Cancelada --> [*]

@@ -1,0 +1,178 @@
+classDiagram
+direction LR
+class Usuario {
+  +String id
+  +String nombreUsuario
+  +String nombreCompleto
+  +Rol rol
+  +String hashClave
+  +esAdministrador() bool
+}
+class Rol {
+  <<enumeration>>
+  administrador
+  recepcionista
+}
+class ServicioAutenticacion {
+  -Map intentosFallidos
+  -Map bloqueadoHasta
+  +int maximoIntentos
+  +Duration duracionBloqueo
+  +iniciarSesion(usuario, clave) Usuario
+  +intentosFallidos(usuario) int
+  -registrarFallo(usuario, ahora)
+}
+class UsuariosRepository {
+  <<interface>>
+  +obtenerPorNombreUsuario(nombre) Usuario
+}
+class Casa {
+  +String id
+  +String nombre
+  +String municipio
+  +int capacidadMaxima
+  +int precioNoche
+  +String descripcion
+  +bool activa
+  +copiarCon() Casa
+  +toJson() Map
+}
+class Cliente {
+  +String id
+  +String documento
+  +String nombreCompleto
+  +String telefono
+  +String correo
+  +toJson() Map
+}
+class Reserva {
+  +String id
+  +String casaId
+  +String clienteId
+  +String clienteNombre
+  +int cantidadHuespedes
+  +int montoTotal
+  +totalPagado() int
+  +saldoPendiente() int
+  +copiarCon(estado, pagos) Reserva
+  +toJson() Map
+}
+class RangoFechas {
+  +DateTime fechaEntrada
+  +DateTime fechaSalida
+  +cantidadNoches() int
+  +noches() List~DateTime~
+  +seSolapaCon(otro) bool
+}
+class Pago {
+  +String id
+  +int monto
+  +DateTime fecha
+  +MetodoPago metodo
+}
+class MetodoPago {
+  <<enumeration>>
+  efectivo
+  transferencia
+  tarjeta
+}
+class EstadoReserva {
+  <<sealed>>
+  +etiqueta String
+  +tipo String
+  +esActiva bool
+  +toJson() Map
+}
+class Pendiente
+class Confirmada {
+  +String confirmadaPor
+}
+class EnCurso
+class Finalizada
+class Cancelada {
+  +String motivo
+}
+class ServicioReservas {
+  +listar(tipoEstado) List~Reserva~
+  +cotizar(casaId, rango) int
+  +crearReserva(solicitud) Reserva
+  +registrarPago(id, monto, metodo) Reserva
+  +confirmar(id, usuario) Reserva
+  +iniciarEstadia(id) Reserva
+  +finalizar(id) Reserva
+  +cancelar(id, motivo) Reserva
+}
+class ServicioDisponibilidad {
+  +estaDisponible(casaId, rango) bool
+  +casasDisponibles(rango, huespedes) List~Casa~
+}
+class CalculadoraTarifa {
+  +int recargoTemporadaAlta
+  +int descuentoEstanciaLarga
+  +esTemporadaAlta(noche)$ bool
+  +calcular(precioNoche, rango) int
+}
+class ServicioCasas {
+  +listar(soloActivas) List~Casa~
+  +validar(datos)
+  +crear(datos) Casa
+  +actualizar(id, datos) Casa
+  +cambiarEstado(id, activa) Casa
+}
+class ServicioClientes {
+  +listar(filtro) List~Cliente~
+  +validar(datos)
+  +registrar(datos) Cliente
+  +actualizar(id, datos) Cliente
+}
+class ServicioReportes {
+  +generar(anio, mes) ResumenReportes
+}
+class RepositorioJsonLocal~T~ {
+  <<abstract>>
+  +String clave
+  +String rutaSemilla
+  +todos() List~T~
+  +porId(id) T
+  +guardar(entidad)
+  +eliminar(id)
+  +siguienteId() String
+}
+class Almacenamiento {
+  <<interface>>
+  +leer(clave) String
+  +escribir(clave, valor)
+  +eliminar(clave)
+}
+class CasasLocales
+class ClientesLocales
+class ReservasLocales
+
+Usuario --> Rol
+UsuariosRepository ..> Usuario
+ServicioAutenticacion --> UsuariosRepository
+Reserva *-- RangoFechas
+Reserva *-- "0..*" Pago
+Reserva --> EstadoReserva
+Pago --> MetodoPago
+EstadoReserva <|-- Pendiente
+EstadoReserva <|-- Confirmada
+EstadoReserva <|-- EnCurso
+EstadoReserva <|-- Finalizada
+EstadoReserva <|-- Cancelada
+Reserva "0..*" --> "1" Casa : casaId
+Reserva "0..*" --> "1" Cliente : clienteId
+ServicioReservas --> ServicioDisponibilidad
+ServicioReservas --> CalculadoraTarifa
+ServicioReservas --> ReservasLocales
+ServicioReservas --> CasasLocales
+ServicioReservas --> ClientesLocales
+ServicioDisponibilidad --> CasasLocales
+ServicioDisponibilidad --> ReservasLocales
+ServicioCasas --> CasasLocales
+ServicioClientes --> ClientesLocales
+ServicioReportes --> ReservasLocales
+RepositorioJsonLocal <|-- CasasLocales
+RepositorioJsonLocal <|-- ClientesLocales
+RepositorioJsonLocal <|-- ReservasLocales
+RepositorioJsonLocal --> Almacenamiento

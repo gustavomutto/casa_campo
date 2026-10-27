@@ -3,6 +3,7 @@ import 'package:casa_campo/app/dependencias.dart';
 import 'package:casa_campo/core/almacenamiento.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/semantics.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

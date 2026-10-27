@@ -51,7 +51,9 @@ class _ReservasPageState extends State<ReservasPage> {
   }
 
   void _recargar() {
-    setState(() => _datos = _cargar());
+    setState(() {
+      _datos = _cargar();
+    });
   }
 
   Future<void> _nuevaReserva() async {

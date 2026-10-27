@@ -33,7 +33,9 @@ class _ClientesPageState extends State<ClientesPage> {
   }
 
   void _recargar() {
-    setState(() => _clientes = _cargar());
+    setState(() {
+      _clientes = _cargar();
+    });
   }
 
   Future<void> _abrirFormulario([Cliente? cliente]) async {

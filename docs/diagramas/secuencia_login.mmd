@@ -1,0 +1,30 @@
+sequenceDiagram
+autonumber
+actor U as Usuario
+participant LP as LoginPage
+participant SA as ServicioAutenticacion
+participant V as Validadores
+participant UR as UsuariosRepository
+participant S as SesionController
+U->>LP: Ingresa usuario y contraseña, pulsa "Ingresar"
+LP->>V: validarNombreUsuario(), validarClave()
+V-->>LP: null (datos válidos)
+LP->>SA: iniciarSesion(usuario, clave)
+SA->>SA: ¿cuenta bloqueada? (bloqueadoHasta > ahora)
+alt Cuenta bloqueada
+  SA-->>LP: ErrorDeNegocio("Cuenta bloqueada...")
+  LP-->>U: Muestra mensaje de bloqueo
+else Cuenta no bloqueada
+  SA->>UR: obtenerPorNombreUsuario(usuario)
+  UR-->>SA: Usuario | null
+  SA->>SA: calcularHashClave(usuario, clave)
+  alt Credenciales incorrectas
+    SA->>SA: registrarFallo() (bloquea al 3er intento)
+    SA-->>LP: ErrorDeNegocio("Usuario o contraseña incorrectos.")
+    LP-->>U: Muestra mensaje de error
+  else Credenciales correctas
+    SA-->>LP: Usuario
+    LP->>S: iniciar(usuario)
+    S-->>U: Muestra InicioPage según el rol
+  end
+end

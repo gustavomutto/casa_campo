@@ -1,0 +1,32 @@
+sequenceDiagram
+autonumber
+actor R as Recepcionista / Administrador
+participant F as ReservaFormPage
+participant SR as ServicioReservas
+participant CR as CasasRepository
+participant CL as ClientesRepository
+participant SD as ServicioDisponibilidad
+participant CT as CalculadoraTarifa
+participant RR as ReservasRepository
+participant A as Almacenamiento
+R->>F: Selecciona casa, cliente, fechas y huéspedes
+F->>SR: cotizar(casaId, rango)
+SR->>CT: calcular(precioNoche, rango)
+CT-->>F: valor de la estadía
+R->>F: Pulsa "Guardar reserva"
+F->>SR: crearReserva(solicitud)
+SR->>CR: obtenerPorId(casaId)
+CR-->>SR: Casa (activa)
+SR->>CL: obtenerPorId(clienteId)
+CL-->>SR: Cliente
+SR->>SR: Valida fechas, noches (<=30) y huéspedes
+SR->>SD: estaDisponible(casaId, rango)
+SD->>RR: obtenerPorCasa(casaId)
+RR-->>SD: reservas de la casa
+SD-->>SR: true
+SR->>CT: calcular(precioNoche, rango)
+CT-->>SR: montoTotal
+SR->>RR: siguienteId() / guardar(reserva Pendiente)
+RR->>A: escribir("casa_campo.reservas.v1", json)
+SR-->>F: Reserva
+F-->>R: "Reserva res-NNN registrada."

@@ -1,0 +1,27 @@
+digraph G {
+rankdir=TB; fontname="DejaVu Sans"; labelloc=t; fontsize=16;
+label="Grafo de flujo: ServicioCasas.cambiarEstado()  V(G) = 4   (E=11, N=9, E-N+2=4)";
+node [shape=circle, fontname="DejaVu Sans", fontsize=13, width=0.5, fixedsize=true, style=filled, fillcolor="#e8f5e9", color="#2e7d32"];
+edge [fontname="DejaVu Sans", fontsize=10, color="#333333"];
+"1" [fillcolor="#e8f5e9"];
+"2" [fillcolor="#fff3e0"];
+"3" [fillcolor="#ffebee"];
+"4" [fillcolor="#fff3e0"];
+"5" [fillcolor="#e8f5e9"];
+"6" [fillcolor="#fff3e0"];
+"7" [fillcolor="#ffebee"];
+"8" [fillcolor="#e8f5e9"];
+"1" -> "2" [label=""];
+"2" -> "3" [label="V"];
+"2" -> "4" [label="F"];
+"4" -> "5" [label="V"];
+"4" -> "8" [label="F"];
+"5" -> "6" [label=""];
+"6" -> "7" [label="V"];
+"6" -> "8" [label="F"];
+"Fin" [shape=doublecircle, width=0.6, fillcolor="#eeeeee"];
+"3" -> "Fin" [style=dashed];
+"7" -> "Fin" [style=dashed];
+"8" -> "Fin" [style=dashed];
+leyenda [shape=plaintext, fixedsize=false, style="", label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="2" BGCOLOR="#fafafa"><TR><TD COLSPAN="2"><B>Nodos</B></TD></TR><TR><TD ALIGN="RIGHT"><B>1</B></TD><TD ALIGN="LEFT">casa = obtenerPorId(id)</TD></TR><TR><TD ALIGN="RIGHT"><B>2</B></TD><TD ALIGN="LEFT">¿casa == null?</TD></TR><TR><TD ALIGN="RIGHT"><B>3</B></TD><TD ALIGN="LEFT">throw ErrorDeNegocio(no existe)</TD></TR><TR><TD ALIGN="RIGHT"><B>4</B></TD><TD ALIGN="LEFT">¿!activa? (se quiere desactivar)</TD></TR><TR><TD ALIGN="RIGHT"><B>5</B></TD><TD ALIGN="LEFT">reservas = obtenerPorCasa(id); tieneFuturas = any(activa y salida &gt;= hoy)</TD></TR><TR><TD ALIGN="RIGHT"><B>6</B></TD><TD ALIGN="LEFT">¿tieneFuturas?</TD></TR><TR><TD ALIGN="RIGHT"><B>7</B></TD><TD ALIGN="LEFT">throw ErrorDeNegocio(tiene reservas activas)</TD></TR><TR><TD ALIGN="RIGHT"><B>8</B></TD><TD ALIGN="LEFT">guardar(casa.copiarCon(activa)); return</TD></TR></TABLE>>];
+}

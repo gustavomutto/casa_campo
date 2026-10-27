@@ -1,6 +1,5 @@
 import 'package:casa_campo/core/almacenamiento.dart';
 import 'package:casa_campo/core/reloj.dart';
-import 'package:casa_campo/core/repositorio_json_local.dart';
 import 'package:casa_campo/features/autenticacion/data/usuarios_locales.dart';
 import 'package:casa_campo/features/autenticacion/domain/servicio_autenticacion.dart';
 import 'package:casa_campo/features/autenticacion/domain/usuario.dart';
