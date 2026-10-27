@@ -51,8 +51,8 @@ jobs:
           docker logs sonarqube 2>&1 | tail -n 30
           curl -s -u admin:admin -X POST "localhost:9000/api/users/change_password?login=admin&previousPassword=admin&password=CasaCampo2026*"
           curl -s -u admin:CasaCampo2026* -X POST "localhost:9000/api/projects/create?project=casa_campo&name=Casa%20Campo"
-          TOKEN=$(curl -s -u admin:CasaCampo2026* -X POST "localhost:9000/api/user_tokens/generate?name=ci" | python3 -c "import json,sys;print(json.load(sys.stdin)['token'])")
-          echo "SONAR_TOKEN=$TOKEN" >> $GITHUB_ENV
+          curl -s -u 'admin:CasaCampo2026*' -X POST "localhost:9000/api/user_tokens/generate?name=ci" | tee /tmp/token.json; echo
+          echo "AUTH=admin:CasaCampo2026*" >> $GITHUB_ENV
           curl -s localhost:9000/api/plugins/installed | python3 -m json.tool > reportes/sonar/plugins.json
 
       - name: Preparar reportes para SonarQube
@@ -78,11 +78,11 @@ jobs:
           sonar.flutter.coverage.reportPath=coverage/lcov.info
           PROPS
           sed -i 's/^ *//' sonar-project.properties
-          docker run --rm --network host -e SONAR_HOST_URL=http://localhost:9000 -e SONAR_TOKEN=$SONAR_TOKEN \
-            -v $GITHUB_WORKSPACE:/usr/src sonarsource/sonar-scanner-cli:5 2>&1 | tee reportes/sonar/scanner.txt
+          docker run --rm --network host -e SONAR_HOST_URL=http://localhost:9000 \
+            -v $GITHUB_WORKSPACE:/usr/src sonarsource/sonar-scanner-cli:5 -Dsonar.login=admin '-Dsonar.password=CasaCampo2026*' 2>&1 | tee reportes/sonar/scanner.txt
           sleep 20
           for i in $(seq 1 30); do
-            pendientes=$(curl -s -u $SONAR_TOKEN: "localhost:9000/api/ce/component?component=casa_campo" | python3 -c "import json,sys;d=json.load(sys.stdin);print(len(d.get('queue',[])))")
+            pendientes=$(curl -s -u "$AUTH" "localhost:9000/api/ce/component?component=casa_campo" | python3 -c "import json,sys;d=json.load(sys.stdin);print(len(d.get('queue',[])))")
             [ "$pendientes" = "0" ] && break; sleep 5
           done
 
@@ -90,10 +90,10 @@ jobs:
         run: |
           set +e +o pipefail
           M=ncloc,lines,statements,functions,classes,files,comment_lines,comment_lines_density,complexity,cognitive_complexity,violations,bugs,vulnerabilities,code_smells,security_hotspots,sqale_index,sqale_rating,sqale_debt_ratio,reliability_rating,security_rating,duplicated_lines,duplicated_lines_density,duplicated_blocks,coverage,line_coverage,lines_to_cover,uncovered_lines,tests,test_failures,test_errors,test_success_density,test_execution_time
-          curl -s -u $SONAR_TOKEN: "localhost:9000/api/measures/component?component=casa_campo&metricKeys=$M" | python3 -m json.tool > reportes/sonar/medidas.json
-          curl -s -u $SONAR_TOKEN: "localhost:9000/api/measures/component_tree?component=casa_campo&qualifiers=FIL&ps=500&metricKeys=ncloc,lines,functions,classes,complexity,cognitive_complexity,comment_lines,coverage,code_smells" | python3 -m json.tool > reportes/sonar/medidas_por_archivo.json
-          curl -s -u $SONAR_TOKEN: "localhost:9000/api/issues/search?componentKeys=casa_campo&ps=500" | python3 -m json.tool > reportes/sonar/issues.json
-          curl -s -u $SONAR_TOKEN: "localhost:9000/api/qualitygates/project_status?projectKey=casa_campo" | python3 -m json.tool > reportes/sonar/quality_gate.json
+          curl -s -u "$AUTH" "localhost:9000/api/measures/component?component=casa_campo&metricKeys=$M" | python3 -m json.tool > reportes/sonar/medidas.json
+          curl -s -u "$AUTH" "localhost:9000/api/measures/component_tree?component=casa_campo&qualifiers=FIL&ps=500&metricKeys=ncloc,lines,functions,classes,complexity,cognitive_complexity,comment_lines,coverage,code_smells" | python3 -m json.tool > reportes/sonar/medidas_por_archivo.json
+          curl -s -u "$AUTH" "localhost:9000/api/issues/search?componentKeys=casa_campo&ps=500" | python3 -m json.tool > reportes/sonar/issues.json
+          curl -s -u "$AUTH" "localhost:9000/api/qualitygates/project_status?projectKey=casa_campo" | python3 -m json.tool > reportes/sonar/quality_gate.json
           cat reportes/sonar/medidas.json | head -100
 
       - name: Capturas de SonarQube
