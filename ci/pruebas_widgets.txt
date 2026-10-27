@@ -4,5 +4,5 @@
 00:01 +2: Login: el recepcionista no ve Casas ni Reportes
 00:01 +3: Cliente: valida los cuatro campos
 00:01 +4: Cliente: documento duplicado se informa al guardar
-00:01 +5: Casa: valida capacidad y precio
+00:02 +5: Casa: valida capacidad y precio
 00:02 +6: All tests passed!

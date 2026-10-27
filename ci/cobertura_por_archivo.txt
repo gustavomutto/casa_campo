@@ -35,7 +35,7 @@ casa.dart                           |60.9%    46|    -   0
 servicio_casas.dart                 | 100%    54|    -   0
 
 [lib/features/casas/presentation/]
-casa_form_page.dart                 |66.7%    72|    -   0
+casa_form_page.dart                 |65.3%    72|    -   0
 casas_page.dart                     |59.7%    62|    -   0
 
 [lib/features/clientes/data/]
@@ -69,6 +69,6 @@ presentation/rese...etalle_page.dart|80.8%   182|    -   0
 presentation/reserva_form_page.dart |92.9%   127|    -   0
 presentation/reservas_page.dart     |92.7%    96|    -   0
 ==========================================================
-                              Total:|88.7%  1791|    -   0
+                              Total:|88.6%  1791|    -   0
 Message summary:
   no messages were reported
