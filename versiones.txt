@@ -1,0 +1,7 @@
+Google Chrome 155.0.8059.39 
+ChromeDriver 155.0.8059.39 (3ff7ac5a9224be9156d7f8703a06e22890aafd34-refs/branch-heads/8059@{#935})
+
+Copyright (c) 1999-2024 The Apache Software Foundation
+
+selenium 4.51.0
+lighthouse 12.8.2

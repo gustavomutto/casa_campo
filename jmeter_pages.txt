@@ -1,0 +1,17 @@
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider (file:/home/runner/work/casa_campo/casa_campo/apache-jmeter-5.6.3/lib/xstream-1.4.20.jar)
+WARNING: Please consider reporting this to the maintainers of class com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+Creating summariser <summary>
+Created the tree successfully using pruebas/jmeter/plan_rendimiento.jmx
+Starting standalone test @ 2026 Oct 27 20:09:12 UTC (1793131752190)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+summary +    221 in 00:00:18 =   12.3/s Avg:    25 Min:    13 Max:   523 Err:   221 (100.00%) Active: 4 Started: 10 Finished: 6
+summary +     19 in 00:00:04 =    5.2/s Avg:    16 Min:    15 Max:    18 Err:    19 (100.00%) Active: 0 Started: 10 Finished: 10
+summary =    240 in 00:00:22 =   11.1/s Avg:    24 Min:    13 Max:   523 Err:   240 (100.00%)
+Tidying up ...    @ 2026 Oct 27 20:09:33 UTC (1793131773801)
+... end of run

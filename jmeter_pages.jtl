@@ -1,0 +1,1701 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1793131752864,523,01 index.html,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9742,137,2,2,https://gustavomutto.github.io/casa_campo/,517,0,441
+1793131753793,57,01 index.html,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,137,2,2,https://gustavomutto.github.io/casa_campo/,56,0,39
+1793131753889,77,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9742,157,2,2,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,64,0,0
+1793131754351,19,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,157,3,3,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,17,0,0
+1793131754467,54,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,149,3,3,https://gustavomutto.github.io/casa_campo/main.dart.js,48,0,0
+1793131754792,57,01 index.html,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,137,3,3,https://gustavomutto.github.io/casa_campo/,56,0,40
+1793131754870,20,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,3,3,https://gustavomutto.github.io/casa_campo/main.dart.js,19,0,0
+1793131755022,86,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9742,159,3,3,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,83,0,0
+1793131755350,18,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,157,4,4,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,17,0,0
+1793131755391,29,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,159,4,4,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,28,0,0
+1793131755609,75,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9742,161,4,4,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,73,0,0
+1793131755791,69,01 index.html,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,137,4,4,https://gustavomutto.github.io/casa_campo/,68,0,33
+1793131755869,20,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,4,4,https://gustavomutto.github.io/casa_campo/main.dart.js,19,0,0
+1793131755920,19,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,161,4,4,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,18,0,0
+1793131756184,90,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9742,166,4,4,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,88,0,0
+1793131756361,43,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,157,5,5,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,42,0,0
+1793131756390,18,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,5,5,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,16,0,0
+1793131756440,18,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,166,5,5,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,17,0,0
+1793131756775,54,07 FontManifest,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,161,5,5,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,54,0,0
+1793131756792,47,01 index.html,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,137,5,5,https://gustavomutto.github.io/casa_campo/,46,0,33
+1793131756908,20,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,161,5,5,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,18,0,0
+1793131756905,40,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,149,5,5,https://gustavomutto.github.io/casa_campo/main.dart.js,39,0,0
+1793131756959,18,07 FontManifest,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,161,5,5,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,18,0,0
+1793131757338,15,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,157,6,6,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,14,0,0
+1793131757329,55,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,6,6,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,55,0,0
+1793131757427,19,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,166,6,6,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,18,0,0
+1793131757476,17,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9759,175,6,6,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,17,0,0
+1793131757445,53,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9742,159,6,6,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,52,0,0
+1793131757792,54,01 index.html,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,137,6,6,https://gustavomutto.github.io/casa_campo/,53,0,36
+1793131757854,14,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,6,6,https://gustavomutto.github.io/casa_campo/main.dart.js,13,0,0
+1793131757885,57,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,175,6,6,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,57,0,0
+1793131757946,20,07 FontManifest,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,161,6,6,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,20,0,0
+1793131757994,17,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,6,6,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,17,0,0
+1793131757998,54,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,161,6,6,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,53,0,0
+1793131758347,19,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,157,7,7,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,18,0,0
+1793131758369,14,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,7,7,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,14,0,0
+1793131758467,17,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9759,175,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,17,0,0
+1793131758443,60,10 casas.json,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,166,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,60,0,0
+1793131758512,19,10 casas.json,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,19,0,0
+1793131758553,38,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,166,7,7,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,37,0,0
+1793131758788,52,01 index.html,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,137,7,7,https://gustavomutto.github.io/casa_campo/,52,0,35
+1793131758867,18,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,7,7,https://gustavomutto.github.io/casa_campo/main.dart.js,17,0,0
+1793131758884,15,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,161,7,7,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,15,0,0
+1793131758985,17,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,7,7,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,17,0,0
+1793131759031,27,11 clientes.json,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,27,0,0
+1793131759003,57,11 clientes.json,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,169,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,57,0,0
+1793131759091,47,07 FontManifest,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,161,7,7,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,47,0,0
+1793131759341,16,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,157,8,8,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,16,0,0
+1793131759385,19,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,8,8,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,17,0,0
+1793131759400,14,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,8,8,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,14,0,0
+1793131759503,18,10 casas.json,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,18,0,0
+1793131759561,60,12 reservas.json,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,60,0,0
+1793131752296,1248,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-1,,false,,117047,1944,8,8,null,1216,6078,441
+1793131759559,62,12 reservas.json,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,169,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,62,0,0
+1793131753292,322,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-2,,false,,117028,1944,8,8,null,315,6009,39
+1793131759638,40,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,175,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,40,0,0
+1793131759791,52,01 index.html,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,137,8,8,https://gustavomutto.github.io/casa_campo/,52,0,35
+1793131759858,20,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,8,8,https://gustavomutto.github.io/casa_campo/main.dart.js,19,0,0
+1793131759904,17,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,161,8,8,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,16,0,0
+1793131759915,15,07 FontManifest,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,161,8,8,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,15,0,0
+1793131760022,21,11 clientes.json,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,21,0,0
+1793131760122,18,01 index.html,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,137,8,8,https://gustavomutto.github.io/casa_campo/,18,0,0
+1793131760122,18,01 index.html,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,137,8,8,https://gustavomutto.github.io/casa_campo/,18,0,0
+1793131760179,42,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,175,8,8,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,42,0,0
+1793131760344,17,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,157,9,9,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,17,0,0
+1793131760378,19,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,9,9,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,18,0,0
+1793131760421,18,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,166,9,9,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,17,0,0
+1793131760431,15,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,9,9,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,15,0,0
+1793131760544,20,12 reservas.json,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,9,9,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,20,0,0
+1793131754291,265,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-3,,false,,117024,1944,9,9,null,257,6009,40
+1793131760641,16,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,157,9,9,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,16,0,0
+1793131760641,17,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,157,9,9,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,17,0,0
+1793131760722,39,10 casas.json,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9763,166,9,9,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,39,0,0
+1793131760790,54,01 index.html,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,137,9,9,https://gustavomutto.github.io/casa_campo/,54,0,36
+1793131760862,18,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,9,9,https://gustavomutto.github.io/casa_campo/main.dart.js,17,0,0
+1793131760898,17,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,161,9,9,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,17,0,0
+1793131760940,17,07 FontManifest,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,161,9,9,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,17,0,0
+1793131760947,15,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,9,9,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,15,0,0
+1793131761065,20,01 index.html,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,137,9,9,https://gustavomutto.github.io/casa_campo/,20,0,0
+1793131761158,16,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,9,9,https://gustavomutto.github.io/casa_campo/main.dart.js,16,0,0
+1793131761158,21,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,9,9,https://gustavomutto.github.io/casa_campo/main.dart.js,21,0,0
+1793131761262,60,11 clientes.json,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9742,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,60,0,0
+1793131761345,22,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,157,10,10,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,21,0,0
+1793131761380,18,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,18,0,0
+1793131761416,16,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,166,10,10,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,16,0,0
+1793131761457,18,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9759,175,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,18,0,0
+1793131761462,15,10 casas.json,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,15,0,0
+1793131761586,17,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,157,10,10,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,16,0,0
+1793131761675,16,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,16,0,0
+1793131761679,17,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,17,0,0
+1793131761789,52,01 index.html,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,137,10,10,https://gustavomutto.github.io/casa_campo/,52,0,35
+1793131761823,52,12 reservas.json,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9742,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,52,0,0
+1793131755290,577,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-4,,false,,117090,1944,10,10,null,571,6010,33
+1793131761868,17,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,10,10,https://gustavomutto.github.io/casa_campo/main.dart.js,16,0,0
+1793131761899,17,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,161,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,16,0,0
+1793131761933,18,07 FontManifest,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,161,10,10,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,18,0,0
+1793131761977,15,11 clientes.json,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,15,0,0
+1793131761976,17,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,10,10,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,17,0,0
+1793131762103,18,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,10,10,https://gustavomutto.github.io/casa_campo/main.dart.js,18,0,0
+1793131762192,17,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,161,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,17,0,0
+1793131762196,17,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,161,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,17,0,0
+1793131762342,18,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,157,10,10,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,16,0,0
+1793131762376,14,01 index.html,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,137,10,10,https://gustavomutto.github.io/casa_campo/,14,0,0
+1793131762386,18,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,17,0,0
+1793131762416,18,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,166,10,10,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,17,0,0
+1793131762451,18,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9759,175,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,18,0,0
+1793131762493,17,12 reservas.json,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,17,0,0
+1793131756291,211,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-5,,false,,117066,1944,10,10,null,208,6009,33
+1793131762493,18,10 casas.json,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,18,0,0
+1793131762622,17,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,17,0,0
+1793131762710,18,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,166,10,10,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,18,0,0
+1793131762714,16,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,166,10,10,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,16,0,0
+1793131762861,19,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,10,10,https://gustavomutto.github.io/casa_campo/main.dart.js,18,0,0
+1793131762891,14,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,157,10,10,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,14,0,0
+1793131762905,18,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,161,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,17,0,0
+1793131762934,17,07 FontManifest,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,161,10,10,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,17,0,0
+1793131762969,19,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,10,10,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,19,0,0
+1793131763010,14,01 index.html,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,137,10,10,https://gustavomutto.github.io/casa_campo/,14,0,0
+1793131763012,17,11 clientes.json,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,17,0,0
+1793131763140,16,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,161,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,16,0,0
+1793131763229,15,07 FontManifest,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,161,10,10,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,15,0,0
+1793131763231,16,07 FontManifest,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,161,10,10,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,16,0,0
+1793131763380,18,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,17,0,0
+1793131763406,15,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,10,10,https://gustavomutto.github.io/casa_campo/main.dart.js,15,0,0
+1793131763423,16,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,166,10,10,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,16,0,0
+1793131763452,27,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9759,175,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,27,0,0
+1793131763488,17,10 casas.json,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,17,0,0
+1793131763524,13,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,157,10,10,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,13,0,0
+1793131763529,16,12 reservas.json,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,16,0,0
+1793131757292,248,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-6,,false,,117024,1944,10,10,null,241,6006,36
+1793131763657,16,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,166,10,10,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,16,0,0
+1793131763745,16,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9759,175,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,16,0,0
+1793131763748,17,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9759,175,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,17,0,0
+1793131763899,18,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,161,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,18,0,0
+1793131763921,14,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,14,0,0
+1793131763939,30,07 FontManifest,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,161,10,10,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,30,0,0
+1793131763980,17,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,10,10,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,17,0,0
+1793131764005,17,11 clientes.json,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,17,0,0
+1793131764038,14,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,149,10,10,https://gustavomutto.github.io/casa_campo/main.dart.js,14,0,0
+1793131764045,17,01 index.html,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,137,10,10,https://gustavomutto.github.io/casa_campo/,16,0,0
+1793131764174,16,07 FontManifest,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,161,10,10,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,16,0,0
+1793131764261,17,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,10,10,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,17,0,0
+1793131764265,19,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,10,10,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,19,0,0
+1793131764418,18,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,166,10,10,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,17,0,0
+1793131764435,15,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,161,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,15,0,0
+1793131764469,17,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9759,175,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,17,0,0
+1793131764497,19,10 casas.json,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,19,0,0
+1793131764522,17,12 reservas.json,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,17,0,0
+1793131758287,246,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-7,,false,,117024,1944,10,10,null,244,6007,35
+1793131764552,15,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,159,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,15,0,0
+1793131764562,16,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,157,10,10,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,16,0,0
+1793131764691,17,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9759,175,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,17,0,0
+1793131764778,16,10 casas.json,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,16,0,0
+1793131764784,17,10 casas.json,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,17,0,0
+1793131764936,22,07 FontManifest,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,161,10,10,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,22,0,0
+1793131764951,14,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,10,10,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,14,0,0
+1793131764987,16,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,10,10,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,16,0,0
+1793131765017,17,11 clientes.json,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,17,0,0
+1793131765040,15,01 index.html,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,137,10,10,https://gustavomutto.github.io/casa_campo/,15,0,0
+1793131765067,13,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,161,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,13,0,0
+1793131765078,19,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,149,10,10,https://gustavomutto.github.io/casa_campo/main.dart.js,19,0,0
+1793131765209,17,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,10,10,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,17,0,0
+1793131765295,16,11 clientes.json,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,16,0,0
+1793131765302,17,11 clientes.json,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,17,0,0
+1793131765458,18,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9759,175,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,18,0,0
+1793131765465,15,07 FontManifest,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,161,10,10,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,15,0,0
+1793131765504,17,10 casas.json,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,17,0,0
+1793131765534,17,12 reservas.json,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,17,0,0
+1793131759290,254,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-8,,false,,117024,1944,10,10,null,251,6007,35
+1793131765556,17,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,157,10,10,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,17,0,0
+1793131765580,16,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,10,10,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,16,0,0
+1793131765597,19,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,159,10,10,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,19,0,0
+1793131765727,16,10 casas.json,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,16,0,0
+1793131765812,17,12 reservas.json,404,Not Found,Usuarios concurrentes 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,10,10,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,17,0,0
+1793131759622,199,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-2,,false,,117024,1944,10,10,null,199,6008,0
+1793131765819,17,12 reservas.json,404,Not Found,Usuarios concurrentes 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,9,9,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,17,0,0
+1793131759621,208,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-1,,false,,117024,1944,9,9,null,208,6007,0
+1793131765976,18,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,8,8,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,18,0,0
+1793131765980,17,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,17,0,0
+1793131766021,17,11 clientes.json,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,17,0,0
+1793131766052,15,01 index.html,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,137,8,8,https://gustavomutto.github.io/casa_campo/,15,0,0
+1793131766073,15,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,149,8,8,https://gustavomutto.github.io/casa_campo/main.dart.js,15,0,0
+1793131766097,13,07 FontManifest,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,161,8,8,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,13,0,0
+1793131766116,16,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,161,8,8,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,16,0,0
+1793131766243,18,11 clientes.json,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,18,0,0
+1793131766497,15,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,8,8,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,15,0,0
+1793131766495,19,10 casas.json,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,19,0,0
+1793131766539,18,12 reservas.json,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,18,0,0
+1793131760289,260,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-9,,false,,117024,1944,8,8,null,256,6008,36
+1793131766568,15,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,157,8,8,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,15,0,0
+1793131766589,15,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,159,8,8,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,15,0,0
+1793131766611,13,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,13,0,0
+1793131766632,15,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,166,8,8,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,15,0,0
+1793131766762,16,12 reservas.json,404,Not Found,Usuarios concurrentes 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,8,8,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,16,0,0
+1793131760564,204,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-3,,false,,117024,1944,8,8,null,203,6011,0
+1793131767012,39,10 casas.json,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,166,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,39,0,0
+1793131767015,58,11 clientes.json,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,58,0,0
+1793131767057,44,01 index.html,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,137,7,7,https://gustavomutto.github.io/casa_campo/,44,0,0
+1793131767083,28,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,149,7,7,https://gustavomutto.github.io/casa_campo/main.dart.js,28,0,0
+1793131767105,17,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,161,7,7,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,17,0,0
+1793131767124,13,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,7,7,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,13,0,0
+1793131767148,16,07 FontManifest,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,161,7,7,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,16,0,0
+1793131767553,15,11 clientes.json,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,169,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,15,0,0
+1793131767575,16,12 reservas.json,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,169,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,16,0,0
+1793131761288,294,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-10,,false,,117025,1944,7,7,null,289,6008,35
+1793131767602,15,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,157,7,7,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,15,0,0
+1793131767613,17,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,159,7,7,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,17,0,0
+1793131767623,15,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,166,7,7,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,15,0,0
+1793131767639,13,10 casas.json,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,166,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,13,0,0
+1793131767665,17,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,17,0,0
+1793131768068,17,12 reservas.json,404,Not Found,Usuarios concurrentes 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,169,7,7,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,17,0,0
+1793131761876,204,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-4,,false,,117067,1944,7,7,null,204,6004,0
+1793131768092,16,01 index.html,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,137,6,6,https://gustavomutto.github.io/casa_campo/,16,0,0
+1793131768118,19,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,149,6,6,https://gustavomutto.github.io/casa_campo/main.dart.js,19,0,0
+1793131768130,17,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,161,6,6,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,17,0,0
+1793131768139,15,07 FontManifest,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,161,6,6,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,15,0,0
+1793131768153,13,11 clientes.json,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,169,6,6,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,13,0,0
+1793131768182,15,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,6,6,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,15,0,0
+1793131768608,17,02 flutter_bootstrap.js,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,157,6,6,https://gustavomutto.github.io/casa_campo/flutter_bootstrap.js,17,0,0
+1793131768637,15,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,159,6,6,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,15,0,0
+1793131768648,15,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,166,6,6,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,15,0,0
+1793131768654,15,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,6,6,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,15,0,0
+1793131768667,14,12 reservas.json,404,Not Found,Usuarios concurrentes 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9740,169,6,6,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,14,0,0
+1793131762510,164,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-5,,false,,117066,1944,6,6,null,164,6006,0
+1793131768697,16,10 casas.json,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,166,5,5,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,16,0,0
+1793131769125,16,03 main.dart.js,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,149,5,5,https://gustavomutto.github.io/casa_campo/main.dart.js,16,0,0
+1793131769153,16,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,161,5,5,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,16,0,0
+1793131769164,17,07 FontManifest,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,161,5,5,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,17,0,0
+1793131769169,16,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,5,5,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,16,0,0
+1793131769213,16,11 clientes.json,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,5,5,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,16,0,0
+1793131769642,16,04 canvaskit.js,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,159,5,5,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.js,16,0,0
+1793131769669,16,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,166,5,5,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,16,0,0
+1793131769681,16,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,5,5,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,16,0,0
+1793131769685,16,10 casas.json,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,166,5,5,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,16,0,0
+1793131769729,16,12 reservas.json,404,Not Found,Usuarios concurrentes 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,5,5,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,16,0,0
+1793131763545,198,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-6,,false,,117036,1944,5,5,null,197,6001,0
+1793131770159,17,05 canvaskit.wasm,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,161,4,4,https://gustavomutto.github.io/casa_campo/canvaskit/canvaskit.wasm,17,0,0
+1793131770186,16,07 FontManifest,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,161,4,4,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,16,0,0
+1793131770197,15,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,4,4,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,15,0,0
+1793131770202,15,11 clientes.json,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,4,4,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,15,0,0
+1793131770679,16,06 AssetManifest,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9741,166,4,4,https://gustavomutto.github.io/casa_campo/assets/AssetManifest.bin.json,16,0,0
+1793131770702,16,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,4,4,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,16,0,0
+1793131770712,16,10 casas.json,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,166,4,4,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,16,0,0
+1793131770718,15,12 reservas.json,404,Not Found,Usuarios concurrentes 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,4,4,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,15,0,0
+1793131764540,186,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-7,,false,,117036,1944,4,4,null,186,6006,0
+1793131771196,16,07 FontManifest,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,161,3,3,https://gustavomutto.github.io/casa_campo/assets/FontManifest.json,16,0,0
+1793131771218,17,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,3,3,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,17,0,0
+1793131771228,18,11 clientes.json,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,3,3,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,18,0,0
+1793131771713,17,08 Roboto-Regular.ttf,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9760,175,3,3,https://gustavomutto.github.io/casa_campo/assets/assets/fonts/Roboto-Regular.ttf,17,0,0
+1793131771735,16,10 casas.json,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,166,3,3,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,16,0,0
+1793131771746,16,12 reservas.json,404,Not Found,Usuarios concurrentes 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,3,3,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,16,0,0
+1793131765552,205,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-8,,false,,117036,1944,3,3,null,205,6004,0
+1793131772230,17,09 MaterialIcons,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9761,175,2,2,https://gustavomutto.github.io/casa_campo/assets/fonts/MaterialIcons-Regular.otf,17,0,0
+1793131772251,15,11 clientes.json,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,2,2,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,15,0,0
+1793131772748,16,10 casas.json,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,166,2,2,https://gustavomutto.github.io/casa_campo/assets/assets/data/casas.json,16,0,0
+1793131772767,16,12 reservas.json,404,Not Found,Usuarios concurrentes 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,2,2,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,16,0,0
+1793131766557,221,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-9,,false,,117036,1944,2,2,null,221,6004,0
+1793131773265,17,11 clientes.json,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,1,1,https://gustavomutto.github.io/casa_campo/assets/assets/data/clientes.json,17,0,0
+1793131773782,17,12 reservas.json,404,Not Found,Usuarios concurrentes 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/",9762,169,1,1,https://gustavomutto.github.io/casa_campo/assets/assets/data/reservas.json,17,0,0
+1793131767592,198,Carga completa de la aplicación,,"Number of samples in transaction : 12, number of failing samples : 12",Usuarios concurrentes 1-10,,false,,117036,1944,1,1,null,198,6009,0

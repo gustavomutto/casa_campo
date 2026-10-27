@@ -1,0 +1,37 @@
+navegador,version,vista,ancho,alto,carga_login_s,login_s,resultado,errores_js,captura,error
+chromium,156.0.8078.4,movil,390,844,,,Fallido,0,,"Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator(""input[aria-label=\""Usuario\""]"")
+"
+chromium,156.0.8078.4,tableta,768,1024,,,Fallido,0,,"Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator(""input[aria-label=\""Usuario\""]"")
+"
+chromium,156.0.8078.4,escritorio,1366,768,,,Fallido,0,,"Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator(""input[aria-label=\""Usuario\""]"")
+"
+firefox,157.0,movil,390,844,,,Fallido,0,,"Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator(""input[aria-label=\""Usuario\""]"")
+"
+firefox,157.0,tableta,768,1024,,,Fallido,0,,"Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator(""input[aria-label=\""Usuario\""]"")
+"
+firefox,157.0,escritorio,1366,768,,,Fallido,0,,"Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator(""input[aria-label=\""Usuario\""]"")
+"
+webkit,27.2,movil,390,844,,,Fallido,0,,"Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator(""input[aria-label=\""Usuario\""]"")
+"
+webkit,27.2,tableta,768,1024,,,Fallido,0,,"Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator(""input[aria-label=\""Usuario\""]"")
+"
+webkit,27.2,escritorio,1366,768,,,Fallido,0,,"Page.wait_for_selector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator(""input[aria-label=\""Usuario\""]"")
+"
