@@ -3,7 +3,7 @@ name: CI - Pruebas, cobertura y despliegue
 on:
   push:
     branches: [main]
-    paths-ignore: ['docs/**', '**.md', '.github/**']
+    paths-ignore: ['docs/**', '**.md', '.github/**', 'pruebas/herramientas/**']
   workflow_dispatch:
 
 permissions:

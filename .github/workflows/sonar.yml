@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['.github/workflows/sonar.yml']
+    paths: ['.github/workflows/sonar.yml', 'pruebas/herramientas/capturas_sonar.py']
 
 permissions:
   contents: write

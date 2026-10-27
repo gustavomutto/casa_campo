@@ -25,6 +25,11 @@ with sync_playwright() as p:
     pagina.fill("#password", "CasaCampo2026*")
     pagina.keyboard.press("Enter")
     pagina.wait_for_timeout(4000)
+    # SonarQube pide aceptar el riesgo de los plugins de terceros la primera vez.
+    boton = pagina.get_by_role("button", name="I understand the risk")
+    if boton.count():
+        boton.click()
+        pagina.wait_for_timeout(3000)
     for nombre, ruta in PAGINAS.items():
         try:
             pagina.goto(URL + ruta)
