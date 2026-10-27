@@ -57,7 +57,7 @@
 00:00 +55: /home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart: ServicioReportes CP-REP-01 totales por estado e ingresos
 00:00 +56: /home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart: ServicioReportes CP-REP-02 ocupación mensual por casa (noviembre)
 00:00 +57: /home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart: ServicioReportes CP-REP-03 reservas que cruzan de mes (octubre)
-00:01 +58: /home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart: CP-TAR camino básico de calcular() Camino 1: precio <= 0 lanza ArgumentError
+00:00 +58: /home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart: CP-TAR camino básico de calcular() Camino 1: precio <= 0 lanza ArgumentError
 00:01 +59: /home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart: CP-TAR camino básico de calcular() Camino 2: noches en temporada normal, sin descuento
 00:01 +60: /home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart: CP-TAR camino básico de calcular() Camino 3: noches en temporada alta (+20 %)
 00:01 +61: /home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart: CP-TAR camino básico de calcular() Camino 4: estadía de 7 noches con descuento del 10 %
@@ -116,29 +116,29 @@
 00:01 +114: /home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart: Entero en rango CE válida
 00:01 +115: /home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart: Entero en rango CE inválida: vacío / no numérico / decimal
 00:01 +116: /home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart: Entero en rango VL: 0 / 1 / 30 / 31
-00:02 +117: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: carga reservas desde JSON local
-00:02 +118: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: obtiene solamente reservas pendientes y por casa
-00:02 +119: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: lee la semilla una sola vez y luego usa el almacenamiento
-00:02 +120: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: guarda, reemplaza, elimina y persiste cambios
-00:02 +121: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: genera identificadores consecutivos
-00:02 +122: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: rechaza un archivo que no contiene una lista
-00:02 +123: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: rechaza elementos que no son objetos
-00:02 +124: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: rechaza JSON mal formado
-00:02 +125: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: AlmacenamientoEnMemoria elimina claves
-00:02 +126: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-01 registra una casa válida
-00:02 +127: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-02 nombre vacío
-00:02 +128: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-03 nombre de 51 caracteres
-00:02 +129: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-04 municipio vacío
-00:02 +130: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-05 capacidad 0 y 31 (fuera de rango)
-00:02 +131: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-06 capacidad no numérica
-00:02 +132: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-07 precio 49.999 y 5.000.001 (fuera de rango)
-00:02 +133: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-08 valores límite válidos
-00:02 +134: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-09 nombre duplicado (sin distinguir mayúsculas)
-00:02 +135: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-10 actualiza una casa existente
-00:02 +136: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-11 actualizar una casa inexistente
-00:02 +137: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-12 no permite desactivar una casa con reservas activas
-00:02 +138: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-13 desactiva y reactiva una casa sin reservas activas
-00:02 +139: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-14 cambiar el estado de una casa inexistente
+00:01 +117: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: carga reservas desde JSON local
+00:01 +118: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: obtiene solamente reservas pendientes y por casa
+00:01 +119: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: lee la semilla una sola vez y luego usa el almacenamiento
+00:01 +120: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: guarda, reemplaza, elimina y persiste cambios
+00:01 +121: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: genera identificadores consecutivos
+00:01 +122: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: rechaza un archivo que no contiene una lista
+00:01 +123: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: rechaza elementos que no son objetos
+00:01 +124: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: rechaza JSON mal formado
+00:01 +125: /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart: AlmacenamientoEnMemoria elimina claves
+00:01 +126: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-01 registra una casa válida
+00:01 +127: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-02 nombre vacío
+00:01 +128: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-03 nombre de 51 caracteres
+00:01 +129: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-04 municipio vacío
+00:01 +130: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-05 capacidad 0 y 31 (fuera de rango)
+00:01 +131: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-06 capacidad no numérica
+00:01 +132: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-07 precio 49.999 y 5.000.001 (fuera de rango)
+00:01 +133: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-08 valores límite válidos
+00:01 +134: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-09 nombre duplicado (sin distinguir mayúsculas)
+00:01 +135: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-10 actualiza una casa existente
+00:01 +136: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-11 actualizar una casa inexistente
+00:01 +137: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-12 no permite desactivar una casa con reservas activas
+00:01 +138: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-13 desactiva y reactiva una casa sin reservas activas
+00:01 +139: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart: CP-CAS-14 cambiar el estado de una casa inexistente
 00:02 +140: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart: CP-CLI-01 registra un cliente válido
 00:02 +141: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart: CP-CLI-02 documento vacío
 00:02 +142: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart: CP-CLI-03 documento con letras
@@ -154,15 +154,15 @@
 00:02 +152: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart: CP-CLI-13 actualiza un cliente y conserva su id
 00:02 +153: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart: CP-CLI-14 actualizar un cliente inexistente
 00:02 +154: /home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart: CP-CLI-15 busca por nombre o documento y ordena
-00:03 +155: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: formatearFecha / leerFechaTexto formatea con ceros a la izquierda
-00:03 +156: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: formatearFecha / leerFechaTexto lee una fecha válida
-00:03 +157: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: formatearFecha / leerFechaTexto rechaza fechas inexistentes o mal escritas
-00:03 +158: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: formatearFecha / leerFechaTexto acepta 29 de febrero en año bisiesto
-00:03 +159: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: formatearPesos agrega separadores de miles
-00:03 +160: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON leerTexto exige texto no vacío
-00:03 +161: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON leerEntero acepta enteros y valores por defecto
-00:03 +162: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON leerBooleano y leerTextoOpcional
-00:03 +163: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON leerFecha valida ISO-8601
-00:03 +164: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON leerListaDeObjetos
-00:03 +165: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON CampoInvalido describe el error
-00:03 +166: All tests passed!
+00:02 +155: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: formatearFecha / leerFechaTexto formatea con ceros a la izquierda
+00:02 +156: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: formatearFecha / leerFechaTexto lee una fecha válida
+00:02 +157: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: formatearFecha / leerFechaTexto rechaza fechas inexistentes o mal escritas
+00:02 +158: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: formatearFecha / leerFechaTexto acepta 29 de febrero en año bisiesto
+00:02 +159: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: formatearPesos agrega separadores de miles
+00:02 +160: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON leerTexto exige texto no vacío
+00:02 +161: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON leerEntero acepta enteros y valores por defecto
+00:02 +162: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON leerBooleano y leerTextoOpcional
+00:02 +163: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON leerFecha valida ISO-8601
+00:02 +164: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON leerListaDeObjetos
+00:02 +165: /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart: lectura de JSON CampoInvalido describe el error
+00:02 +166: All tests passed!

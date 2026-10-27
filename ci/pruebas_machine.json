@@ -1,485 +1,485 @@
-{"protocolVersion":"0.1.1","runnerVersion":null,"pid":3941,"type":"start","time":0}
+{"protocolVersion":"0.1.1","runnerVersion":null,"pid":3625,"type":"start","time":0}
 {"suite":{"id":0,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"suite","time":0}
-{"test":{"id":1,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
-{"suite":{"id":2,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"suite","time":6}
-{"test":{"id":3,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6}
-{"count":14,"time":8,"type":"allSuites"}
+{"test":{"id":1,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":0}
+{"suite":{"id":2,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"suite","time":3}
+{"test":{"id":3,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3}
+{"count":14,"time":4,"type":"allSuites"}
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:38111/UJaXIIAWfEc=/"}}]
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:44103/1pLg9dZ3IPk=/"}}]
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:45489/V9i2WtUz6qc=/"}}]
-{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":1744}
-{"group":{"id":4,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":15,"line":null,"column":null,"url":null},"type":"group","time":1747}
-{"test":{"id":5,"name":"CP-AUT-01 credenciales válidas de administrador","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":25,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1747}
-{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1781}
-{"test":{"id":6,"name":"CP-AUT-02 credenciales válidas de recepcionista (sin distinguir mayúsculas en el usuario)","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":32,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1782}
-{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1784}
-{"test":{"id":7,"name":"CP-AUT-03 usuario vacío","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":40,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1785}
-{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1795}
-{"test":{"id":8,"name":"CP-AUT-04 usuario de 3 caracteres","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":47,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1795}
-{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1797}
-{"test":{"id":9,"name":"CP-AUT-05 usuario de 21 caracteres","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":54,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1797}
-{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1800}
-{"test":{"id":10,"name":"CP-AUT-06 usuario con caracteres especiales","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":61,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1800}
-{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1802}
-{"test":{"id":11,"name":"CP-AUT-07 contraseña vacía","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":68,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1803}
-{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1806}
-{"test":{"id":12,"name":"CP-AUT-08 contraseña de 7 caracteres","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":72,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1807}
-{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1811}
-{"test":{"id":13,"name":"CP-AUT-09 contraseña de 21 caracteres","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":79,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1811}
-{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1814}
-{"test":{"id":14,"name":"CP-AUT-10 contraseña incorrecta","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":83,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1814}
-{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1818}
-{"test":{"id":15,"name":"CP-AUT-11 usuario inexistente (mismo mensaje genérico)","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":90,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1818}
-{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1821}
-{"test":{"id":16,"name":"CP-AUT-12 bloqueo después de 3 intentos fallidos","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":97,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1821}
-{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1826}
-{"test":{"id":17,"name":"CP-AUT-13 el bloqueo expira a los 5 minutos","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":118,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1826}
-{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1829}
-{"test":{"id":18,"name":"CP-AUT-14 un ingreso exitoso reinicia el contador de fallos","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":137,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1830}
-{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1834}
-{"test":{"id":19,"name":"CP-AUT-15 las contraseñas se guardan como hash SHA-256","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":147,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1834}
-{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1838}
-{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":1908}
-{"group":{"id":20,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":35,"line":null,"column":null,"url":null},"type":"group","time":1908}
-{"group":{"id":21,"suiteID":2,"parentID":20,"name":"crearReserva() - camino básico","metadata":{"skip":false,"skipReason":null},"testCount":10,"line":50,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"group","time":1909}
-{"test":{"id":22,"name":"crearReserva() - camino básico CP-RES-C1 casa inexistente","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":51,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1909}
-{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1957}
-{"test":{"id":23,"name":"crearReserva() - camino básico CP-RES-C2 casa inactiva","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":58,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1957}
-{"testID":23,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1961}
-{"test":{"id":24,"name":"crearReserva() - camino básico CP-RES-C3 cliente inexistente","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":65,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1961}
-{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1968}
-{"test":{"id":25,"name":"crearReserva() - camino básico CP-RES-C4 fecha de entrada anterior a hoy","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":72,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1968}
-{"testID":25,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1973}
-{"test":{"id":26,"name":"crearReserva() - camino básico CP-RES-C5 fecha de salida igual a la de entrada","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":84,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1973}
-{"testID":26,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1976}
-{"test":{"id":27,"name":"crearReserva() - camino básico CP-RES-C6 estadía de 31 noches","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":96,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1976}
-{"testID":27,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1979}
-{"test":{"id":28,"name":"crearReserva() - camino básico CP-RES-C7 cero huéspedes","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":108,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1980}
-{"testID":28,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1982}
-{"test":{"id":29,"name":"crearReserva() - camino básico CP-RES-C8 huéspedes por encima de la capacidad (5 > 4)","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":115,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1983}
-{"testID":29,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1986}
-{"test":{"id":30,"name":"crearReserva() - camino básico CP-RES-C9 casa ocupada en las fechas solicitadas","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":122,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1986}
-{"testID":30,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1998}
-{"test":{"id":31,"name":"crearReserva() - camino básico CP-RES-C10 reserva válida queda Pendiente y con valor calculado","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":135,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1998}
-{"testID":31,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2005}
-{"group":{"id":32,"suiteID":2,"parentID":20,"name":"crearReserva() - valores límite","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":149,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"group","time":2005}
-{"test":{"id":33,"name":"crearReserva() - valores límite entrada hoy es válida","suiteID":2,"groupIDs":[20,32],"metadata":{"skip":false,"skipReason":null},"line":150,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2005}
-{"testID":33,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2009}
-{"test":{"id":34,"name":"crearReserva() - valores límite 30 noches es válido","suiteID":2,"groupIDs":[20,32],"metadata":{"skip":false,"skipReason":null},"line":160,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2010}
-{"testID":34,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2014}
-{"test":{"id":35,"name":"crearReserva() - valores límite capacidad exacta (4 de 4) y 1 huésped son válidos","suiteID":2,"groupIDs":[20,32],"metadata":{"skip":false,"skipReason":null},"line":170,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2015}
-{"testID":35,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2019}
-{"test":{"id":36,"name":"crearReserva() - valores límite entrar el día de salida de otra reserva es válido","suiteID":2,"groupIDs":[20,32],"metadata":{"skip":false,"skipReason":null},"line":188,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2019}
-{"testID":36,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2022}
-{"test":{"id":37,"name":"crearReserva() - valores límite una reserva cancelada no bloquea la casa","suiteID":2,"groupIDs":[20,32],"metadata":{"skip":false,"skipReason":null},"line":199,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2022}
-{"testID":37,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2026}
-{"group":{"id":38,"suiteID":2,"parentID":20,"name":"Pagos","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":210,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"group","time":2026}
-{"test":{"id":39,"name":"Pagos CP-PAG-01 registra un abono válido","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":211,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2026}
-{"testID":39,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2030}
-{"test":{"id":40,"name":"Pagos CP-PAG-02 monto 0","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":223,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2031}
-{"testID":40,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2033}
-{"test":{"id":41,"name":"Pagos CP-PAG-03 monto negativo","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":234,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2034}
-{"testID":41,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2036}
-{"test":{"id":42,"name":"Pagos CP-PAG-04 monto mayor que el saldo (saldo + 1)","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":245,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2037}
-{"testID":42,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2041}
-{"test":{"id":43,"name":"Pagos CP-PAG-05 monto igual al saldo deja la reserva pagada","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":256,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2041}
-{"testID":43,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2044}
-{"test":{"id":44,"name":"Pagos CP-PAG-06 reserva cancelada no admite pagos","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":265,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2044}
-{"testID":44,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2047}
-{"test":{"id":45,"name":"Pagos CP-PAG-07 reserva inexistente","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":276,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2047}
-{"testID":45,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2051}
-{"group":{"id":46,"suiteID":2,"parentID":20,"name":"Ciclo de vida (transiciones de estado)","metadata":{"skip":false,"skipReason":null},"testCount":11,"line":288,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"group","time":2051}
-{"test":{"id":47,"name":"Ciclo de vida (transiciones de estado) CP-EST-01 confirmar sin anticipo del 30 % falla","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":289,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2051}
-{"testID":47,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2055}
-{"test":{"id":48,"name":"Ciclo de vida (transiciones de estado) CP-EST-02 confirmar con anticipo exacto del 30 %","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":297,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2055}
-{"testID":48,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2060}
-{"test":{"id":49,"name":"Ciclo de vida (transiciones de estado) CP-EST-03 solo se confirman reservas pendientes","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":308,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2060}
-{"testID":49,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2064}
-{"test":{"id":50,"name":"Ciclo de vida (transiciones de estado) CP-EST-04 iniciar estadía de una reserva confirmada","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":315,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2064}
-{"testID":50,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2069}
-{"test":{"id":51,"name":"Ciclo de vida (transiciones de estado) CP-EST-05 no se inicia una reserva pendiente","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":320,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2069}
-{"testID":51,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2074}
-{"test":{"id":52,"name":"Ciclo de vida (transiciones de estado) CP-EST-06 finalizar con saldo pendiente falla","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":324,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2075}
-{"testID":52,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2079}
-{"test":{"id":53,"name":"Ciclo de vida (transiciones de estado) CP-EST-07 finalizar una reserva en curso y pagada","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":328,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2079}
-{"testID":53,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2083}
-{"test":{"id":54,"name":"Ciclo de vida (transiciones de estado) CP-EST-08 no se finaliza una reserva confirmada","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":339,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2083}
-{"testID":54,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2086}
-{"test":{"id":55,"name":"Ciclo de vida (transiciones de estado) CP-EST-09 cancelar con motivo válido","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":343,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2087}
-{"testID":55,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2090}
-{"test":{"id":56,"name":"Ciclo de vida (transiciones de estado) CP-EST-10 cancelar con motivo de 4 caracteres","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":351,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2090}
-{"testID":56,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2093}
-{"test":{"id":57,"name":"Ciclo de vida (transiciones de estado) CP-EST-11 no se cancela una reserva en curso o finalizada","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":358,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2093}
-{"testID":57,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2098}
-{"group":{"id":58,"suiteID":2,"parentID":20,"name":"Consultas","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":370,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"group","time":2098}
-{"test":{"id":59,"name":"Consultas lista y filtra por estado, ordenadas por fecha de entrada","suiteID":2,"groupIDs":[20,58],"metadata":{"skip":false,"skipReason":null},"line":371,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2098}
-{"testID":59,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2104}
-{"test":{"id":60,"name":"Consultas cotiza una estadía y valida la casa","suiteID":2,"groupIDs":[20,58],"metadata":{"skip":false,"skipReason":null},"line":380,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":2104}
-{"testID":60,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2108}
-{"suite":{"id":61,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"suite","time":2468}
-{"test":{"id":62,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart","suiteID":61,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2468}
-{"suite":{"id":63,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"suite","time":2779}
-{"test":{"id":64,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart","suiteID":63,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2779}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:45905/gpIBpinbHcE=/"}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":1268}
+{"group":{"id":4,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":15,"line":null,"column":null,"url":null},"type":"group","time":1270}
+{"test":{"id":5,"name":"CP-AUT-01 credenciales válidas de administrador","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":25,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1270}
+{"testID":5,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1286}
+{"test":{"id":6,"name":"CP-AUT-02 credenciales válidas de recepcionista (sin distinguir mayúsculas en el usuario)","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":32,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1286}
+{"testID":6,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1289}
+{"test":{"id":7,"name":"CP-AUT-03 usuario vacío","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":40,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1289}
+{"testID":7,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1294}
+{"test":{"id":8,"name":"CP-AUT-04 usuario de 3 caracteres","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":47,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1294}
+{"testID":8,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1296}
+{"test":{"id":9,"name":"CP-AUT-05 usuario de 21 caracteres","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":54,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1296}
+{"testID":9,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1297}
+{"test":{"id":10,"name":"CP-AUT-06 usuario con caracteres especiales","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":61,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1297}
+{"testID":10,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1299}
+{"test":{"id":11,"name":"CP-AUT-07 contraseña vacía","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":68,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1299}
+{"testID":11,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1302}
+{"test":{"id":12,"name":"CP-AUT-08 contraseña de 7 caracteres","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":72,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1302}
+{"testID":12,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1303}
+{"test":{"id":13,"name":"CP-AUT-09 contraseña de 21 caracteres","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":79,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1303}
+{"testID":13,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1305}
+{"test":{"id":14,"name":"CP-AUT-10 contraseña incorrecta","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":83,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1305}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1307}
+{"test":{"id":15,"name":"CP-AUT-11 usuario inexistente (mismo mensaje genérico)","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":90,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1307}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1308}
+{"test":{"id":16,"name":"CP-AUT-12 bloqueo después de 3 intentos fallidos","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":97,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1308}
+{"testID":16,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1311}
+{"test":{"id":17,"name":"CP-AUT-13 el bloqueo expira a los 5 minutos","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":118,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1311}
+{"testID":17,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1313}
+{"test":{"id":18,"name":"CP-AUT-14 un ingreso exitoso reinicia el contador de fallos","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":137,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1313}
+{"testID":18,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1315}
+{"test":{"id":19,"name":"CP-AUT-15 las contraseñas se guardan como hash SHA-256","suiteID":0,"groupIDs":[4],"metadata":{"skip":false,"skipReason":null},"line":147,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_autenticacion_test.dart"},"type":"testStart","time":1315}
+{"testID":19,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1317}
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":1359}
+{"group":{"id":20,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":35,"line":null,"column":null,"url":null},"type":"group","time":1360}
+{"group":{"id":21,"suiteID":2,"parentID":20,"name":"crearReserva() - camino básico","metadata":{"skip":false,"skipReason":null},"testCount":10,"line":50,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"group","time":1360}
+{"test":{"id":22,"name":"crearReserva() - camino básico CP-RES-C1 casa inexistente","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":51,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1360}
+{"testID":22,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1387}
+{"test":{"id":23,"name":"crearReserva() - camino básico CP-RES-C2 casa inactiva","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":58,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1387}
+{"testID":23,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1389}
+{"test":{"id":24,"name":"crearReserva() - camino básico CP-RES-C3 cliente inexistente","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":65,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1389}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1392}
+{"test":{"id":25,"name":"crearReserva() - camino básico CP-RES-C4 fecha de entrada anterior a hoy","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":72,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1392}
+{"testID":25,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1395}
+{"test":{"id":26,"name":"crearReserva() - camino básico CP-RES-C5 fecha de salida igual a la de entrada","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":84,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1395}
+{"testID":26,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1397}
+{"test":{"id":27,"name":"crearReserva() - camino básico CP-RES-C6 estadía de 31 noches","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":96,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1397}
+{"testID":27,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1399}
+{"test":{"id":28,"name":"crearReserva() - camino básico CP-RES-C7 cero huéspedes","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":108,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1399}
+{"testID":28,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1400}
+{"test":{"id":29,"name":"crearReserva() - camino básico CP-RES-C8 huéspedes por encima de la capacidad (5 > 4)","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":115,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1400}
+{"testID":29,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1402}
+{"test":{"id":30,"name":"crearReserva() - camino básico CP-RES-C9 casa ocupada en las fechas solicitadas","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":122,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1402}
+{"testID":30,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1409}
+{"test":{"id":31,"name":"crearReserva() - camino básico CP-RES-C10 reserva válida queda Pendiente y con valor calculado","suiteID":2,"groupIDs":[20,21],"metadata":{"skip":false,"skipReason":null},"line":135,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1410}
+{"testID":31,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1413}
+{"group":{"id":32,"suiteID":2,"parentID":20,"name":"crearReserva() - valores límite","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":149,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"group","time":1413}
+{"test":{"id":33,"name":"crearReserva() - valores límite entrada hoy es válida","suiteID":2,"groupIDs":[20,32],"metadata":{"skip":false,"skipReason":null},"line":150,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1413}
+{"testID":33,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1416}
+{"test":{"id":34,"name":"crearReserva() - valores límite 30 noches es válido","suiteID":2,"groupIDs":[20,32],"metadata":{"skip":false,"skipReason":null},"line":160,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1416}
+{"testID":34,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1418}
+{"test":{"id":35,"name":"crearReserva() - valores límite capacidad exacta (4 de 4) y 1 huésped son válidos","suiteID":2,"groupIDs":[20,32],"metadata":{"skip":false,"skipReason":null},"line":170,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1418}
+{"testID":35,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1421}
+{"test":{"id":36,"name":"crearReserva() - valores límite entrar el día de salida de otra reserva es válido","suiteID":2,"groupIDs":[20,32],"metadata":{"skip":false,"skipReason":null},"line":188,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1421}
+{"testID":36,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1423}
+{"test":{"id":37,"name":"crearReserva() - valores límite una reserva cancelada no bloquea la casa","suiteID":2,"groupIDs":[20,32],"metadata":{"skip":false,"skipReason":null},"line":199,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1423}
+{"testID":37,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1424}
+{"group":{"id":38,"suiteID":2,"parentID":20,"name":"Pagos","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":210,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"group","time":1425}
+{"test":{"id":39,"name":"Pagos CP-PAG-01 registra un abono válido","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":211,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1425}
+{"testID":39,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1427}
+{"test":{"id":40,"name":"Pagos CP-PAG-02 monto 0","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":223,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1427}
+{"testID":40,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1429}
+{"test":{"id":41,"name":"Pagos CP-PAG-03 monto negativo","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":234,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1429}
+{"testID":41,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1430}
+{"test":{"id":42,"name":"Pagos CP-PAG-04 monto mayor que el saldo (saldo + 1)","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":245,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1431}
+{"testID":42,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1432}
+{"test":{"id":43,"name":"Pagos CP-PAG-05 monto igual al saldo deja la reserva pagada","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":256,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1433}
+{"testID":43,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1434}
+{"test":{"id":44,"name":"Pagos CP-PAG-06 reserva cancelada no admite pagos","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":265,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1434}
+{"testID":44,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1436}
+{"test":{"id":45,"name":"Pagos CP-PAG-07 reserva inexistente","suiteID":2,"groupIDs":[20,38],"metadata":{"skip":false,"skipReason":null},"line":276,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1436}
+{"testID":45,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1438}
+{"group":{"id":46,"suiteID":2,"parentID":20,"name":"Ciclo de vida (transiciones de estado)","metadata":{"skip":false,"skipReason":null},"testCount":11,"line":288,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"group","time":1438}
+{"test":{"id":47,"name":"Ciclo de vida (transiciones de estado) CP-EST-01 confirmar sin anticipo del 30 % falla","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":289,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1438}
+{"testID":47,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1441}
+{"test":{"id":48,"name":"Ciclo de vida (transiciones de estado) CP-EST-02 confirmar con anticipo exacto del 30 %","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":297,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1441}
+{"testID":48,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1444}
+{"test":{"id":49,"name":"Ciclo de vida (transiciones de estado) CP-EST-03 solo se confirman reservas pendientes","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":308,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1444}
+{"testID":49,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1446}
+{"test":{"id":50,"name":"Ciclo de vida (transiciones de estado) CP-EST-04 iniciar estadía de una reserva confirmada","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":315,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1446}
+{"testID":50,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1448}
+{"test":{"id":51,"name":"Ciclo de vida (transiciones de estado) CP-EST-05 no se inicia una reserva pendiente","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":320,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1448}
+{"testID":51,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1450}
+{"test":{"id":52,"name":"Ciclo de vida (transiciones de estado) CP-EST-06 finalizar con saldo pendiente falla","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":324,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1450}
+{"testID":52,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1452}
+{"test":{"id":53,"name":"Ciclo de vida (transiciones de estado) CP-EST-07 finalizar una reserva en curso y pagada","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":328,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1452}
+{"testID":53,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1454}
+{"test":{"id":54,"name":"Ciclo de vida (transiciones de estado) CP-EST-08 no se finaliza una reserva confirmada","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":339,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1454}
+{"testID":54,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1455}
+{"test":{"id":55,"name":"Ciclo de vida (transiciones de estado) CP-EST-09 cancelar con motivo válido","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":343,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1455}
+{"testID":55,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1457}
+{"test":{"id":56,"name":"Ciclo de vida (transiciones de estado) CP-EST-10 cancelar con motivo de 4 caracteres","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":351,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1457}
+{"testID":56,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1459}
+{"test":{"id":57,"name":"Ciclo de vida (transiciones de estado) CP-EST-11 no se cancela una reserva en curso o finalizada","suiteID":2,"groupIDs":[20,46],"metadata":{"skip":false,"skipReason":null},"line":358,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1459}
+{"testID":57,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1462}
+{"group":{"id":58,"suiteID":2,"parentID":20,"name":"Consultas","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":370,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"group","time":1462}
+{"test":{"id":59,"name":"Consultas lista y filtra por estado, ordenadas por fecha de entrada","suiteID":2,"groupIDs":[20,58],"metadata":{"skip":false,"skipReason":null},"line":371,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1462}
+{"testID":59,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1466}
+{"test":{"id":60,"name":"Consultas cotiza una estadía y valida la casa","suiteID":2,"groupIDs":[20,58],"metadata":{"skip":false,"skipReason":null},"line":380,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_reservas_test.dart"},"type":"testStart","time":1466}
+{"testID":60,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":1468}
+{"suite":{"id":61,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"suite","time":1736}
+{"test":{"id":62,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart","suiteID":61,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1736}
+{"suite":{"id":63,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"suite","time":1870}
+{"test":{"id":64,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart","suiteID":63,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1870}
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:42131/XoS1shpEV7c=/"}}]
-{"testID":62,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3070}
-{"group":{"id":65,"suiteID":61,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":8,"line":null,"column":null,"url":null},"type":"group","time":3070}
-{"group":{"id":66,"suiteID":61,"parentID":65,"name":"ServicioDisponibilidad","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":21,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"group","time":3070}
-{"test":{"id":67,"name":"ServicioDisponibilidad CP-DIS-01 excluye casas ocupadas e inactivas","suiteID":61,"groupIDs":[65,66],"metadata":{"skip":false,"skipReason":null},"line":22,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":3070}
-{"testID":67,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3128}
-{"test":{"id":68,"name":"ServicioDisponibilidad CP-DIS-02 filtra por capacidad","suiteID":61,"groupIDs":[65,66],"metadata":{"skip":false,"skipReason":null},"line":30,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":3128}
-{"testID":68,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3136}
-{"test":{"id":69,"name":"ServicioDisponibilidad CP-DIS-03 la reserva cancelada no ocupa la casa","suiteID":61,"groupIDs":[65,66],"metadata":{"skip":false,"skipReason":null},"line":39,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":3136}
-{"testID":69,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3142}
-{"test":{"id":70,"name":"ServicioDisponibilidad CP-DIS-04 se puede excluir la propia reserva","suiteID":61,"groupIDs":[65,66],"metadata":{"skip":false,"skipReason":null},"line":49,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":3142}
-{"testID":70,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3149}
-{"test":{"id":71,"name":"ServicioDisponibilidad CP-DIS-05 sin resultados cuando nadie tiene capacidad","suiteID":61,"groupIDs":[65,66],"metadata":{"skip":false,"skipReason":null},"line":66,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":3150}
-{"testID":71,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3153}
-{"group":{"id":72,"suiteID":61,"parentID":65,"name":"ServicioReportes","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":76,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"group","time":3154}
-{"test":{"id":73,"name":"ServicioReportes CP-REP-01 totales por estado e ingresos","suiteID":61,"groupIDs":[65,72],"metadata":{"skip":false,"skipReason":null},"line":77,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":3155}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:46667/SoXIqoQYKhg=/"}}]
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:39015/3_1tr_ujaSI=/"}}]
-{"testID":73,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3161}
-{"test":{"id":74,"name":"ServicioReportes CP-REP-02 ocupación mensual por casa (noviembre)","suiteID":61,"groupIDs":[65,72],"metadata":{"skip":false,"skipReason":null},"line":94,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":3161}
-{"testID":74,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3166}
-{"test":{"id":75,"name":"ServicioReportes CP-REP-03 reservas que cruzan de mes (octubre)","suiteID":61,"groupIDs":[65,72],"metadata":{"skip":false,"skipReason":null},"line":105,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":3166}
-{"testID":75,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3170}
-{"testID":64,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3400}
-{"group":{"id":76,"suiteID":63,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":8,"line":null,"column":null,"url":null},"type":"group","time":3401}
-{"group":{"id":77,"suiteID":63,"parentID":76,"name":"CP-TAR camino básico de calcular()","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":14,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"group","time":3401}
-{"test":{"id":78,"name":"CP-TAR camino básico de calcular() Camino 1: precio <= 0 lanza ArgumentError","suiteID":63,"groupIDs":[76,77],"metadata":{"skip":false,"skipReason":null},"line":15,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":3401}
-{"testID":78,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3424}
-{"test":{"id":79,"name":"CP-TAR camino básico de calcular() Camino 2: noches en temporada normal, sin descuento","suiteID":63,"groupIDs":[76,77],"metadata":{"skip":false,"skipReason":null},"line":25,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":3424}
-{"testID":79,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3427}
-{"test":{"id":80,"name":"CP-TAR camino básico de calcular() Camino 3: noches en temporada alta (+20 %)","suiteID":63,"groupIDs":[76,77],"metadata":{"skip":false,"skipReason":null},"line":34,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":3427}
-{"testID":80,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3430}
-{"test":{"id":81,"name":"CP-TAR camino básico de calcular() Camino 4: estadía de 7 noches con descuento del 10 %","suiteID":63,"groupIDs":[76,77],"metadata":{"skip":false,"skipReason":null},"line":43,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":3430}
-{"testID":81,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3432}
-{"test":{"id":82,"name":"CP-TAR camino básico de calcular() Camino 5: temporada alta mixta + descuento","suiteID":63,"groupIDs":[76,77],"metadata":{"skip":false,"skipReason":null},"line":52,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":3433}
-{"testID":82,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3435}
-{"group":{"id":83,"suiteID":63,"parentID":76,"name":"Valores límite","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":63,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"group","time":3435}
-{"test":{"id":84,"name":"Valores límite 6 noches no tienen descuento, 7 sí","suiteID":63,"groupIDs":[76,83],"metadata":{"skip":false,"skipReason":null},"line":64,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":3435}
-{"testID":84,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3437}
-{"test":{"id":85,"name":"Valores límite límites de temporada alta","suiteID":63,"groupIDs":[76,83],"metadata":{"skip":false,"skipReason":null},"line":78,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":3437}
-{"testID":85,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3439}
-{"test":{"id":86,"name":"Valores límite precio mínimo positivo (1) es válido","suiteID":63,"groupIDs":[76,83],"metadata":{"skip":false,"skipReason":null},"line":113,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":3440}
-{"testID":86,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3442}
-{"suite":{"id":87,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"suite","time":3721}
-{"test":{"id":88,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart","suiteID":87,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3721}
-{"suite":{"id":89,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"suite","time":4025}
-{"test":{"id":90,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart","suiteID":89,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":4025}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:32907/AGcaL4HN-UI=/"}}]
+{"testID":62,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":2134}
+{"group":{"id":65,"suiteID":61,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":8,"line":null,"column":null,"url":null},"type":"group","time":2135}
+{"group":{"id":66,"suiteID":61,"parentID":65,"name":"ServicioDisponibilidad","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":21,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"group","time":2135}
+{"test":{"id":67,"name":"ServicioDisponibilidad CP-DIS-01 excluye casas ocupadas e inactivas","suiteID":61,"groupIDs":[65,66],"metadata":{"skip":false,"skipReason":null},"line":22,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":2135}
+{"testID":67,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2156}
+{"test":{"id":68,"name":"ServicioDisponibilidad CP-DIS-02 filtra por capacidad","suiteID":61,"groupIDs":[65,66],"metadata":{"skip":false,"skipReason":null},"line":30,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":2156}
+{"testID":68,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2159}
+{"test":{"id":69,"name":"ServicioDisponibilidad CP-DIS-03 la reserva cancelada no ocupa la casa","suiteID":61,"groupIDs":[65,66],"metadata":{"skip":false,"skipReason":null},"line":39,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":2159}
+{"testID":69,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2161}
+{"test":{"id":70,"name":"ServicioDisponibilidad CP-DIS-04 se puede excluir la propia reserva","suiteID":61,"groupIDs":[65,66],"metadata":{"skip":false,"skipReason":null},"line":49,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":2161}
+{"testID":70,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2164}
+{"test":{"id":71,"name":"ServicioDisponibilidad CP-DIS-05 sin resultados cuando nadie tiene capacidad","suiteID":61,"groupIDs":[65,66],"metadata":{"skip":false,"skipReason":null},"line":66,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":2164}
+{"testID":71,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2165}
+{"group":{"id":72,"suiteID":61,"parentID":65,"name":"ServicioReportes","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":76,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"group","time":2166}
+{"test":{"id":73,"name":"ServicioReportes CP-REP-01 totales por estado e ingresos","suiteID":61,"groupIDs":[65,72],"metadata":{"skip":false,"skipReason":null},"line":77,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":2166}
+{"testID":73,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2170}
+{"test":{"id":74,"name":"ServicioReportes CP-REP-02 ocupación mensual por casa (noviembre)","suiteID":61,"groupIDs":[65,72],"metadata":{"skip":false,"skipReason":null},"line":94,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":2170}
+{"testID":74,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2172}
+{"test":{"id":75,"name":"ServicioReportes CP-REP-03 reservas que cruzan de mes (octubre)","suiteID":61,"groupIDs":[65,72],"metadata":{"skip":false,"skipReason":null},"line":105,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/disponibilidad_reportes_test.dart"},"type":"testStart","time":2173}
+{"testID":75,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2174}
+{"testID":64,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":2236}
+{"group":{"id":76,"suiteID":63,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":8,"line":null,"column":null,"url":null},"type":"group","time":2236}
+{"group":{"id":77,"suiteID":63,"parentID":76,"name":"CP-TAR camino básico de calcular()","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":14,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"group","time":2236}
+{"test":{"id":78,"name":"CP-TAR camino básico de calcular() Camino 1: precio <= 0 lanza ArgumentError","suiteID":63,"groupIDs":[76,77],"metadata":{"skip":false,"skipReason":null},"line":15,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":2236}
+{"testID":78,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2248}
+{"test":{"id":79,"name":"CP-TAR camino básico de calcular() Camino 2: noches en temporada normal, sin descuento","suiteID":63,"groupIDs":[76,77],"metadata":{"skip":false,"skipReason":null},"line":25,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":2249}
+{"testID":79,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2251}
+{"test":{"id":80,"name":"CP-TAR camino básico de calcular() Camino 3: noches en temporada alta (+20 %)","suiteID":63,"groupIDs":[76,77],"metadata":{"skip":false,"skipReason":null},"line":34,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":2251}
+{"testID":80,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2252}
+{"test":{"id":81,"name":"CP-TAR camino básico de calcular() Camino 4: estadía de 7 noches con descuento del 10 %","suiteID":63,"groupIDs":[76,77],"metadata":{"skip":false,"skipReason":null},"line":43,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":2252}
+{"testID":81,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2253}
+{"test":{"id":82,"name":"CP-TAR camino básico de calcular() Camino 5: temporada alta mixta + descuento","suiteID":63,"groupIDs":[76,77],"metadata":{"skip":false,"skipReason":null},"line":52,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":2253}
+{"testID":82,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2254}
+{"group":{"id":83,"suiteID":63,"parentID":76,"name":"Valores límite","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":63,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"group","time":2255}
+{"test":{"id":84,"name":"Valores límite 6 noches no tienen descuento, 7 sí","suiteID":63,"groupIDs":[76,83],"metadata":{"skip":false,"skipReason":null},"line":64,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":2255}
+{"testID":84,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2256}
+{"test":{"id":85,"name":"Valores límite límites de temporada alta","suiteID":63,"groupIDs":[76,83],"metadata":{"skip":false,"skipReason":null},"line":78,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":2256}
+{"testID":85,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2257}
+{"test":{"id":86,"name":"Valores límite precio mínimo positivo (1) es válido","suiteID":63,"groupIDs":[76,83],"metadata":{"skip":false,"skipReason":null},"line":113,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/calculadora_tarifa_test.dart"},"type":"testStart","time":2257}
+{"testID":86,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2258}
+{"suite":{"id":87,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"suite","time":2558}
+{"test":{"id":88,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart","suiteID":87,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2558}
+{"suite":{"id":89,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"suite","time":2623}
+{"test":{"id":90,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart","suiteID":89,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":2623}
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:43745/28feN_GUepo=/"}}]
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:33757/Df2zqxsfnMY=/"}}]
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:37665/XGrPyPGmJqw=/"}}]
-{"testID":88,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4397}
-{"group":{"id":91,"suiteID":87,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":19,"line":null,"column":null,"url":null},"type":"group","time":4397}
-{"group":{"id":92,"suiteID":87,"parentID":91,"name":"RangoFechas","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":27,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"group","time":4397}
-{"test":{"id":93,"name":"RangoFechas calcula correctamente la cantidad de noches","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":28,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4397}
-{"testID":93,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4421}
-{"test":{"id":94,"name":"RangoFechas cuenta noches por fecha calendario aunque haya horas","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":39,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4421}
-{"testID":94,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4424}
-{"test":{"id":95,"name":"RangoFechas rechaza una fecha de salida anterior a la entrada","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":49,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4424}
-{"testID":95,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4428}
-{"test":{"id":96,"name":"RangoFechas rechaza fechas de entrada y salida iguales","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":59,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4428}
-{"testID":96,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4430}
-{"test":{"id":97,"name":"RangoFechas detecta solapamientos y permite entrada el día de salida","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":69,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4430}
-{"testID":97,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4432}
-{"test":{"id":98,"name":"RangoFechas igualdad y JSON","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":87,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4433}
-{"testID":98,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4438}
-{"group":{"id":99,"suiteID":87,"parentID":91,"name":"EstadoReserva","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":99,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"group","time":4438}
-{"test":{"id":100,"name":"EstadoReserva convierte pendiente desde JSON","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":100,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4438}
-{"testID":100,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4441}
-{"test":{"id":101,"name":"EstadoReserva convierte confirmada desde JSON","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":104,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4441}
-{"testID":101,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4444}
-{"test":{"id":102,"name":"EstadoReserva convierte en curso y finalizada desde JSON","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":114,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4444}
-{"testID":102,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4446}
-{"test":{"id":103,"name":"EstadoReserva convierte cancelada desde JSON","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":119,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4446}
-{"testID":103,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4448}
-{"test":{"id":104,"name":"EstadoReserva rechaza un tipo de estado desconocido","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":129,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4448}
-{"testID":104,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4451}
-{"test":{"id":105,"name":"EstadoReserva ida y vuelta JSON, igualdad y propiedades","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":136,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4451}
-{"testID":105,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4456}
-{"group":{"id":106,"suiteID":87,"parentID":91,"name":"Reserva","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":158,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"group","time":4456}
-{"test":{"id":107,"name":"Reserva crea una reserva correctamente","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":159,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4456}
-{"testID":107,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4460}
-{"test":{"id":108,"name":"Reserva convierte una reserva desde JSON (campos opcionales)","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":169,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4460}
-{"testID":108,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4464}
-{"test":{"id":109,"name":"Reserva rechaza rangoFechas o estado con formato inválido","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":186,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4464}
-{"testID":109,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4467}
-{"test":{"id":110,"name":"Reserva ida y vuelta JSON con pagos","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":209,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4467}
-{"testID":110,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4473}
-{"test":{"id":111,"name":"Reserva el saldo nunca es negativo","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":228,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4473}
-{"testID":111,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4476}
-{"test":{"id":112,"name":"Reserva copiarCon permite cambiar el estado","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":243,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4476}
-{"testID":112,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4478}
-{"test":{"id":113,"name":"Reserva rechaza un método de pago desconocido","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":252,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":4479}
-{"testID":113,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4481}
-{"testID":90,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4752}
-{"group":{"id":114,"suiteID":89,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":32,"line":null,"column":null,"url":null},"type":"group","time":4753}
-{"group":{"id":115,"suiteID":89,"parentID":114,"name":"Usuario (4 a 20 caracteres alfanuméricos)","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":7,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":4753}
-{"test":{"id":116,"name":"Usuario (4 a 20 caracteres alfanuméricos) CE válida: usuario alfanumérico","suiteID":89,"groupIDs":[114,115],"metadata":{"skip":false,"skipReason":null},"line":8,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4753}
-{"testID":116,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4771}
-{"test":{"id":117,"name":"Usuario (4 a 20 caracteres alfanuméricos) CE inválida: vacío","suiteID":89,"groupIDs":[114,115],"metadata":{"skip":false,"skipReason":null},"line":11,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4771}
-{"testID":117,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4773}
-{"test":{"id":118,"name":"Usuario (4 a 20 caracteres alfanuméricos) VL: 3 caracteres (inválido) / 4 caracteres (válido)","suiteID":89,"groupIDs":[114,115],"metadata":{"skip":false,"skipReason":null},"line":16,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4774}
-{"testID":118,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4776}
-{"test":{"id":119,"name":"Usuario (4 a 20 caracteres alfanuméricos) VL: 20 caracteres (válido) / 21 caracteres (inválido)","suiteID":89,"groupIDs":[114,115],"metadata":{"skip":false,"skipReason":null},"line":20,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4776}
-{"testID":119,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4778}
-{"test":{"id":120,"name":"Usuario (4 a 20 caracteres alfanuméricos) CE inválida: caracteres especiales","suiteID":89,"groupIDs":[114,115],"metadata":{"skip":false,"skipReason":null},"line":24,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4778}
-{"testID":120,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4780}
-{"group":{"id":121,"suiteID":89,"parentID":114,"name":"Contraseña (8 a 20 caracteres)","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":29,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":4780}
-{"test":{"id":122,"name":"Contraseña (8 a 20 caracteres) CE válida","suiteID":89,"groupIDs":[114,121],"metadata":{"skip":false,"skipReason":null},"line":30,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4781}
-{"testID":122,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4783}
-{"test":{"id":123,"name":"Contraseña (8 a 20 caracteres) CE inválida: vacía","suiteID":89,"groupIDs":[114,121],"metadata":{"skip":false,"skipReason":null},"line":31,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4783}
-{"testID":123,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4785}
-{"test":{"id":124,"name":"Contraseña (8 a 20 caracteres) VL: 7 / 8 caracteres","suiteID":89,"groupIDs":[114,121],"metadata":{"skip":false,"skipReason":null},"line":35,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4785}
-{"testID":124,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4787}
-{"test":{"id":125,"name":"Contraseña (8 a 20 caracteres) VL: 20 / 21 caracteres","suiteID":89,"groupIDs":[114,121],"metadata":{"skip":false,"skipReason":null},"line":39,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4787}
-{"testID":125,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4789}
-{"group":{"id":126,"suiteID":89,"parentID":114,"name":"Documento (6 a 10 dígitos)","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":45,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":4789}
-{"test":{"id":127,"name":"Documento (6 a 10 dígitos) CE válida","suiteID":89,"groupIDs":[114,126],"metadata":{"skip":false,"skipReason":null},"line":46,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4789}
-{"testID":127,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4792}
-{"test":{"id":128,"name":"Documento (6 a 10 dígitos) CE inválida: vacío","suiteID":89,"groupIDs":[114,126],"metadata":{"skip":false,"skipReason":null},"line":47,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4792}
-{"testID":128,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4794}
-{"test":{"id":129,"name":"Documento (6 a 10 dígitos) CE inválida: contiene letras","suiteID":89,"groupIDs":[114,126],"metadata":{"skip":false,"skipReason":null},"line":50,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4794}
-{"testID":129,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4797}
-{"test":{"id":130,"name":"Documento (6 a 10 dígitos) VL: 5 / 6 dígitos","suiteID":89,"groupIDs":[114,126],"metadata":{"skip":false,"skipReason":null},"line":53,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4797}
-{"testID":130,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4799}
-{"test":{"id":131,"name":"Documento (6 a 10 dígitos) VL: 10 / 11 dígitos","suiteID":89,"groupIDs":[114,126],"metadata":{"skip":false,"skipReason":null},"line":57,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4799}
-{"testID":131,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4802}
-{"group":{"id":132,"suiteID":89,"parentID":114,"name":"Nombre de persona (3 a 60 letras)","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":63,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":4802}
-{"test":{"id":133,"name":"Nombre de persona (3 a 60 letras) CE válida con tildes y ñ","suiteID":89,"groupIDs":[114,132],"metadata":{"skip":false,"skipReason":null},"line":64,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4802}
-{"testID":133,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4804}
-{"test":{"id":134,"name":"Nombre de persona (3 a 60 letras) CE inválida: vacío","suiteID":89,"groupIDs":[114,132],"metadata":{"skip":false,"skipReason":null},"line":67,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4805}
-{"testID":134,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4808}
-{"test":{"id":135,"name":"Nombre de persona (3 a 60 letras) CE inválida: contiene números","suiteID":89,"groupIDs":[114,132],"metadata":{"skip":false,"skipReason":null},"line":70,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4808}
-{"testID":135,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4810}
-{"test":{"id":136,"name":"Nombre de persona (3 a 60 letras) VL: 2 / 3 caracteres","suiteID":89,"groupIDs":[114,132],"metadata":{"skip":false,"skipReason":null},"line":73,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4810}
-{"testID":136,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4812}
-{"test":{"id":137,"name":"Nombre de persona (3 a 60 letras) VL: 60 / 61 caracteres","suiteID":89,"groupIDs":[114,132],"metadata":{"skip":false,"skipReason":null},"line":77,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4812}
-{"testID":137,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4814}
-{"group":{"id":138,"suiteID":89,"parentID":114,"name":"Teléfono (10 dígitos, inicia en 3)","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":83,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":4815}
-{"test":{"id":139,"name":"Teléfono (10 dígitos, inicia en 3) CE válida","suiteID":89,"groupIDs":[114,138],"metadata":{"skip":false,"skipReason":null},"line":84,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4815}
-{"testID":139,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4818}
-{"test":{"id":140,"name":"Teléfono (10 dígitos, inicia en 3) CE inválida: vacío","suiteID":89,"groupIDs":[114,138],"metadata":{"skip":false,"skipReason":null},"line":85,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4818}
-{"testID":140,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4821}
-{"test":{"id":141,"name":"Teléfono (10 dígitos, inicia en 3) CE inválida: no numérico","suiteID":89,"groupIDs":[114,138],"metadata":{"skip":false,"skipReason":null},"line":88,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4821}
-{"testID":141,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4823}
-{"test":{"id":142,"name":"Teléfono (10 dígitos, inicia en 3) VL: 9 / 11 dígitos","suiteID":89,"groupIDs":[114,138],"metadata":{"skip":false,"skipReason":null},"line":91,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4823}
-{"testID":142,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4825}
-{"test":{"id":143,"name":"Teléfono (10 dígitos, inicia en 3) CE inválida: no inicia en 3","suiteID":89,"groupIDs":[114,138],"metadata":{"skip":false,"skipReason":null},"line":95,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4825}
-{"testID":143,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4827}
-{"group":{"id":144,"suiteID":89,"parentID":114,"name":"Correo electrónico","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":100,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":4827}
-{"test":{"id":145,"name":"Correo electrónico CE válida","suiteID":89,"groupIDs":[114,144],"metadata":{"skip":false,"skipReason":null},"line":101,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4827}
-{"testID":145,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4830}
-{"test":{"id":146,"name":"Correo electrónico CE inválida: vacío","suiteID":89,"groupIDs":[114,144],"metadata":{"skip":false,"skipReason":null},"line":105,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4831}
-{"testID":146,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4832}
-{"test":{"id":147,"name":"Correo electrónico CE inválida: sin arroba / sin dominio","suiteID":89,"groupIDs":[114,144],"metadata":{"skip":false,"skipReason":null},"line":108,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4833}
-{"testID":147,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4835}
-{"group":{"id":148,"suiteID":89,"parentID":114,"name":"Nombre de casa (3 a 50 caracteres)","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":115,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":4835}
-{"test":{"id":149,"name":"Nombre de casa (3 a 50 caracteres) CE válida","suiteID":89,"groupIDs":[114,148],"metadata":{"skip":false,"skipReason":null},"line":116,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4835}
-{"testID":149,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4837}
-{"test":{"id":150,"name":"Nombre de casa (3 a 50 caracteres) VL: 2 / 3 / 50 / 51 caracteres","suiteID":89,"groupIDs":[114,148],"metadata":{"skip":false,"skipReason":null},"line":117,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4837}
-{"testID":150,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4839}
-{"group":{"id":151,"suiteID":89,"parentID":114,"name":"Entero en rango","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":125,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":4839}
-{"test":{"id":152,"name":"Entero en rango CE válida","suiteID":89,"groupIDs":[114,151],"metadata":{"skip":false,"skipReason":null},"line":129,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4839}
-{"testID":152,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4842}
-{"test":{"id":153,"name":"Entero en rango CE inválida: vacío / no numérico / decimal","suiteID":89,"groupIDs":[114,151],"metadata":{"skip":false,"skipReason":null},"line":130,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4842}
-{"testID":153,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4845}
-{"test":{"id":154,"name":"Entero en rango VL: 0 / 1 / 30 / 31","suiteID":89,"groupIDs":[114,151],"metadata":{"skip":false,"skipReason":null},"line":135,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":4845}
-{"testID":154,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4847}
-{"suite":{"id":155,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"suite","time":5074}
-{"test":{"id":156,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart","suiteID":155,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":5074}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:33661/8G7Vm9rshrg=/"}}]
+{"testID":88,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":2940}
+{"group":{"id":91,"suiteID":87,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":19,"line":null,"column":null,"url":null},"type":"group","time":2941}
+{"group":{"id":92,"suiteID":87,"parentID":91,"name":"RangoFechas","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":27,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"group","time":2941}
+{"test":{"id":93,"name":"RangoFechas calcula correctamente la cantidad de noches","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":28,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2941}
+{"testID":93,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2954}
+{"test":{"id":94,"name":"RangoFechas cuenta noches por fecha calendario aunque haya horas","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":39,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2954}
+{"testID":94,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2955}
+{"test":{"id":95,"name":"RangoFechas rechaza una fecha de salida anterior a la entrada","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":49,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2955}
+{"testID":95,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2957}
+{"test":{"id":96,"name":"RangoFechas rechaza fechas de entrada y salida iguales","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":59,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2957}
+{"testID":96,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2959}
+{"test":{"id":97,"name":"RangoFechas detecta solapamientos y permite entrada el día de salida","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":69,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2959}
+{"testID":97,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2961}
+{"test":{"id":98,"name":"RangoFechas igualdad y JSON","suiteID":87,"groupIDs":[91,92],"metadata":{"skip":false,"skipReason":null},"line":87,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2961}
+{"testID":98,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2963}
+{"group":{"id":99,"suiteID":87,"parentID":91,"name":"EstadoReserva","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":99,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"group","time":2963}
+{"test":{"id":100,"name":"EstadoReserva convierte pendiente desde JSON","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":100,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2963}
+{"testID":100,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2965}
+{"test":{"id":101,"name":"EstadoReserva convierte confirmada desde JSON","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":104,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2965}
+{"testID":101,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2966}
+{"test":{"id":102,"name":"EstadoReserva convierte en curso y finalizada desde JSON","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":114,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2966}
+{"testID":102,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2967}
+{"test":{"id":103,"name":"EstadoReserva convierte cancelada desde JSON","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":119,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2967}
+{"testID":103,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2969}
+{"test":{"id":104,"name":"EstadoReserva rechaza un tipo de estado desconocido","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":129,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2969}
+{"testID":104,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2970}
+{"test":{"id":105,"name":"EstadoReserva ida y vuelta JSON, igualdad y propiedades","suiteID":87,"groupIDs":[91,99],"metadata":{"skip":false,"skipReason":null},"line":136,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2970}
+{"testID":105,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2972}
+{"group":{"id":106,"suiteID":87,"parentID":91,"name":"Reserva","metadata":{"skip":false,"skipReason":null},"testCount":7,"line":158,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"group","time":2973}
+{"test":{"id":107,"name":"Reserva crea una reserva correctamente","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":159,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2973}
+{"testID":107,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2975}
+{"test":{"id":108,"name":"Reserva convierte una reserva desde JSON (campos opcionales)","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":169,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2975}
+{"testID":108,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2976}
+{"test":{"id":109,"name":"Reserva rechaza rangoFechas o estado con formato inválido","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":186,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2977}
+{"testID":109,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2978}
+{"test":{"id":110,"name":"Reserva ida y vuelta JSON con pagos","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":209,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2978}
+{"testID":110,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2981}
+{"test":{"id":111,"name":"Reserva el saldo nunca es negativo","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":228,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2981}
+{"testID":111,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2982}
+{"test":{"id":112,"name":"Reserva copiarCon permite cambiar el estado","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":243,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2982}
+{"testID":112,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2983}
+{"test":{"id":113,"name":"Reserva rechaza un método de pago desconocido","suiteID":87,"groupIDs":[91,106],"metadata":{"skip":false,"skipReason":null},"line":252,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/reserva_test.dart"},"type":"testStart","time":2984}
+{"testID":113,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":2985}
+{"testID":90,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3062}
+{"group":{"id":114,"suiteID":89,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":32,"line":null,"column":null,"url":null},"type":"group","time":3063}
+{"group":{"id":115,"suiteID":89,"parentID":114,"name":"Usuario (4 a 20 caracteres alfanuméricos)","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":7,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":3063}
+{"test":{"id":116,"name":"Usuario (4 a 20 caracteres alfanuméricos) CE válida: usuario alfanumérico","suiteID":89,"groupIDs":[114,115],"metadata":{"skip":false,"skipReason":null},"line":8,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3063}
+{"testID":116,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3072}
+{"test":{"id":117,"name":"Usuario (4 a 20 caracteres alfanuméricos) CE inválida: vacío","suiteID":89,"groupIDs":[114,115],"metadata":{"skip":false,"skipReason":null},"line":11,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3073}
+{"testID":117,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3074}
+{"test":{"id":118,"name":"Usuario (4 a 20 caracteres alfanuméricos) VL: 3 caracteres (inválido) / 4 caracteres (válido)","suiteID":89,"groupIDs":[114,115],"metadata":{"skip":false,"skipReason":null},"line":16,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3074}
+{"testID":118,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3075}
+{"test":{"id":119,"name":"Usuario (4 a 20 caracteres alfanuméricos) VL: 20 caracteres (válido) / 21 caracteres (inválido)","suiteID":89,"groupIDs":[114,115],"metadata":{"skip":false,"skipReason":null},"line":20,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3075}
+{"testID":119,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3076}
+{"test":{"id":120,"name":"Usuario (4 a 20 caracteres alfanuméricos) CE inválida: caracteres especiales","suiteID":89,"groupIDs":[114,115],"metadata":{"skip":false,"skipReason":null},"line":24,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3076}
+{"testID":120,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3077}
+{"group":{"id":121,"suiteID":89,"parentID":114,"name":"Contraseña (8 a 20 caracteres)","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":29,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":3077}
+{"test":{"id":122,"name":"Contraseña (8 a 20 caracteres) CE válida","suiteID":89,"groupIDs":[114,121],"metadata":{"skip":false,"skipReason":null},"line":30,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3077}
+{"testID":122,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3078}
+{"test":{"id":123,"name":"Contraseña (8 a 20 caracteres) CE inválida: vacía","suiteID":89,"groupIDs":[114,121],"metadata":{"skip":false,"skipReason":null},"line":31,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3079}
+{"testID":123,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3080}
+{"test":{"id":124,"name":"Contraseña (8 a 20 caracteres) VL: 7 / 8 caracteres","suiteID":89,"groupIDs":[114,121],"metadata":{"skip":false,"skipReason":null},"line":35,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3080}
+{"testID":124,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3081}
+{"test":{"id":125,"name":"Contraseña (8 a 20 caracteres) VL: 20 / 21 caracteres","suiteID":89,"groupIDs":[114,121],"metadata":{"skip":false,"skipReason":null},"line":39,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3081}
+{"testID":125,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3082}
+{"group":{"id":126,"suiteID":89,"parentID":114,"name":"Documento (6 a 10 dígitos)","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":45,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":3082}
+{"test":{"id":127,"name":"Documento (6 a 10 dígitos) CE válida","suiteID":89,"groupIDs":[114,126],"metadata":{"skip":false,"skipReason":null},"line":46,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3082}
+{"testID":127,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3083}
+{"test":{"id":128,"name":"Documento (6 a 10 dígitos) CE inválida: vacío","suiteID":89,"groupIDs":[114,126],"metadata":{"skip":false,"skipReason":null},"line":47,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3083}
+{"testID":128,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3085}
+{"test":{"id":129,"name":"Documento (6 a 10 dígitos) CE inválida: contiene letras","suiteID":89,"groupIDs":[114,126],"metadata":{"skip":false,"skipReason":null},"line":50,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3085}
+{"testID":129,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3086}
+{"test":{"id":130,"name":"Documento (6 a 10 dígitos) VL: 5 / 6 dígitos","suiteID":89,"groupIDs":[114,126],"metadata":{"skip":false,"skipReason":null},"line":53,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3086}
+{"testID":130,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3087}
+{"test":{"id":131,"name":"Documento (6 a 10 dígitos) VL: 10 / 11 dígitos","suiteID":89,"groupIDs":[114,126],"metadata":{"skip":false,"skipReason":null},"line":57,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3087}
+{"testID":131,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3089}
+{"group":{"id":132,"suiteID":89,"parentID":114,"name":"Nombre de persona (3 a 60 letras)","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":63,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":3089}
+{"test":{"id":133,"name":"Nombre de persona (3 a 60 letras) CE válida con tildes y ñ","suiteID":89,"groupIDs":[114,132],"metadata":{"skip":false,"skipReason":null},"line":64,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3089}
+{"testID":133,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3090}
+{"test":{"id":134,"name":"Nombre de persona (3 a 60 letras) CE inválida: vacío","suiteID":89,"groupIDs":[114,132],"metadata":{"skip":false,"skipReason":null},"line":67,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3090}
+{"testID":134,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3091}
+{"test":{"id":135,"name":"Nombre de persona (3 a 60 letras) CE inválida: contiene números","suiteID":89,"groupIDs":[114,132],"metadata":{"skip":false,"skipReason":null},"line":70,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3091}
+{"testID":135,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3093}
+{"test":{"id":136,"name":"Nombre de persona (3 a 60 letras) VL: 2 / 3 caracteres","suiteID":89,"groupIDs":[114,132],"metadata":{"skip":false,"skipReason":null},"line":73,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3093}
+{"testID":136,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3094}
+{"test":{"id":137,"name":"Nombre de persona (3 a 60 letras) VL: 60 / 61 caracteres","suiteID":89,"groupIDs":[114,132],"metadata":{"skip":false,"skipReason":null},"line":77,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3094}
+{"testID":137,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3095}
+{"group":{"id":138,"suiteID":89,"parentID":114,"name":"Teléfono (10 dígitos, inicia en 3)","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":83,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":3095}
+{"test":{"id":139,"name":"Teléfono (10 dígitos, inicia en 3) CE válida","suiteID":89,"groupIDs":[114,138],"metadata":{"skip":false,"skipReason":null},"line":84,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3095}
+{"testID":139,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3097}
+{"test":{"id":140,"name":"Teléfono (10 dígitos, inicia en 3) CE inválida: vacío","suiteID":89,"groupIDs":[114,138],"metadata":{"skip":false,"skipReason":null},"line":85,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3097}
+{"testID":140,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3098}
+{"test":{"id":141,"name":"Teléfono (10 dígitos, inicia en 3) CE inválida: no numérico","suiteID":89,"groupIDs":[114,138],"metadata":{"skip":false,"skipReason":null},"line":88,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3098}
+{"testID":141,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3099}
+{"test":{"id":142,"name":"Teléfono (10 dígitos, inicia en 3) VL: 9 / 11 dígitos","suiteID":89,"groupIDs":[114,138],"metadata":{"skip":false,"skipReason":null},"line":91,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3099}
+{"testID":142,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3100}
+{"test":{"id":143,"name":"Teléfono (10 dígitos, inicia en 3) CE inválida: no inicia en 3","suiteID":89,"groupIDs":[114,138],"metadata":{"skip":false,"skipReason":null},"line":95,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3101}
+{"testID":143,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3101}
+{"group":{"id":144,"suiteID":89,"parentID":114,"name":"Correo electrónico","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":100,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":3102}
+{"test":{"id":145,"name":"Correo electrónico CE válida","suiteID":89,"groupIDs":[114,144],"metadata":{"skip":false,"skipReason":null},"line":101,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3102}
+{"testID":145,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3103}
+{"test":{"id":146,"name":"Correo electrónico CE inválida: vacío","suiteID":89,"groupIDs":[114,144],"metadata":{"skip":false,"skipReason":null},"line":105,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3103}
+{"testID":146,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3105}
+{"test":{"id":147,"name":"Correo electrónico CE inválida: sin arroba / sin dominio","suiteID":89,"groupIDs":[114,144],"metadata":{"skip":false,"skipReason":null},"line":108,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3105}
+{"testID":147,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3107}
+{"group":{"id":148,"suiteID":89,"parentID":114,"name":"Nombre de casa (3 a 50 caracteres)","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":115,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":3107}
+{"test":{"id":149,"name":"Nombre de casa (3 a 50 caracteres) CE válida","suiteID":89,"groupIDs":[114,148],"metadata":{"skip":false,"skipReason":null},"line":116,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3107}
+{"testID":149,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3108}
+{"test":{"id":150,"name":"Nombre de casa (3 a 50 caracteres) VL: 2 / 3 / 50 / 51 caracteres","suiteID":89,"groupIDs":[114,148],"metadata":{"skip":false,"skipReason":null},"line":117,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3108}
+{"testID":150,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3109}
+{"group":{"id":151,"suiteID":89,"parentID":114,"name":"Entero en rango","metadata":{"skip":false,"skipReason":null},"testCount":3,"line":125,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"group","time":3109}
+{"test":{"id":152,"name":"Entero en rango CE válida","suiteID":89,"groupIDs":[114,151],"metadata":{"skip":false,"skipReason":null},"line":129,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3109}
+{"testID":152,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3111}
+{"test":{"id":153,"name":"Entero en rango CE inválida: vacío / no numérico / decimal","suiteID":89,"groupIDs":[114,151],"metadata":{"skip":false,"skipReason":null},"line":130,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3111}
+{"testID":153,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3112}
+{"test":{"id":154,"name":"Entero en rango VL: 0 / 1 / 30 / 31","suiteID":89,"groupIDs":[114,151],"metadata":{"skip":false,"skipReason":null},"line":135,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/validadores_test.dart"},"type":"testStart","time":3112}
+{"testID":154,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3113}
+{"suite":{"id":155,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"suite","time":3368}
+{"test":{"id":156,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart","suiteID":155,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3368}
+{"suite":{"id":157,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"suite","time":3536}
+{"test":{"id":158,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart","suiteID":157,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":3537}
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:34627/QcjZC4tr5BA=/"}}]
-{"suite":{"id":157,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"suite","time":5518}
-{"test":{"id":158,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart","suiteID":157,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":5518}
-{"testID":156,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":5662}
-{"group":{"id":159,"suiteID":155,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":9,"line":null,"column":null,"url":null},"type":"group","time":5662}
-{"test":{"id":160,"name":"carga reservas desde JSON local","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":38,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":5662}
-{"testID":160,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5703}
-{"test":{"id":161,"name":"obtiene solamente reservas pendientes y por casa","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":47,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":5704}
-{"testID":161,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5708}
-{"test":{"id":162,"name":"lee la semilla una sola vez y luego usa el almacenamiento","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":55,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":5708}
-{"testID":162,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5712}
-{"test":{"id":163,"name":"guarda, reemplaza, elimina y persiste cambios","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":79,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":5712}
-{"testID":163,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5733}
-{"test":{"id":164,"name":"genera identificadores consecutivos","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":103,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":5734}
-{"testID":164,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5740}
-{"test":{"id":165,"name":"rechaza un archivo que no contiene una lista","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":108,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":5740}
-{"testID":165,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5749}
-{"test":{"id":166,"name":"rechaza elementos que no son objetos","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":113,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":5750}
-{"testID":166,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5768}
-{"test":{"id":167,"name":"rechaza JSON mal formado","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":118,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":5768}
-{"testID":167,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5775}
-{"test":{"id":168,"name":"AlmacenamientoEnMemoria elimina claves","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":123,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":5776}
-{"testID":168,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5778}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:46651/TvFYZ_ddEbE=/"}}]
+{"testID":156,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3740}
+{"group":{"id":159,"suiteID":155,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":9,"line":null,"column":null,"url":null},"type":"group","time":3740}
+{"test":{"id":160,"name":"carga reservas desde JSON local","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":38,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":3740}
+{"testID":160,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3755}
+{"test":{"id":161,"name":"obtiene solamente reservas pendientes y por casa","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":47,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":3755}
+{"testID":161,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3757}
+{"test":{"id":162,"name":"lee la semilla una sola vez y luego usa el almacenamiento","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":55,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":3757}
+{"testID":162,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3758}
+{"test":{"id":163,"name":"guarda, reemplaza, elimina y persiste cambios","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":79,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":3759}
+{"testID":163,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3766}
+{"test":{"id":164,"name":"genera identificadores consecutivos","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":103,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":3766}
+{"testID":164,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3768}
+{"test":{"id":165,"name":"rechaza un archivo que no contiene una lista","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":108,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":3768}
+{"testID":165,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3772}
+{"test":{"id":166,"name":"rechaza elementos que no son objetos","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":113,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":3772}
+{"testID":166,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3773}
+{"test":{"id":167,"name":"rechaza JSON mal formado","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":118,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":3773}
+{"testID":167,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3776}
+{"test":{"id":168,"name":"AlmacenamientoEnMemoria elimina claves","suiteID":155,"groupIDs":[159],"metadata":{"skip":false,"skipReason":null},"line":123,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/repositorios_locales_test.dart"},"type":"testStart","time":3776}
+{"testID":168,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3777}
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:39083/26Hyr83NKCY=/"}}]
-{"testID":158,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":6070}
-{"group":{"id":169,"suiteID":157,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":14,"line":null,"column":null,"url":null},"type":"group","time":6071}
-{"test":{"id":170,"name":"CP-CAS-01 registra una casa válida","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":34,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6071}
-{"testID":170,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6104}
-{"test":{"id":171,"name":"CP-CAS-02 nombre vacío","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":42,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6104}
-{"testID":171,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6114}
-{"test":{"id":172,"name":"CP-CAS-03 nombre de 51 caracteres","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":46,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6114}
-{"testID":172,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6117}
-{"test":{"id":173,"name":"CP-CAS-04 municipio vacío","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":50,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6117}
-{"testID":173,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6120}
-{"test":{"id":174,"name":"CP-CAS-05 capacidad 0 y 31 (fuera de rango)","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":54,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6121}
-{"testID":174,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6123}
-{"test":{"id":175,"name":"CP-CAS-06 capacidad no numérica","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":59,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6123}
-{"testID":175,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6127}
-{"test":{"id":176,"name":"CP-CAS-07 precio 49.999 y 5.000.001 (fuera de rango)","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":66,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6127}
-{"testID":176,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6130}
-{"test":{"id":177,"name":"CP-CAS-08 valores límite válidos","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":71,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6130}
-{"testID":177,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6134}
-{"test":{"id":178,"name":"CP-CAS-09 nombre duplicado (sin distinguir mayúsculas)","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":83,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6134}
-{"testID":178,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6138}
-{"test":{"id":179,"name":"CP-CAS-10 actualiza una casa existente","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":90,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6138}
-{"testID":179,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6143}
-{"test":{"id":180,"name":"CP-CAS-11 actualizar una casa inexistente","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":100,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6143}
-{"testID":180,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6146}
-{"test":{"id":181,"name":"CP-CAS-12 no permite desactivar una casa con reservas activas","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":107,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6146}
-{"testID":181,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6161}
-{"test":{"id":182,"name":"CP-CAS-13 desactiva y reactiva una casa sin reservas activas","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":114,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6161}
-{"testID":182,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6167}
-{"test":{"id":183,"name":"CP-CAS-14 cambiar el estado de una casa inexistente","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":126,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":6167}
-{"testID":183,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6170}
-{"suite":{"id":184,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"suite","time":6421}
-{"test":{"id":185,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart","suiteID":184,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6421}
-{"suite":{"id":186,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"suite","time":6783}
-{"test":{"id":187,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart","suiteID":186,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6784}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:40477/HCXutIp-OX8=/"}}]
+{"testID":158,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3893}
+{"group":{"id":169,"suiteID":157,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":14,"line":null,"column":null,"url":null},"type":"group","time":3894}
+{"test":{"id":170,"name":"CP-CAS-01 registra una casa válida","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":34,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3894}
+{"testID":170,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3915}
+{"test":{"id":171,"name":"CP-CAS-02 nombre vacío","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":42,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3915}
+{"testID":171,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3922}
+{"test":{"id":172,"name":"CP-CAS-03 nombre de 51 caracteres","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":46,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3923}
+{"testID":172,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3925}
+{"test":{"id":173,"name":"CP-CAS-04 municipio vacío","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":50,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3925}
+{"testID":173,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3926}
+{"test":{"id":174,"name":"CP-CAS-05 capacidad 0 y 31 (fuera de rango)","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":54,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3927}
+{"testID":174,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3928}
+{"test":{"id":175,"name":"CP-CAS-06 capacidad no numérica","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":59,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3928}
+{"testID":175,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3930}
+{"test":{"id":176,"name":"CP-CAS-07 precio 49.999 y 5.000.001 (fuera de rango)","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":66,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3930}
+{"testID":176,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3931}
+{"test":{"id":177,"name":"CP-CAS-08 valores límite válidos","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":71,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3931}
+{"testID":177,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3933}
+{"test":{"id":178,"name":"CP-CAS-09 nombre duplicado (sin distinguir mayúsculas)","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":83,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3933}
+{"testID":178,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3935}
+{"test":{"id":179,"name":"CP-CAS-10 actualiza una casa existente","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":90,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3935}
+{"testID":179,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3937}
+{"test":{"id":180,"name":"CP-CAS-11 actualizar una casa inexistente","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":100,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3938}
+{"testID":180,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3939}
+{"test":{"id":181,"name":"CP-CAS-12 no permite desactivar una casa con reservas activas","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":107,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3939}
+{"testID":181,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3946}
+{"test":{"id":182,"name":"CP-CAS-13 desactiva y reactiva una casa sin reservas activas","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":114,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3946}
+{"testID":182,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3949}
+{"test":{"id":183,"name":"CP-CAS-14 cambiar el estado de una casa inexistente","suiteID":157,"groupIDs":[169],"metadata":{"skip":false,"skipReason":null},"line":126,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_casas_test.dart"},"type":"testStart","time":3949}
+{"testID":183,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":3951}
+{"suite":{"id":184,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"suite","time":4150}
+{"test":{"id":185,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart","suiteID":184,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":4150}
+{"suite":{"id":186,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"suite","time":4368}
+{"test":{"id":187,"name":"loading /home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart","suiteID":186,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":4369}
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:45967/D-U6DT__Ggg=/"}}]
-{"testID":185,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":7047}
-{"group":{"id":188,"suiteID":184,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":15,"line":null,"column":null,"url":null},"type":"group","time":7048}
-{"test":{"id":189,"name":"CP-CLI-01 registra un cliente válido","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":32,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7048}
-{"testID":189,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7089}
-{"test":{"id":190,"name":"CP-CLI-02 documento vacío","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":42,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7090}
-{"testID":190,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7099}
-{"test":{"id":191,"name":"CP-CLI-03 documento con letras","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":46,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7099}
-{"testID":191,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7103}
-{"test":{"id":192,"name":"CP-CLI-04 documento de 5 dígitos","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":53,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7103}
-{"testID":192,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7106}
-{"test":{"id":193,"name":"CP-CLI-05 documento de 11 dígitos","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":60,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7106}
-{"testID":193,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7109}
-{"test":{"id":194,"name":"CP-CLI-06 nombre con números","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":67,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7109}
-{"testID":194,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7111}
-{"test":{"id":195,"name":"CP-CLI-07 nombre de 2 caracteres","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":74,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7112}
-{"testID":195,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7114}
-{"test":{"id":196,"name":"CP-CLI-08 teléfono de 9 dígitos","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":78,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7114}
-{"testID":196,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7117}
-{"test":{"id":197,"name":"CP-CLI-09 teléfono que no inicia en 3","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":85,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7117}
-{"testID":197,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7119}
-{"test":{"id":198,"name":"CP-CLI-10 correo sin dominio","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":92,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7119}
-{"testID":198,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7122}
-{"test":{"id":199,"name":"CP-CLI-11 documento duplicado","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":96,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7122}
-{"testID":199,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7125}
-{"test":{"id":200,"name":"CP-CLI-12 valores límite válidos (6 y 10 dígitos, nombre de 3)","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":109,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7125}
-{"testID":200,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7129}
-{"test":{"id":201,"name":"CP-CLI-13 actualiza un cliente y conserva su id","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":122,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7130}
-{"testID":201,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7133}
-{"test":{"id":202,"name":"CP-CLI-14 actualizar un cliente inexistente","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":135,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7133}
-{"testID":202,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7136}
-{"test":{"id":203,"name":"CP-CLI-15 busca por nombre o documento y ordena","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":142,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":7136}
-{"testID":203,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7141}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:34593/hoZSRkFS7iE=/"}}]
+{"testID":185,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4493}
+{"group":{"id":188,"suiteID":184,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":15,"line":null,"column":null,"url":null},"type":"group","time":4494}
+{"test":{"id":189,"name":"CP-CLI-01 registra un cliente válido","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":32,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4494}
+{"testID":189,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4525}
+{"test":{"id":190,"name":"CP-CLI-02 documento vacío","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":42,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4525}
+{"testID":190,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4532}
+{"test":{"id":191,"name":"CP-CLI-03 documento con letras","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":46,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4532}
+{"testID":191,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4536}
+{"test":{"id":192,"name":"CP-CLI-04 documento de 5 dígitos","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":53,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4536}
+{"testID":192,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4538}
+{"test":{"id":193,"name":"CP-CLI-05 documento de 11 dígitos","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":60,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4538}
+{"testID":193,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4540}
+{"test":{"id":194,"name":"CP-CLI-06 nombre con números","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":67,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4540}
+{"testID":194,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4542}
+{"test":{"id":195,"name":"CP-CLI-07 nombre de 2 caracteres","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":74,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4542}
+{"testID":195,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4544}
+{"test":{"id":196,"name":"CP-CLI-08 teléfono de 9 dígitos","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":78,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4544}
+{"testID":196,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4545}
+{"test":{"id":197,"name":"CP-CLI-09 teléfono que no inicia en 3","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":85,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4545}
+{"testID":197,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4547}
+{"test":{"id":198,"name":"CP-CLI-10 correo sin dominio","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":92,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4547}
+{"testID":198,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4549}
+{"test":{"id":199,"name":"CP-CLI-11 documento duplicado","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":96,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4550}
+{"testID":199,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4553}
+{"test":{"id":200,"name":"CP-CLI-12 valores límite válidos (6 y 10 dígitos, nombre de 3)","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":109,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4553}
+{"testID":200,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4555}
+{"test":{"id":201,"name":"CP-CLI-13 actualiza un cliente y conserva su id","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":122,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4555}
+{"testID":201,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4558}
+{"test":{"id":202,"name":"CP-CLI-14 actualizar un cliente inexistente","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":135,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4559}
+{"testID":202,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4560}
+{"test":{"id":203,"name":"CP-CLI-15 busca por nombre o documento y ordena","suiteID":184,"groupIDs":[188],"metadata":{"skip":false,"skipReason":null},"line":142,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/servicio_clientes_test.dart"},"type":"testStart","time":4560}
+{"testID":203,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4563}
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:35087/SjgaLFoKYyc=/"}}]
-{"testID":187,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":7405}
-{"group":{"id":204,"suiteID":186,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":11,"line":null,"column":null,"url":null},"type":"group","time":7405}
-{"group":{"id":205,"suiteID":186,"parentID":204,"name":"formatearFecha / leerFechaTexto","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":6,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"group","time":7405}
-{"test":{"id":206,"name":"formatearFecha / leerFechaTexto formatea con ceros a la izquierda","suiteID":186,"groupIDs":[204,205],"metadata":{"skip":false,"skipReason":null},"line":7,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7405}
-{"testID":206,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7427}
-{"test":{"id":207,"name":"formatearFecha / leerFechaTexto lee una fecha válida","suiteID":186,"groupIDs":[204,205],"metadata":{"skip":false,"skipReason":null},"line":10,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7428}
-{"testID":207,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7432}
-{"test":{"id":208,"name":"formatearFecha / leerFechaTexto rechaza fechas inexistentes o mal escritas","suiteID":186,"groupIDs":[204,205],"metadata":{"skip":false,"skipReason":null},"line":14,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7432}
-{"testID":208,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7435}
-{"test":{"id":209,"name":"formatearFecha / leerFechaTexto acepta 29 de febrero en año bisiesto","suiteID":186,"groupIDs":[204,205],"metadata":{"skip":false,"skipReason":null},"line":22,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7436}
-{"testID":209,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7438}
-{"group":{"id":210,"suiteID":186,"parentID":204,"name":"formatearPesos","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":27,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"group","time":7438}
-{"test":{"id":211,"name":"formatearPesos agrega separadores de miles","suiteID":186,"groupIDs":[204,210],"metadata":{"skip":false,"skipReason":null},"line":28,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7438}
-{"testID":211,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7440}
-{"group":{"id":212,"suiteID":186,"parentID":204,"name":"lectura de JSON","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":37,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"group","time":7441}
-{"test":{"id":213,"name":"lectura de JSON leerTexto exige texto no vacío","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":38,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7441}
-{"testID":213,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7444}
-{"test":{"id":214,"name":"lectura de JSON leerEntero acepta enteros y valores por defecto","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":43,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7444}
-{"testID":214,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7447}
-{"test":{"id":215,"name":"lectura de JSON leerBooleano y leerTextoOpcional","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":50,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7447}
-{"testID":215,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7450}
-{"test":{"id":216,"name":"lectura de JSON leerFecha valida ISO-8601","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":60,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7450}
-{"testID":216,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7453}
-{"test":{"id":217,"name":"lectura de JSON leerListaDeObjetos","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":71,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7453}
-{"testID":217,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7457}
-{"test":{"id":218,"name":"lectura de JSON CampoInvalido describe el error","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":92,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":7457}
-{"testID":218,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7459}
-{"suite":{"id":219,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"suite","time":7714}
-{"test":{"id":220,"name":"loading /home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart","suiteID":219,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":7714}
-{"suite":{"id":221,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart"},"type":"suite","time":8112}
-{"test":{"id":222,"name":"loading /home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart","suiteID":221,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":8112}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:40367/HuKbT2f2hqM=/"}}]
+{"testID":187,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":4746}
+{"group":{"id":204,"suiteID":186,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":11,"line":null,"column":null,"url":null},"type":"group","time":4746}
+{"group":{"id":205,"suiteID":186,"parentID":204,"name":"formatearFecha / leerFechaTexto","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":6,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"group","time":4746}
+{"test":{"id":206,"name":"formatearFecha / leerFechaTexto formatea con ceros a la izquierda","suiteID":186,"groupIDs":[204,205],"metadata":{"skip":false,"skipReason":null},"line":7,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4746}
+{"testID":206,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4759}
+{"test":{"id":207,"name":"formatearFecha / leerFechaTexto lee una fecha válida","suiteID":186,"groupIDs":[204,205],"metadata":{"skip":false,"skipReason":null},"line":10,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4759}
+{"testID":207,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4761}
+{"test":{"id":208,"name":"formatearFecha / leerFechaTexto rechaza fechas inexistentes o mal escritas","suiteID":186,"groupIDs":[204,205],"metadata":{"skip":false,"skipReason":null},"line":14,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4762}
+{"testID":208,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4763}
+{"test":{"id":209,"name":"formatearFecha / leerFechaTexto acepta 29 de febrero en año bisiesto","suiteID":186,"groupIDs":[204,205],"metadata":{"skip":false,"skipReason":null},"line":22,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4763}
+{"testID":209,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4764}
+{"group":{"id":210,"suiteID":186,"parentID":204,"name":"formatearPesos","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":27,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"group","time":4765}
+{"test":{"id":211,"name":"formatearPesos agrega separadores de miles","suiteID":186,"groupIDs":[204,210],"metadata":{"skip":false,"skipReason":null},"line":28,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4765}
+{"testID":211,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4766}
+{"group":{"id":212,"suiteID":186,"parentID":204,"name":"lectura de JSON","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":37,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"group","time":4766}
+{"test":{"id":213,"name":"lectura de JSON leerTexto exige texto no vacío","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":38,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4766}
+{"testID":213,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4768}
+{"test":{"id":214,"name":"lectura de JSON leerEntero acepta enteros y valores por defecto","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":43,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4768}
+{"testID":214,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4769}
+{"test":{"id":215,"name":"lectura de JSON leerBooleano y leerTextoOpcional","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":50,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4770}
+{"testID":215,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4771}
+{"test":{"id":216,"name":"lectura de JSON leerFecha valida ISO-8601","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":60,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4771}
+{"testID":216,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4773}
+{"test":{"id":217,"name":"lectura de JSON leerListaDeObjetos","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":71,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4773}
+{"testID":217,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4775}
+{"test":{"id":218,"name":"lectura de JSON CampoInvalido describe el error","suiteID":186,"groupIDs":[204,212],"metadata":{"skip":false,"skipReason":null},"line":92,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/unit/formato_json_test.dart"},"type":"testStart","time":4775}
+{"testID":218,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":4776}
+{"suite":{"id":219,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"suite","time":4946}
+{"test":{"id":220,"name":"loading /home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart","suiteID":219,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":4947}
+{"suite":{"id":221,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart"},"type":"suite","time":5150}
+{"test":{"id":222,"name":"loading /home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart","suiteID":221,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":5150}
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:44795/3vOie_sGiz8=/"}}]
-{"testID":220,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":8404}
-{"group":{"id":223,"suiteID":219,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":8404}
-{"test":{"id":224,"name":"Login: muestra errores de campos obligatorios","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":19,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":8404}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:35881/HRbb2LRVr5M=/"}}]
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:40103/clhIlLHxOwA=/"}}]
-{"testID":222,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":8755}
-{"group":{"id":225,"suiteID":221,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":null,"column":null,"url":null},"type":"group","time":8755}
-{"test":{"id":226,"name":"CPI-D1 Nivel 1: App + autenticación real con repositorios stub","suiteID":221,"groupIDs":[225],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":76,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart"},"type":"testStart","time":8755}
-{"testID":224,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9508}
-{"test":{"id":227,"name":"Login: credenciales incorrectas muestran mensaje genérico","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":30,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":9508}
-{"testID":227,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9833}
-{"test":{"id":228,"name":"Login: el recepcionista no ve Casas ni Reportes","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":44,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":9833}
-{"testID":226,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10124}
-{"test":{"id":229,"name":"CPI-D2 Nivel 2: navegación entre secciones con stubs","suiteID":221,"groupIDs":[225],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":98,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart"},"type":"testStart","time":10124}
-{"testID":228,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10269}
-{"test":{"id":230,"name":"Cliente: valida los cuatro campos","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":60,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":10270}
-{"testID":230,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10545}
-{"test":{"id":231,"name":"Cliente: documento duplicado se informa al guardar","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":91,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":10546}
-{"testID":229,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10657}
-{"test":{"id":232,"name":"CPI-D3 Nivel 2: un fallo del repositorio se muestra al usuario","suiteID":221,"groupIDs":[225],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":128,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart"},"type":"testStart","time":10657}
-{"testID":231,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10797}
-{"test":{"id":233,"name":"Casa: valida capacidad y precio","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":124,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":10797}
-{"testID":232,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10909}
-{"test":{"id":234,"name":"CPI-D4 Nivel 3: stubs sustituidos por repositorios reales","suiteID":221,"groupIDs":[225],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":150,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart"},"type":"testStart","time":10909}
-{"testID":233,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11022}
-{"testID":234,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":11370}
-{"suite":{"id":235,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"suite","time":11574}
-{"test":{"id":236,"name":"loading /home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart","suiteID":235,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":11574}
-{"suite":{"id":237,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"suite","time":11877}
-{"test":{"id":238,"name":"loading /home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart","suiteID":237,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":11877}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:45879/PZRGkvpOEos=/"}}]
+{"testID":220,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":5544}
+{"group":{"id":223,"suiteID":219,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":6,"line":null,"column":null,"url":null},"type":"group","time":5544}
+{"test":{"id":224,"name":"Login: muestra errores de campos obligatorios","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":19,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":5544}
+{"testID":222,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":5608}
+{"group":{"id":225,"suiteID":221,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":null,"column":null,"url":null},"type":"group","time":5608}
+{"test":{"id":226,"name":"CPI-D1 Nivel 1: App + autenticación real con repositorios stub","suiteID":221,"groupIDs":[225],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":76,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart"},"type":"testStart","time":5609}
+{"testID":224,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6119}
+{"test":{"id":227,"name":"Login: credenciales incorrectas muestran mensaje genérico","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":30,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":6119}
+{"testID":227,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6312}
+{"test":{"id":228,"name":"Login: el recepcionista no ve Casas ni Reportes","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":44,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":6312}
+{"testID":226,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6384}
+{"test":{"id":229,"name":"CPI-D2 Nivel 2: navegación entre secciones con stubs","suiteID":221,"groupIDs":[225],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":98,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart"},"type":"testStart","time":6384}
+{"testID":228,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6570}
+{"test":{"id":230,"name":"Cliente: valida los cuatro campos","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":60,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":6570}
+{"testID":229,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6706}
+{"test":{"id":231,"name":"CPI-D3 Nivel 2: un fallo del repositorio se muestra al usuario","suiteID":221,"groupIDs":[225],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":128,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart"},"type":"testStart","time":6707}
+{"testID":230,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6744}
+{"test":{"id":232,"name":"Cliente: documento duplicado se informa al guardar","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":91,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":6745}
+{"testID":231,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6836}
+{"test":{"id":233,"name":"CPI-D4 Nivel 3: stubs sustituidos por repositorios reales","suiteID":221,"groupIDs":[225],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":150,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_descendente_test.dart"},"type":"testStart","time":6836}
+{"testID":232,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6901}
+{"test":{"id":234,"name":"Casa: valida capacidad y precio","suiteID":219,"groupIDs":[223],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":124,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/widget/formularios_test.dart"},"type":"testStart","time":6901}
+{"testID":234,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7052}
+{"testID":233,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7151}
+{"suite":{"id":235,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"suite","time":7395}
+{"test":{"id":236,"name":"loading /home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart","suiteID":235,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":7395}
+{"suite":{"id":237,"platform":"vm","path":"/home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"suite","time":7500}
+{"test":{"id":238,"name":"loading /home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart","suiteID":237,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":7501}
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:45793/r3wtvEotpaE=/"}}]
-{"testID":236,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":12175}
-{"group":{"id":239,"suiteID":235,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":null,"column":null,"url":null},"type":"group","time":12175}
-{"group":{"id":240,"suiteID":235,"parentID":239,"name":"Nivel 1: Almacenamiento + Repositorios","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":28,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"group","time":12175}
-{"test":{"id":241,"name":"Nivel 1: Almacenamiento + Repositorios CPI-A1 los tres repositorios cargan las semillas y las persisten","suiteID":235,"groupIDs":[239,240],"metadata":{"skip":false,"skipReason":null},"line":29,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"testStart","time":12175}
-{"testID":241,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12235}
-{"test":{"id":242,"name":"Nivel 1: Almacenamiento + Repositorios CPI-A2 las reservas referencian casas y clientes existentes","suiteID":235,"groupIDs":[239,240],"metadata":{"skip":false,"skipReason":null},"line":49,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"testStart","time":12235}
-{"testID":242,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12245}
-{"group":{"id":243,"suiteID":235,"parentID":239,"name":"Nivel 2: Repositorios + Servicios","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":66,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"group","time":12245}
-{"test":{"id":244,"name":"Nivel 2: Repositorios + Servicios CPI-A3 ServicioDisponibilidad usa reservas y casas reales","suiteID":235,"groupIDs":[239,243],"metadata":{"skip":false,"skipReason":null},"line":67,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"testStart","time":12245}
-{"testID":244,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12261}
-{"test":{"id":245,"name":"Nivel 2: Repositorios + Servicios CPI-A4 ServicioReservas integra clientes, casas y tarifa","suiteID":235,"groupIDs":[239,243],"metadata":{"skip":false,"skipReason":null},"line":79,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"testStart","time":12261}
-{"testID":245,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12280}
-{"group":{"id":246,"suiteID":235,"parentID":239,"name":"Nivel 3: Servicios + persistencia","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":114,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"group","time":12281}
-{"test":{"id":247,"name":"Nivel 3: Servicios + persistencia CPI-A5 el ciclo completo de una reserva queda persistido","suiteID":235,"groupIDs":[239,246],"metadata":{"skip":false,"skipReason":null},"line":115,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"testStart","time":12281}
-{"testID":247,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":12294}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:44073/tyOvDXDfGWw=/"}}]
+{"testID":236,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":7841}
+{"group":{"id":239,"suiteID":235,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":null,"column":null,"url":null},"type":"group","time":7841}
+{"group":{"id":240,"suiteID":235,"parentID":239,"name":"Nivel 1: Almacenamiento + Repositorios","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":28,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"group","time":7841}
+{"test":{"id":241,"name":"Nivel 1: Almacenamiento + Repositorios CPI-A1 los tres repositorios cargan las semillas y las persisten","suiteID":235,"groupIDs":[239,240],"metadata":{"skip":false,"skipReason":null},"line":29,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"testStart","time":7841}
+{"testID":241,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7870}
+{"test":{"id":242,"name":"Nivel 1: Almacenamiento + Repositorios CPI-A2 las reservas referencian casas y clientes existentes","suiteID":235,"groupIDs":[239,240],"metadata":{"skip":false,"skipReason":null},"line":49,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"testStart","time":7871}
+{"testID":242,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7876}
+{"group":{"id":243,"suiteID":235,"parentID":239,"name":"Nivel 2: Repositorios + Servicios","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":66,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"group","time":7876}
+{"test":{"id":244,"name":"Nivel 2: Repositorios + Servicios CPI-A3 ServicioDisponibilidad usa reservas y casas reales","suiteID":235,"groupIDs":[239,243],"metadata":{"skip":false,"skipReason":null},"line":67,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"testStart","time":7876}
+{"testID":244,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7885}
+{"test":{"id":245,"name":"Nivel 2: Repositorios + Servicios CPI-A4 ServicioReservas integra clientes, casas y tarifa","suiteID":235,"groupIDs":[239,243],"metadata":{"skip":false,"skipReason":null},"line":79,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"testStart","time":7885}
+{"testID":245,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7894}
+{"group":{"id":246,"suiteID":235,"parentID":239,"name":"Nivel 3: Servicios + persistencia","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":114,"column":3,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"group","time":7894}
+{"test":{"id":247,"name":"Nivel 3: Servicios + persistencia CPI-A5 el ciclo completo de una reserva queda persistido","suiteID":235,"groupIDs":[239,246],"metadata":{"skip":false,"skipReason":null},"line":115,"column":5,"url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_ascendente_test.dart"},"type":"testStart","time":7894}
+{"testID":247,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7901}
 
-[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:44855/WEes8luY7nY=/"}}]
-{"testID":238,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":12556}
-{"group":{"id":248,"suiteID":237,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":null,"column":null,"url":null},"type":"group","time":12556}
-{"test":{"id":249,"name":"CPI-H1 Hilo \"Registrar reserva\" (CU-05)","suiteID":237,"groupIDs":[248],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":28,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"testStart","time":12556}
-{"testID":249,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":14851}
-{"test":{"id":250,"name":"CPI-H2 Hilo \"Registrar reserva\" con casa ocupada (flujo alterno)","suiteID":237,"groupIDs":[248],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":82,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"testStart","time":14851}
-{"testID":250,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15481}
-{"test":{"id":251,"name":"CPI-H3 Hilo \"Registrar pago y confirmar\" (CU-07 y CU-08)","suiteID":237,"groupIDs":[248],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":126,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"testStart","time":15482}
-{"testID":251,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":15992}
-{"test":{"id":252,"name":"CPI-H4 Hilo \"Registrar cliente\" (CU-03)","suiteID":237,"groupIDs":[248],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":162,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"testStart","time":15992}
-{"testID":252,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":16510}
-{"test":{"id":253,"name":"CPI-H5 Hilo \"Consultar disponibilidad\" (CU-06)","suiteID":237,"groupIDs":[248],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":195,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"testStart","time":16511}
-{"testID":253,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":16894}
-{"success":true,"type":"done","time":17310}
+[{"event":"test.startedProcess","params":{"vmServiceUri":"http://127.0.0.1:33635/m3G_PD8csf4=/"}}]
+{"testID":238,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":8064}
+{"group":{"id":248,"suiteID":237,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":5,"line":null,"column":null,"url":null},"type":"group","time":8064}
+{"test":{"id":249,"name":"CPI-H1 Hilo \"Registrar reserva\" (CU-05)","suiteID":237,"groupIDs":[248],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":28,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"testStart","time":8064}
+{"testID":249,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9234}
+{"test":{"id":250,"name":"CPI-H2 Hilo \"Registrar reserva\" con casa ocupada (flujo alterno)","suiteID":237,"groupIDs":[248],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":82,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"testStart","time":9234}
+{"testID":250,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9554}
+{"test":{"id":251,"name":"CPI-H3 Hilo \"Registrar pago y confirmar\" (CU-07 y CU-08)","suiteID":237,"groupIDs":[248],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":126,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"testStart","time":9554}
+{"testID":251,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":9825}
+{"test":{"id":252,"name":"CPI-H4 Hilo \"Registrar cliente\" (CU-03)","suiteID":237,"groupIDs":[248],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":162,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"testStart","time":9825}
+{"testID":252,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10081}
+{"test":{"id":253,"name":"CPI-H5 Hilo \"Consultar disponibilidad\" (CU-06)","suiteID":237,"groupIDs":[248],"metadata":{"skip":false,"skipReason":null},"line":174,"column":5,"url":"package:flutter_test/src/widget_tester.dart","root_line":195,"root_column":3,"root_url":"file:///home/runner/work/casa_campo/casa_campo/test/integracion/integracion_hilos_test.dart"},"type":"testStart","time":10082}
+{"testID":253,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":10267}
+{"success":true,"type":"done","time":10514}
