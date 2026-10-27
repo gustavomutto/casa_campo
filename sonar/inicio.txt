@@ -1,76 +1,76 @@
 Plugin: https://github.com/insideapp-fr/sonar-flutter/releases/download/0.5.3-SNAPSHOT/sonar-flutter-plugin-0.5.3-SNAPSHOT.jar
 total 7312
-drwxr-xr-x  2 runner runner    4096 Oct 27 20:54 .
-drwxr-xr-x 17 runner runner    4096 Oct 27 20:54 ..
--rw-r--r--  1 runner runner 7478739 Oct 27 20:54 sonar-flutter-plugin.jar
+drwxr-xr-x  2 runner runner    4096 Oct 27 20:56 .
+drwxr-xr-x 17 runner runner    4096 Oct 27 20:56 ..
+-rw-r--r--  1 runner runner 7478739 Oct 27 20:56 sonar-flutter-plugin.jar
 Unable to find image 'sonarqube:9.9-community' locally
 9.9-community: Pulling from library/sonarqube
+e24a8b9e652f: Pulling fs layer
 4f4fb700ef54: Pulling fs layer
+f3929ce9ef98: Pulling fs layer
 eb27e3a98da1: Pulling fs layer
 5d5a1fad7028: Pulling fs layer
-1df735f481ad: Pulling fs layer
 c7ad1fe61e07: Pulling fs layer
-e24a8b9e652f: Pulling fs layer
+1df735f481ad: Pulling fs layer
 60d98d907669: Pulling fs layer
-f3929ce9ef98: Pulling fs layer
 4f4fb700ef54: Already exists
-ce2bd68be4fc: Download complete
-1df735f481ad: Download complete
 c7ad1fe61e07: Download complete
 5d5a1fad7028: Download complete
-600f318704dc: Download complete
-60d98d907669: Download complete
+1df735f481ad: Download complete
 e24a8b9e652f: Download complete
+ce2bd68be4fc: Download complete
+60d98d907669: Download complete
+600f318704dc: Download complete
 f3929ce9ef98: Download complete
 60d98d907669: Pull complete
-e24a8b9e652f: Pull complete
 eb27e3a98da1: Download complete
+e24a8b9e652f: Pull complete
 1df735f481ad: Pull complete
-5d5a1fad7028: Pull complete
 f3929ce9ef98: Pull complete
-c7ad1fe61e07: Pull complete
+5d5a1fad7028: Pull complete
 eb27e3a98da1: Pull complete
 4f4fb700ef54: Pull complete
+c7ad1fe61e07: Pull complete
 Digest: sha256:f709975ab31d2d08f5a3ae2dc73a31ee011afc8cf28845082c17c55d45df9df5
 Status: Downloaded newer image for sonarqube:9.9-community
-032ea266f76d813ef0c14e561e81333547a11b65e6db54fb77877993ddba0b6e
+d6a61c0e7b057fa9767274c6994dc2cf9509e636704c1b884a2245ab34021272
 estado=
 estado=
-estado=STARTING
 estado=STARTING
 estado=STARTING
 estado=STARTING
 estado=STARTING
 estado=STARTING
 estado=UP
-2026.10.27 20:55:22 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] 0 branch found in need of issue sync.
-2026.10.27 20:55:22 INFO  web[][o.s.s.e.IndexerStartupTask] Trigger asynchronous indexing of type [issues/auth/issue] done | time=37ms
-2026.10.27 20:55:22 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [components/auth],[projectmeasures/auth],[issues/auth]...
-2026.10.27 20:55:22 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [components/auth],[projectmeasures/auth],[issues/auth] done | time=103ms
-2026.10.27 20:55:22 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning is enabled.
-2026.10.27 20:55:22 INFO  web[][o.s.s.p.p.PlatformLevelStartup] Running Community Edition
-2026.10.27 20:55:23 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning will be disabled as there are no more projects in warning.
-2026.10.27 20:55:23 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
-2026.10.27 20:55:23 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[COMPUTE_ENGINE] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -Dcom.redhat.fips=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-9.9.8.100196.jar:/opt/sonarqube/lib/jdbc/h2/h2-2.1.214.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process9110960082497680974properties
-2026.10.27 20:55:23 WARN  app[][startup] ####################################################################################################################
-2026.10.27 20:55:23 WARN  app[][startup] Default Administrator credentials are still being used. Make sure to change the password or deactivate the account.
-2026.10.27 20:55:23 WARN  app[][startup] ####################################################################################################################
-2026.10.27 20:55:23 INFO  web[][o.s.s.p.Platform] Web Server is operational
+2026.10.27 20:57:11 INFO  web[][o.s.s.e.IndexerStartupTask] Trigger asynchronous indexing of type [issues/auth/issue]...
+2026.10.27 20:57:11 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] 0 pending indexation task found to be deleted...
+2026.10.27 20:57:11 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] 0 completed indexation task found to be deleted...
+2026.10.27 20:57:11 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] Indexation task deletion complete.
+2026.10.27 20:57:11 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] Deleting tasks characteristics...
+2026.10.27 20:57:11 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] Tasks characteristics deletion complete.
+2026.10.27 20:57:11 INFO  web[][o.s.s.i.i.AsyncIssueIndexingImpl] 0 branch found in need of issue sync.
+2026.10.27 20:57:11 INFO  web[][o.s.s.e.IndexerStartupTask] Trigger asynchronous indexing of type [issues/auth/issue] done | time=25ms
+2026.10.27 20:57:11 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [components/auth],[projectmeasures/auth],[issues/auth]...
+2026.10.27 20:57:11 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [components/auth],[projectmeasures/auth],[issues/auth] done | time=90ms
+2026.10.27 20:57:11 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning is enabled.
+2026.10.27 20:57:11 INFO  web[][o.s.s.p.p.PlatformLevelStartup] Running Community Edition
+2026.10.27 20:57:11 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning will be disabled as there are no more projects in warning.
+2026.10.27 20:57:12 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2026.10.27 20:57:12 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[COMPUTE_ENGINE] from [/opt/sonarqube]: /opt/java/openjdk/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -Dcom.redhat.fips=false -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/sonar-application-9.9.8.100196.jar:/opt/sonarqube/lib/jdbc/h2/h2-2.1.214.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process5440256171758936425properties
+2026.10.27 20:57:12 WARN  app[][startup] ####################################################################################################################
+2026.10.27 20:57:12 WARN  app[][startup] Default Administrator credentials are still being used. Make sure to change the password or deactivate the account.
+2026.10.27 20:57:12 WARN  app[][startup] ####################################################################################################################
+2026.10.27 20:57:12 INFO  web[][o.s.s.p.Platform] Web Server is operational
 WARNING: A terminally deprecated method in java.lang.System has been called
 WARNING: System::setSecurityManager has been called by org.sonar.process.PluginSecurityManager (file:/opt/sonarqube/lib/sonar-application-9.9.8.100196.jar)
 WARNING: Please consider reporting this to the maintainers of org.sonar.process.PluginSecurityManager
 WARNING: System::setSecurityManager will be removed in a future release
-2026.10.27 20:55:23 INFO  ce[][o.s.p.ProcessEntryPoint] Starting Compute Engine
-2026.10.27 20:55:23 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
-2026.10.27 20:55:24 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar;NON_KEYWORDS=VALUE
-2026.10.27 20:55:24 INFO  ce[][c.z.h.HikariDataSource] HikariPool-1 - Starting...
-2026.10.27 20:55:24 INFO  ce[][c.z.h.p.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://127.0.0.1:9092/sonar user=
-2026.10.27 20:55:24 INFO  ce[][c.z.h.HikariDataSource] HikariPool-1 - Start completed.
-2026.10.27 20:55:24 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
-2026.10.27 20:55:24 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
-2026.10.27 20:55:25 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
-2026.10.27 20:55:25 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
-2026.10.27 20:55:25 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is started
-2026.10.27 20:55:26 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
-2026.10.27 20:55:26 INFO  app[][o.s.a.SchedulerImpl] SonarQube is operational
-{"project":{"key":"casa_campo","name":"Casa Campo","qualifier":"TRK","visibility":"public"}}Expecting value: line 1 column 1 (char 0)
+2026.10.27 20:57:12 INFO  ce[][o.s.p.ProcessEntryPoint] Starting Compute Engine
+2026.10.27 20:57:12 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2026.10.27 20:57:12 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar;NON_KEYWORDS=VALUE
+2026.10.27 20:57:12 INFO  ce[][c.z.h.HikariDataSource] HikariPool-1 - Starting...
+2026.10.27 20:57:12 INFO  ce[][c.z.h.p.HikariPool] HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://127.0.0.1:9092/sonar user=
+2026.10.27 20:57:12 INFO  ce[][c.z.h.HikariDataSource] HikariPool-1 - Start completed.
+2026.10.27 20:57:12 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+{"project":{"key":"casa_campo","name":"Casa Campo","qualifier":"TRK","visibility":"public"}}{"login":"admin","name":"ci","token":"squ_221caf125d8c9e9fcb49afb3ae064d3629aca398","createdAt":"2026-10-27T20:57:15+0000","type":"USER_TOKEN"}
+Expecting value: line 1 column 1 (char 0)
