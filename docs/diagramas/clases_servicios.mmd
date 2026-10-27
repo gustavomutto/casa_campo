@@ -1,0 +1,99 @@
+classDiagram
+direction TB
+class Usuario
+class ServicioAutenticacion {
+  -Map intentosFallidos
+  -Map bloqueadoHasta
+  +int maximoIntentos
+  +Duration duracionBloqueo
+  +iniciarSesion(usuario, clave) Usuario
+  +intentosFallidos(usuario) int
+  -registrarFallo(usuario, ahora)
+}
+class UsuariosRepository {
+  <<interface>>
+  +obtenerPorNombreUsuario(nombre) Usuario
+}
+class Casa
+class Cliente
+class Reserva
+class ServicioReservas {
+  +listar(tipoEstado) List~Reserva~
+  +cotizar(casaId, rango) int
+  +crearReserva(solicitud) Reserva
+  +registrarPago(id, monto, metodo) Reserva
+  +confirmar(id, usuario) Reserva
+  +iniciarEstadia(id) Reserva
+  +finalizar(id) Reserva
+  +cancelar(id, motivo) Reserva
+}
+class ServicioDisponibilidad {
+  +estaDisponible(casaId, rango) bool
+  +casasDisponibles(rango, huespedes) List~Casa~
+}
+class CalculadoraTarifa {
+  +int recargoTemporadaAlta
+  +int descuentoEstanciaLarga
+  +esTemporadaAlta(noche)$ bool
+  +calcular(precioNoche, rango) int
+}
+class ServicioCasas {
+  +listar(soloActivas) List~Casa~
+  +validar(datos)
+  +crear(datos) Casa
+  +actualizar(id, datos) Casa
+  +cambiarEstado(id, activa) Casa
+}
+class ServicioClientes {
+  +listar(filtro) List~Cliente~
+  +validar(datos)
+  +registrar(datos) Cliente
+  +actualizar(id, datos) Cliente
+}
+class ServicioReportes {
+  +generar(anio, mes) ResumenReportes
+}
+class RepositorioJsonLocal~T~ {
+  <<abstract>>
+  +String clave
+  +String rutaSemilla
+  +todos() List~T~
+  +porId(id) T
+  +guardar(entidad)
+  +eliminar(id)
+  +siguienteId() String
+}
+class Almacenamiento {
+  <<interface>>
+  +leer(clave) String
+  +escribir(clave, valor)
+  +eliminar(clave)
+}
+class CasasLocales
+
+class ClientesLocales
+
+class ReservasLocales
+
+UsuariosRepository ..> Usuario
+ServicioAutenticacion --> UsuariosRepository
+Reserva "0..*" --> "1" Casa : casaId
+Reserva "0..*" --> "1" Cliente : clienteId
+ServicioReservas --> ServicioDisponibilidad
+ServicioReservas --> CalculadoraTarifa
+ServicioReservas --> ReservasLocales
+ServicioReservas --> CasasLocales
+ServicioReservas --> ClientesLocales
+ServicioDisponibilidad --> CasasLocales
+ServicioDisponibilidad --> ReservasLocales
+ServicioCasas --> CasasLocales
+ServicioClientes --> ClientesLocales
+ServicioReportes --> ReservasLocales
+RepositorioJsonLocal <|-- CasasLocales
+RepositorioJsonLocal <|-- ClientesLocales
+RepositorioJsonLocal <|-- ReservasLocales
+RepositorioJsonLocal --> Almacenamiento
+ServicioCasas ..> Casa
+ServicioClientes ..> Cliente
+ServicioReservas ..> Reserva
+ServicioAutenticacion ..> Usuario

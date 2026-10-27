@@ -1,0 +1,96 @@
+classDiagram
+direction TB
+class Usuario {
+  +String id
+  +String nombreUsuario
+  +String nombreCompleto
+  +Rol rol
+  +String hashClave
+  +esAdministrador() bool
+}
+class Rol {
+  <<enumeration>>
+  administrador
+  recepcionista
+}
+class Casa {
+  +String id
+  +String nombre
+  +String municipio
+  +int capacidadMaxima
+  +int precioNoche
+  +String descripcion
+  +bool activa
+  +copiarCon() Casa
+  +toJson() Map
+}
+class Cliente {
+  +String id
+  +String documento
+  +String nombreCompleto
+  +String telefono
+  +String correo
+  +toJson() Map
+}
+class Reserva {
+  +String id
+  +String casaId
+  +String clienteId
+  +String clienteNombre
+  +int cantidadHuespedes
+  +int montoTotal
+  +totalPagado() int
+  +saldoPendiente() int
+  +copiarCon(estado, pagos) Reserva
+  +toJson() Map
+}
+class RangoFechas {
+  +DateTime fechaEntrada
+  +DateTime fechaSalida
+  +cantidadNoches() int
+  +noches() List~DateTime~
+  +seSolapaCon(otro) bool
+}
+class Pago {
+  +String id
+  +int monto
+  +DateTime fecha
+  +MetodoPago metodo
+}
+class MetodoPago {
+  <<enumeration>>
+  efectivo
+  transferencia
+  tarjeta
+}
+class EstadoReserva {
+  <<sealed>>
+  +etiqueta String
+  +tipo String
+  +esActiva bool
+  +toJson() Map
+}
+class Pendiente
+
+class Confirmada {
+  +String confirmadaPor
+}
+class EnCurso
+
+class Finalizada
+
+class Cancelada {
+  +String motivo
+}
+Usuario --> Rol
+Reserva *-- RangoFechas
+Reserva *-- "0..*" Pago
+Reserva --> EstadoReserva
+Pago --> MetodoPago
+EstadoReserva <|-- Pendiente
+EstadoReserva <|-- Confirmada
+EstadoReserva <|-- EnCurso
+EstadoReserva <|-- Finalizada
+EstadoReserva <|-- Cancelada
+Reserva "0..*" --> "1" Casa : casaId
+Reserva "0..*" --> "1" Cliente : clienteId
