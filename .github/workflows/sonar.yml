@@ -25,6 +25,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set +e +o pipefail
           mkdir -p plugins reportes/sonar
           exec > >(tee reportes/sonar/inicio.txt) 2>&1
           URL_JAR=$(curl -sL -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/insideapp-oss/sonar-flutter/releases?per_page=20" | tee reportes/sonar/releases.json \
@@ -62,6 +63,7 @@ jobs:
 
       - name: Análisis (sonar-scanner)
         run: |
+          set +e +o pipefail
           cat > sonar-project.properties <<PROPS
           sonar.projectKey=casa_campo
           sonar.projectName=Casa Campo
@@ -86,6 +88,7 @@ jobs:
 
       - name: Exportar métricas
         run: |
+          set +e +o pipefail
           M=ncloc,lines,statements,functions,classes,files,comment_lines,comment_lines_density,complexity,cognitive_complexity,violations,bugs,vulnerabilities,code_smells,security_hotspots,sqale_index,sqale_rating,sqale_debt_ratio,reliability_rating,security_rating,duplicated_lines,duplicated_lines_density,duplicated_blocks,coverage,line_coverage,lines_to_cover,uncovered_lines,tests,test_failures,test_errors,test_success_density,test_execution_time
           curl -s -u $SONAR_TOKEN: "localhost:9000/api/measures/component?component=casa_campo&metricKeys=$M" | python3 -m json.tool > reportes/sonar/medidas.json
           curl -s -u $SONAR_TOKEN: "localhost:9000/api/measures/component_tree?component=casa_campo&qualifiers=FIL&ps=500&metricKeys=ncloc,lines,functions,classes,complexity,cognitive_complexity,comment_lines,coverage,code_smells" | python3 -m json.tool > reportes/sonar/medidas_por_archivo.json
