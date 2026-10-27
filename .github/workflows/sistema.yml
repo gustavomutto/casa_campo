@@ -1,0 +1,293 @@
+name: Pruebas de sistema y aceptación
+
+on:
+  workflow_run:
+    workflows: ["CI - Pruebas, cobertura y despliegue"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sistema
+  cancel-in-progress: true
+
+env:
+  URL_PAGES: https://gustavomutto.github.io/casa_campo/
+  URL_LOCAL: http://localhost:8080/casa_campo/
+
+jobs:
+  sistema:
+    name: Rendimiento, seguridad, usabilidad, portabilidad y aceptación
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Obtener la versión publicada (rama gh-pages)
+        run: |
+          git fetch --depth 1 origin gh-pages
+          mkdir -p sitio/casa_campo reportes
+          git archive origin/gh-pages | tar -x -C sitio/casa_campo
+          ls sitio/casa_campo
+
+      - name: Servidor web local (nginx)
+        run: |
+          sed "s#SITIO#$GITHUB_WORKSPACE/sitio#" pruebas/herramientas/nginx.conf > /tmp/nginx.conf
+          sudo nginx -c /tmp/nginx.conf
+          sleep 2
+          curl -sI $URL_LOCAL | tee reportes/servidor_local.txt
+
+      - name: Herramientas (JMeter, Selenium, Playwright, Lighthouse)
+        run: |
+          (curl -sSfL -o jmeter.tgz https://dlcdn.apache.org/jmeter/binaries/apache-jmeter-5.6.3.tgz || curl -sSfL -o jmeter.tgz https://archive.apache.org/dist/jmeter/binaries/apache-jmeter-5.6.3.tgz)
+          tar -xzf jmeter.tgz
+          python3 -m pip install -q selenium pytest pytest-html playwright
+          python3 -m playwright install --with-deps chromium firefox webkit > /dev/null
+          npm install -g lighthouse@12 > /dev/null
+          google-chrome --version | tee reportes/versiones.txt
+          chromedriver --version | tee -a reportes/versiones.txt || true
+          apache-jmeter-5.6.3/bin/jmeter --version | tail -n 3 >> reportes/versiones.txt || true
+          python3 -c "import selenium; print('selenium', selenium.__version__)" >> reportes/versiones.txt
+          lighthouse --version | sed 's/^/lighthouse /' >> reportes/versiones.txt
+
+      - name: Aceptación (Selenium WebDriver)
+        continue-on-error: true
+        env:
+          BASE_URL: http://localhost:8080/casa_campo/
+          CAPTURAS: reportes/aceptacion/capturas
+        run: |
+          mkdir -p reportes/aceptacion/capturas
+          python3 -m pytest pruebas/aceptacion -v --html=reportes/aceptacion/reporte_selenium.html --self-contained-html 2>&1 | tee reportes/aceptacion/salida_pytest.txt
+
+      - name: Rendimiento - carga (JMeter, 50 usuarios)
+        continue-on-error: true
+        run: |
+          apache-jmeter-5.6.3/bin/jmeter -n -t pruebas/jmeter/plan_rendimiento.jmx \
+            -Jusuarios=50 -Jrampa=30 -Jiteraciones=5 \
+            -l reportes/jmeter_carga.jtl -e -o reportes/jmeter_carga 2>&1 | tee reportes/jmeter_carga.txt
+
+      - name: Rendimiento - estrés (JMeter, 200 usuarios)
+        continue-on-error: true
+        run: |
+          apache-jmeter-5.6.3/bin/jmeter -n -t pruebas/jmeter/plan_rendimiento.jmx \
+            -Jusuarios=200 -Jrampa=20 -Jiteraciones=3 \
+            -l reportes/jmeter_estres.jtl -e -o reportes/jmeter_estres 2>&1 | tee reportes/jmeter_estres.txt
+
+      - name: Rendimiento - GitHub Pages (JMeter, 10 usuarios)
+        continue-on-error: true
+        run: |
+          apache-jmeter-5.6.3/bin/jmeter -n -t pruebas/jmeter/plan_rendimiento.jmx \
+            -Jhost=gustavomutto.github.io -Jpuerto=443 -Jprotocolo=https \
+            -Jusuarios=10 -Jrampa=10 -Jiteraciones=2 \
+            -l reportes/jmeter_pages.jtl -e -o reportes/jmeter_pages 2>&1 | tee reportes/jmeter_pages.txt
+
+      - name: Fiabilidad - prueba de resistencia (JMeter, 25 usuarios durante 3 minutos)
+        continue-on-error: true
+        run: |
+          apache-jmeter-5.6.3/bin/jmeter -n -t pruebas/jmeter/plan_resistencia.jmx \
+            -Jusuarios=25 -Jrampa=10 -Jduracion=180 \
+            -l reportes/jmeter_resistencia.jtl -e -o reportes/jmeter_resistencia 2>&1 | tee reportes/jmeter_resistencia.txt
+
+      - name: Usabilidad y rendimiento percibido (Lighthouse)
+        continue-on-error: true
+        run: |
+          mkdir -p reportes/lighthouse
+          for modo in escritorio movil; do
+            extra=""; [ "$modo" = "escritorio" ] && extra="--preset=desktop"
+            lighthouse $URL_LOCAL $extra --output html --output json \
+              --output-path reportes/lighthouse/local_$modo \
+              --chrome-flags="--headless=new --no-sandbox" --quiet || true
+            lighthouse $URL_PAGES $extra --output html --output json \
+              --output-path reportes/lighthouse/pages_$modo \
+              --chrome-flags="--headless=new --no-sandbox" --quiet || true
+          done
+          ls reportes/lighthouse
+
+      - name: Seguridad (OWASP ZAP baseline)
+        continue-on-error: true
+        run: |
+          mkdir -p reportes/zap && chmod 777 reportes/zap
+          docker run --rm --network host -v $GITHUB_WORKSPACE/reportes/zap:/zap/wrk:rw ghcr.io/zaproxy/zaproxy:stable \
+            zap-baseline.py -t $URL_PAGES -r zap_pages.html -J zap_pages.json -w zap_pages.md -I -j 2>&1 | tee reportes/zap/salida_pages.txt || true
+          docker run --rm --network host -v $GITHUB_WORKSPACE/reportes/zap:/zap/wrk:rw ghcr.io/zaproxy/zaproxy:stable \
+            zap-baseline.py -t $URL_LOCAL -r zap_local.html -J zap_local.json -w zap_local.md -I -j 2>&1 | tee reportes/zap/salida_local.txt || true
+
+      - name: Portabilidad (Chromium, Firefox, WebKit en 3 tamaños de pantalla)
+        continue-on-error: true
+        run: |
+          mkdir -p reportes/portabilidad
+          python3 pruebas/portabilidad/portabilidad.py $URL_LOCAL reportes/portabilidad 2>&1 | tee reportes/portabilidad/salida.txt
+
+      - name: Capturas de los reportes
+        continue-on-error: true
+        run: python3 pruebas/herramientas/capturas_reportes.py reportes 2>&1 | tee reportes/capturas_reportes.txt
+
+      - name: Publicar reportes en la rama 'reportes'
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: reportes-sistema
+          publish_dir: ./reportes
+          enable_jekyll: true
+          commit_message: "Reportes de pruebas de sistema"
+
+  sonarqube:
+    name: Métricas con SonarQube
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Iniciar SonarQube 9.9 LTS con el plugin sonar-flutter
+        run: |
+          mkdir -p plugins reportes/sonar
+          curl -sSfL -o plugins/sonar-flutter-plugin.jar https://github.com/insideapp-oss/sonar-flutter/releases/download/0.5.2/sonar-flutter-plugin-0.5.2.jar
+          sudo chmod -R 777 plugins
+          docker run -d --name sonarqube -p 9000:9000 \
+            -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true \
+            -v $GITHUB_WORKSPACE/plugins/sonar-flutter-plugin.jar:/opt/sonarqube/extensions/plugins/sonar-flutter-plugin.jar \
+            sonarqube:9.9-community
+          for i in $(seq 1 60); do
+            estado=$(curl -s localhost:9000/api/system/status | python3 -c "import json,sys;print(json.load(sys.stdin).get('status'))" 2>/dev/null)
+            echo "estado=$estado"; [ "$estado" = "UP" ] && break; sleep 5
+          done
+          curl -s -u admin:admin -X POST "localhost:9000/api/users/change_password?login=admin&previousPassword=admin&password=CasaCampo2026*"
+          curl -s -u admin:CasaCampo2026* -X POST "localhost:9000/api/projects/create?project=casa_campo&name=Casa%20Campo"
+          TOKEN=$(curl -s -u admin:CasaCampo2026* -X POST "localhost:9000/api/user_tokens/generate?name=ci" | python3 -c "import json,sys;print(json.load(sys.stdin)['token'])")
+          echo "SONAR_TOKEN=$TOKEN" >> $GITHUB_ENV
+          curl -s localhost:9000/api/plugins/installed | python3 -m json.tool > reportes/sonar/plugins.json
+
+      - name: Preparar reportes para SonarQube
+        run: |
+          flutter pub get
+          flutter test --machine --coverage > tests.output || true
+          dart analyze --format=machine > reportes/sonar/dart_analyze.txt 2>&1 || true
+
+      - name: Análisis (sonar-scanner)
+        run: |
+          cat > sonar-project.properties <<PROPS
+          sonar.projectKey=casa_campo
+          sonar.projectName=Casa Campo
+          sonar.projectVersion=1.0
+          sonar.sources=lib
+          sonar.tests=test
+          sonar.sourceEncoding=UTF-8
+          sonar.dart.analyzer.mode=MANUAL
+          sonar.dart.analyzer.report.mode=MACHINE
+          sonar.dart.analyzer.report.path=reportes/sonar/dart_analyze.txt
+          sonar.flutter.tests.reportPath=tests.output
+          sonar.flutter.coverage.reportPath=coverage/lcov.info
+          PROPS
+          sed -i 's/^ *//' sonar-project.properties
+          docker run --rm --network host -e SONAR_HOST_URL=http://localhost:9000 -e SONAR_TOKEN=$SONAR_TOKEN \
+            -v $GITHUB_WORKSPACE:/usr/src sonarsource/sonar-scanner-cli:5 2>&1 | tee reportes/sonar/scanner.txt
+          sleep 20
+          for i in $(seq 1 30); do
+            pendientes=$(curl -s -u $SONAR_TOKEN: "localhost:9000/api/ce/component?component=casa_campo" | python3 -c "import json,sys;d=json.load(sys.stdin);print(len(d.get('queue',[])))")
+            [ "$pendientes" = "0" ] && break; sleep 5
+          done
+
+      - name: Exportar métricas
+        run: |
+          M=ncloc,lines,statements,functions,classes,files,comment_lines,comment_lines_density,complexity,cognitive_complexity,violations,bugs,vulnerabilities,code_smells,security_hotspots,sqale_index,sqale_rating,sqale_debt_ratio,reliability_rating,security_rating,duplicated_lines,duplicated_lines_density,duplicated_blocks,coverage,line_coverage,lines_to_cover,uncovered_lines,tests,test_failures,test_errors,test_success_density,test_execution_time
+          curl -s -u $SONAR_TOKEN: "localhost:9000/api/measures/component?component=casa_campo&metricKeys=$M" | python3 -m json.tool > reportes/sonar/medidas.json
+          curl -s -u $SONAR_TOKEN: "localhost:9000/api/measures/component_tree?component=casa_campo&qualifiers=FIL&ps=500&metricKeys=ncloc,lines,functions,classes,complexity,cognitive_complexity,comment_lines,coverage,code_smells" | python3 -m json.tool > reportes/sonar/medidas_por_archivo.json
+          curl -s -u $SONAR_TOKEN: "localhost:9000/api/issues/search?componentKeys=casa_campo&ps=500" | python3 -m json.tool > reportes/sonar/issues.json
+          curl -s -u $SONAR_TOKEN: "localhost:9000/api/qualitygates/project_status?projectKey=casa_campo" | python3 -m json.tool > reportes/sonar/quality_gate.json
+          cat reportes/sonar/medidas.json | head -100
+
+      - name: Capturas de SonarQube
+        continue-on-error: true
+        run: |
+          python3 -m pip install -q playwright && python3 -m playwright install --with-deps chromium > /dev/null
+          python3 pruebas/herramientas/capturas_sonar.py reportes/sonar
+
+      - name: Publicar reportes en la rama 'reportes'
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: reportes-sonar
+          publish_dir: ./reportes
+          keep_files: true
+          enable_jekyll: true
+          commit_message: "Reportes de SonarQube"
+
+  portabilidad-plataformas:
+    name: Portabilidad - ${{ matrix.os }}
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+      - name: Pruebas y compilación por plataforma
+        shell: bash
+        run: |
+          mkdir -p salida
+          flutter pub get
+          inicio=$(date +%s)
+          flutter test --reporter compact > salida/pruebas_${{ runner.os }}.txt 2>&1; echo "pruebas_exit=$?" > salida/resumen_${{ runner.os }}.txt
+          echo "pruebas_segundos=$(( $(date +%s) - inicio ))" >> salida/resumen_${{ runner.os }}.txt
+          tail -n 2 salida/pruebas_${{ runner.os }}.txt >> salida/resumen_${{ runner.os }}.txt
+          case "${{ runner.os }}" in
+            Linux)
+              sudo apt-get update -qq && sudo apt-get install -y -qq ninja-build libgtk-3-dev > /dev/null
+              flutter build linux --release > salida/build_linux.txt 2>&1; echo "build_linux_exit=$?" >> salida/resumen_Linux.txt
+              du -sh build/linux/x64/release/bundle >> salida/resumen_Linux.txt 2>/dev/null
+              flutter build apk --release > salida/build_apk.txt 2>&1; echo "build_apk_exit=$?" >> salida/resumen_Linux.txt
+              ls -la build/app/outputs/flutter-apk/ >> salida/resumen_Linux.txt 2>/dev/null
+              ;;
+            Windows)
+              flutter build windows --release > salida/build_windows.txt 2>&1; echo "build_windows_exit=$?" >> salida/resumen_Windows.txt
+              du -sh build/windows/x64/runner/Release >> salida/resumen_Windows.txt 2>/dev/null
+              ;;
+            macOS)
+              flutter build web --release > salida/build_web_macos.txt 2>&1; echo "build_web_exit=$?" >> salida/resumen_macOS.txt
+              ;;
+          esac
+          flutter --version >> salida/resumen_${{ runner.os }}.txt
+          cat salida/resumen_${{ runner.os }}.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: portabilidad-${{ runner.os }}
+          path: salida
+      - name: APK de Android
+        if: runner.os == 'Linux'
+        uses: actions/upload-artifact@v4
+        with:
+          name: casa_campo-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+
+  publicar-portabilidad:
+    needs: portabilidad-plataformas
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: portabilidad-*
+          path: plataformas
+          merge-multiple: true
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: reportes-plataformas
+          publish_dir: ./plataformas
+          keep_files: true
+          enable_jekyll: true
+          commit_message: "Reportes de portabilidad por plataforma"
