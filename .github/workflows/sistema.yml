@@ -34,10 +34,22 @@ jobs:
 
       - name: Servidor web local (nginx)
         run: |
-          sed "s#SITIO#$GITHUB_WORKSPACE/sitio#" pruebas/herramientas/nginx.conf > /tmp/nginx.conf
+          sudo mkdir -p /srv/sitio && sudo cp -r sitio/casa_campo /srv/sitio/ && sudo chmod -R a+rX /srv/sitio
+          sed "s#SITIO#/srv/sitio#" pruebas/herramientas/nginx.conf > /tmp/nginx.conf
+          sudo nginx -t -c /tmp/nginx.conf 2>&1 | tee reportes/nginx_config.txt
           sudo nginx -c /tmp/nginx.conf
           sleep 2
           curl -sI $URL_LOCAL | tee reportes/servidor_local.txt
+          codigo=$(curl -s -o /dev/null -w '%{http_code}' $URL_LOCAL)
+          if [ "$codigo" != "200" ]; then
+            echo "nginx respondió $codigo; se usa el servidor de Python" | tee -a reportes/servidor_local.txt
+            sudo cat /tmp/nginx_error.log >> reportes/servidor_local.txt || true
+            sudo nginx -s stop -c /tmp/nginx.conf || true
+            (cd /srv/sitio && nohup python3 -m http.server 8080 > /tmp/http.log 2>&1 &)
+            sleep 2
+            curl -sI $URL_LOCAL | tee -a reportes/servidor_local.txt
+          fi
+          curl -s -o /dev/null -w 'main.dart.js: %{http_code} %{size_download} bytes\n' ${URL_LOCAL}main.dart.js | tee -a reportes/servidor_local.txt
 
       - name: Herramientas (JMeter, Selenium, Playwright, Lighthouse)
         run: |
@@ -147,9 +159,22 @@ jobs:
           cache: true
 
       - name: Iniciar SonarQube 9.9 LTS con el plugin sonar-flutter
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mkdir -p plugins reportes/sonar
-          curl -sSfL -o plugins/sonar-flutter-plugin.jar https://github.com/insideapp-oss/sonar-flutter/releases/download/0.5.2/sonar-flutter-plugin-0.5.2.jar
+          exec > >(tee reportes/sonar/inicio.txt) 2>&1
+          URL_JAR=$(curl -s -H "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/insideapp-oss/sonar-flutter/releases?per_page=20" \
+            | python3 -c "import json,sys;d=json.load(sys.stdin);print(next((a['browser_download_url'] for r in d for a in r.get('assets',[]) if a['name'].endswith('.jar')), ''))")
+          echo "Plugin: $URL_JAR"
+          if [ -n "$URL_JAR" ]; then
+            curl -sSfL -o plugins/sonar-flutter-plugin.jar "$URL_JAR"
+          else
+            git clone -q --depth 1 https://github.com/insideapp-oss/sonar-flutter /tmp/sonar-flutter
+            (cd /tmp/sonar-flutter && mvn -q -B package -DskipTests)
+            cp $(ls /tmp/sonar-flutter/sonar-flutter-plugin/target/sonar-flutter-plugin-*.jar | grep -v sources | head -n 1) plugins/sonar-flutter-plugin.jar
+          fi
+          ls -la plugins
           sudo chmod -R 777 plugins
           docker run -d --name sonarqube -p 9000:9000 \
             -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true \
@@ -159,6 +184,7 @@ jobs:
             estado=$(curl -s localhost:9000/api/system/status | python3 -c "import json,sys;print(json.load(sys.stdin).get('status'))" 2>/dev/null)
             echo "estado=$estado"; [ "$estado" = "UP" ] && break; sleep 5
           done
+          docker logs sonarqube 2>&1 | tail -n 30
           curl -s -u admin:admin -X POST "localhost:9000/api/users/change_password?login=admin&previousPassword=admin&password=CasaCampo2026*"
           curl -s -u admin:CasaCampo2026* -X POST "localhost:9000/api/projects/create?project=casa_campo&name=Casa%20Campo"
           TOKEN=$(curl -s -u admin:CasaCampo2026* -X POST "localhost:9000/api/user_tokens/generate?name=ci" | python3 -c "import json,sys;print(json.load(sys.stdin)['token'])")

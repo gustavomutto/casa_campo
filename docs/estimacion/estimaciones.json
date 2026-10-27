@@ -1,0 +1,696 @@
+{
+  "costo_persona_mes": 5776000,
+  "salario": 3800000,
+  "factor": 1.52,
+  "pf": {
+    "detalle": [
+      {
+        "tipo": "ILF",
+        "funcion": "Usuario",
+        "det": 5,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 7
+      },
+      {
+        "tipo": "ILF",
+        "funcion": "Casa",
+        "det": 7,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 7
+      },
+      {
+        "tipo": "ILF",
+        "funcion": "Cliente",
+        "det": 5,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 7
+      },
+      {
+        "tipo": "ILF",
+        "funcion": "Reserva (con Pagos)",
+        "det": 14,
+        "ret_ftr": 2,
+        "complejidad": "B",
+        "peso": 7
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Iniciar sesión",
+        "det": 3,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Cerrar sesión",
+        "det": 1,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Registrar cliente",
+        "det": 5,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Editar cliente",
+        "det": 5,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Registrar casa",
+        "det": 6,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Editar casa",
+        "det": 6,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Activar / desactivar casa",
+        "det": 2,
+        "ret_ftr": 2,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Registrar reserva",
+        "det": 7,
+        "ret_ftr": 3,
+        "complejidad": "A",
+        "peso": 6
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Registrar pago",
+        "det": 4,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Confirmar reserva",
+        "det": 3,
+        "ret_ftr": 2,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Iniciar estadía",
+        "det": 2,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Finalizar reserva",
+        "det": 2,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EI",
+        "funcion": "Cancelar reserva",
+        "det": 3,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EO",
+        "funcion": "Cotización de la estadía (cálculo de tarifa)",
+        "det": 4,
+        "ret_ftr": 2,
+        "complejidad": "B",
+        "peso": 4
+      },
+      {
+        "tipo": "EO",
+        "funcion": "Reporte de ingresos y reservas por estado",
+        "det": 9,
+        "ret_ftr": 2,
+        "complejidad": "M",
+        "peso": 5
+      },
+      {
+        "tipo": "EO",
+        "funcion": "Reporte de ocupación mensual por casa",
+        "det": 6,
+        "ret_ftr": 2,
+        "complejidad": "M",
+        "peso": 5
+      },
+      {
+        "tipo": "EQ",
+        "funcion": "Consultar / filtrar reservas",
+        "det": 10,
+        "ret_ftr": 2,
+        "complejidad": "M",
+        "peso": 4
+      },
+      {
+        "tipo": "EQ",
+        "funcion": "Detalle de reserva",
+        "det": 12,
+        "ret_ftr": 2,
+        "complejidad": "M",
+        "peso": 4
+      },
+      {
+        "tipo": "EQ",
+        "funcion": "Consultar disponibilidad",
+        "det": 8,
+        "ret_ftr": 2,
+        "complejidad": "M",
+        "peso": 4
+      },
+      {
+        "tipo": "EQ",
+        "funcion": "Buscar clientes",
+        "det": 6,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      },
+      {
+        "tipo": "EQ",
+        "funcion": "Listar casas",
+        "det": 7,
+        "ret_ftr": 1,
+        "complejidad": "B",
+        "peso": 3
+      }
+    ],
+    "pfna": 102,
+    "gsc": [
+      [
+        "Comunicación de datos",
+        3
+      ],
+      [
+        "Procesamiento distribuido",
+        1
+      ],
+      [
+        "Rendimiento",
+        3
+      ],
+      [
+        "Configuración muy utilizada",
+        2
+      ],
+      [
+        "Tasa de transacciones",
+        2
+      ],
+      [
+        "Entrada de datos en línea",
+        5
+      ],
+      [
+        "Eficiencia del usuario final",
+        4
+      ],
+      [
+        "Actualización en línea",
+        4
+      ],
+      [
+        "Procesamiento complejo",
+        3
+      ],
+      [
+        "Reutilización",
+        3
+      ],
+      [
+        "Facilidad de instalación",
+        3
+      ],
+      [
+        "Facilidad de operación",
+        4
+      ],
+      [
+        "Múltiples sitios",
+        4
+      ],
+      [
+        "Facilidad de cambio",
+        4
+      ]
+    ],
+    "tdi": 45,
+    "vaf": 1.1,
+    "pfa": 112.2,
+    "loc_pf": 53,
+    "kloc": 5.95,
+    "esfuerzo": 15.6,
+    "tiempo": 7.1,
+    "personas": 2.2,
+    "costo": 90119877,
+    "resumen": {
+      "ILF": 28,
+      "EIF": 0,
+      "EI": 42,
+      "EO": 14,
+      "EQ": 18
+    }
+  },
+  "pcu": {
+    "actores": [
+      [
+        "Recepcionista",
+        "Complejo (interfaz gráfica)",
+        3
+      ],
+      [
+        "Administrador",
+        "Complejo (interfaz gráfica)",
+        3
+      ]
+    ],
+    "casos": [
+      [
+        "CU-01 Iniciar sesión",
+        4,
+        "Medio",
+        10
+      ],
+      [
+        "CU-02 Cerrar sesión",
+        1,
+        "Simple",
+        5
+      ],
+      [
+        "CU-03 Gestionar clientes",
+        6,
+        "Medio",
+        10
+      ],
+      [
+        "CU-04 Gestionar casas",
+        6,
+        "Medio",
+        10
+      ],
+      [
+        "CU-05 Registrar reserva",
+        9,
+        "Complejo",
+        15
+      ],
+      [
+        "CU-06 Consultar disponibilidad",
+        5,
+        "Medio",
+        10
+      ],
+      [
+        "CU-07 Registrar pago",
+        3,
+        "Simple",
+        5
+      ],
+      [
+        "CU-08 Gestionar estado de la reserva",
+        7,
+        "Medio",
+        10
+      ],
+      [
+        "CU-09 Consultar reservas",
+        3,
+        "Simple",
+        5
+      ],
+      [
+        "CU-10 Generar reportes",
+        4,
+        "Medio",
+        10
+      ],
+      [
+        "CU-11 Verificar disponibilidad",
+        2,
+        "Simple",
+        5
+      ],
+      [
+        "CU-12 Calcular tarifa",
+        3,
+        "Simple",
+        5
+      ]
+    ],
+    "uaw": 6,
+    "uucw": 100,
+    "uucp": 106,
+    "tf": [
+      [
+        "T1 Sistema distribuido",
+        2,
+        1
+      ],
+      [
+        "T2 Rendimiento / tiempo de respuesta",
+        1,
+        3
+      ],
+      [
+        "T3 Eficiencia del usuario final",
+        1,
+        4
+      ],
+      [
+        "T4 Procesamiento interno complejo",
+        1,
+        3
+      ],
+      [
+        "T5 Código reutilizable",
+        1,
+        3
+      ],
+      [
+        "T6 Facilidad de instalación",
+        0.5,
+        3
+      ],
+      [
+        "T7 Facilidad de uso",
+        0.5,
+        4
+      ],
+      [
+        "T8 Portabilidad",
+        2,
+        4
+      ],
+      [
+        "T9 Facilidad de cambio",
+        1,
+        4
+      ],
+      [
+        "T10 Concurrencia",
+        1,
+        1
+      ],
+      [
+        "T11 Seguridad",
+        1,
+        3
+      ],
+      [
+        "T12 Acceso a terceros",
+        1,
+        0
+      ],
+      [
+        "T13 Capacitación especial",
+        1,
+        1
+      ]
+    ],
+    "tfactor": 35.5,
+    "tcf": 0.955,
+    "ef": [
+      [
+        "E1 Familiaridad con el modelo de proceso",
+        1.5,
+        3
+      ],
+      [
+        "E2 Experiencia en la aplicación",
+        0.5,
+        2
+      ],
+      [
+        "E3 Experiencia en orientación a objetos",
+        1,
+        3
+      ],
+      [
+        "E4 Capacidad del analista líder",
+        0.5,
+        3
+      ],
+      [
+        "E5 Motivación",
+        1,
+        4
+      ],
+      [
+        "E6 Estabilidad de los requisitos",
+        2,
+        4
+      ],
+      [
+        "E7 Personal a tiempo parcial",
+        -1,
+        3
+      ],
+      [
+        "E8 Dificultad del lenguaje",
+        -1,
+        2
+      ]
+    ],
+    "efactor": 17.0,
+    "ecf": 0.89,
+    "ucp": 90.09,
+    "factores_bajos": 1,
+    "horas_por_pcu": 20,
+    "horas": 1801.9,
+    "esfuerzo": 11.26,
+    "tiempo": 6.27,
+    "personas": 1.79,
+    "costo": 65048373
+  },
+  "po": {
+    "pantallas": [
+      [
+        "Inicio de sesión",
+        "Simple",
+        1
+      ],
+      [
+        "Navegación principal por rol",
+        "Simple",
+        1
+      ],
+      [
+        "Lista de reservas con filtros",
+        "Media",
+        2
+      ],
+      [
+        "Formulario de nueva reserva",
+        "Difícil",
+        3
+      ],
+      [
+        "Detalle de reserva con pagos y acciones",
+        "Difícil",
+        3
+      ],
+      [
+        "Consulta de disponibilidad",
+        "Media",
+        2
+      ],
+      [
+        "Lista de clientes",
+        "Simple",
+        1
+      ],
+      [
+        "Formulario de cliente",
+        "Simple",
+        1
+      ],
+      [
+        "Lista de casas",
+        "Simple",
+        1
+      ],
+      [
+        "Formulario de casa",
+        "Simple",
+        1
+      ],
+      [
+        "Reportes",
+        "Media",
+        2
+      ]
+    ],
+    "reportes": [
+      [
+        "Cotización de la estadía",
+        "Simple",
+        2
+      ],
+      [
+        "Reporte de ingresos y ocupación",
+        "Media",
+        5
+      ]
+    ],
+    "componentes": [
+      [
+        "Calculadora de tarifas",
+        10
+      ],
+      [
+        "Servicio de disponibilidad",
+        10
+      ],
+      [
+        "Autenticación con hash y bloqueo",
+        10
+      ],
+      [
+        "Repositorio JSON persistente genérico",
+        10
+      ]
+    ],
+    "op": 65,
+    "reuso": 10,
+    "nop": 58.5,
+    "prod": 13,
+    "esfuerzo": 4.5,
+    "tiempo": 4.43,
+    "personas": 1.02,
+    "costo": 25992000
+  },
+  "ph": {
+    "historias": [
+      [
+        "HU-01",
+        "Como usuario quiero iniciar sesión según mi rol",
+        3
+      ],
+      [
+        "HU-02",
+        "Como administrador quiero que la cuenta se bloquee tras 3 intentos fallidos",
+        2
+      ],
+      [
+        "HU-03",
+        "Como usuario quiero cerrar sesión",
+        1
+      ],
+      [
+        "HU-04",
+        "Como recepcionista quiero registrar clientes",
+        3
+      ],
+      [
+        "HU-05",
+        "Como recepcionista quiero buscar y editar clientes",
+        2
+      ],
+      [
+        "HU-06",
+        "Como administrador quiero registrar y editar casas",
+        3
+      ],
+      [
+        "HU-07",
+        "Como administrador quiero activar o desactivar casas",
+        2
+      ],
+      [
+        "HU-08",
+        "Como recepcionista quiero consultar la disponibilidad",
+        5
+      ],
+      [
+        "HU-09",
+        "Como recepcionista quiero registrar reservas validadas",
+        8
+      ],
+      [
+        "HU-10",
+        "Como administrador quiero que la tarifa se calcule por temporada y estadía",
+        5
+      ],
+      [
+        "HU-11",
+        "Como recepcionista quiero listar y filtrar reservas",
+        3
+      ],
+      [
+        "HU-12",
+        "Como recepcionista quiero registrar pagos",
+        3
+      ],
+      [
+        "HU-13",
+        "Como recepcionista quiero confirmar reservas con anticipo",
+        2
+      ],
+      [
+        "HU-14",
+        "Como recepcionista quiero iniciar y finalizar estadías",
+        3
+      ],
+      [
+        "HU-15",
+        "Como recepcionista quiero cancelar reservas indicando el motivo",
+        2
+      ],
+      [
+        "HU-16",
+        "Como administrador quiero ver reportes de ingresos y ocupación",
+        5
+      ],
+      [
+        "HU-17",
+        "Como usuario quiero que los datos se conserven entre sesiones",
+        5
+      ],
+      [
+        "HU-18",
+        "Como usuario quiero acceder a la aplicación desde la web",
+        2
+      ]
+    ],
+    "total": 59,
+    "equipo": 2,
+    "velocidad": 12,
+    "sprints": 5,
+    "semanas_sprint": 2,
+    "esfuerzo": 5.0,
+    "tiempo": 2.5,
+    "personas": 2,
+    "costo": 28880000
+  }
+}
