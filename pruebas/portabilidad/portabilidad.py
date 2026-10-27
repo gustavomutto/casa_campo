@@ -44,14 +44,19 @@ with sync_playwright() as p:
                 pagina.wait_for_selector('input[aria-label="Usuario"]', state="attached", timeout=60000)
                 fila["carga_login_s"] = round(time.time() - inicio, 2)
                 pagina.locator('input[aria-label="Usuario"]').click()
+                pagina.wait_for_timeout(300)
                 pagina.keyboard.type("admin")
                 pagina.locator('input[aria-label="Contraseña"]').click()
+                pagina.wait_for_timeout(300)
                 pagina.keyboard.type("Admin2026*")
+                pagina.wait_for_timeout(300)
                 inicio = time.time()
                 pagina.get_by_role("button", name="Ingresar").click()
+                # Espera la pantalla principal (texto visible o etiqueta accesible).
                 pagina.wait_for_function(
-                    "() => { const h = document.querySelector('flt-semantics-host');"
-                    " return h && h.textContent.includes('Nueva reserva'); }",
+                    "() => { const h = document.querySelector('flt-semantics-host'); if (!h) return false;"
+                    " const t = h.textContent + [...h.querySelectorAll('[aria-label]')].map(e => e.getAttribute('aria-label')).join(' ');"
+                    " return t.includes('Nueva reserva') || t.includes('Cerrar sesión'); }",
                     timeout=30000,
                 )
                 fila["login_s"] = round(time.time() - inicio, 2)

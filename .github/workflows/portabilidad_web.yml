@@ -1,0 +1,29 @@
+name: Portabilidad web (Playwright)
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['pruebas/portabilidad/**', '.github/workflows/portabilidad_web.yml']
+
+permissions:
+  contents: write
+
+jobs:
+  navegadores:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Playwright en Chromium, Firefox y WebKit
+        run: |
+          python3 -m pip install -q playwright
+          python3 -m playwright install --with-deps chromium firefox webkit > /dev/null
+          mkdir -p reportes/portabilidad
+          python3 pruebas/portabilidad/portabilidad.py https://gustavomutto.github.io/casa_campo/ reportes/portabilidad 2>&1 | tee reportes/portabilidad/salida.txt
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: reportes-portabilidad-web
+          publish_dir: ./reportes
+          enable_jekyll: true
+          commit_message: "Reportes de portabilidad web"
