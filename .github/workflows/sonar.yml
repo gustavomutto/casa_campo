@@ -53,7 +53,8 @@ jobs:
           curl -s -u admin:CasaCampo2026* -X POST "localhost:9000/api/projects/create?project=casa_campo&name=Casa%20Campo"
           curl -s -u 'admin:CasaCampo2026*' -X POST "localhost:9000/api/user_tokens/generate?name=ci" | tee /tmp/token.json; echo
           echo "AUTH=admin:CasaCampo2026*" >> $GITHUB_ENV
-          curl -s localhost:9000/api/plugins/installed | python3 -m json.tool > reportes/sonar/plugins.json
+          curl -s -u "admin:CasaCampo2026*" localhost:9000/api/plugins/installed > reportes/sonar/plugins.json
+          true
 
       - name: Preparar reportes para SonarQube
         run: |
@@ -85,6 +86,7 @@ jobs:
             pendientes=$(curl -s -u "$AUTH" "localhost:9000/api/ce/component?component=casa_campo" | python3 -c "import json,sys;d=json.load(sys.stdin);print(len(d.get('queue',[])))")
             [ "$pendientes" = "0" ] && break; sleep 5
           done
+          true
 
       - name: Exportar métricas
         run: |
@@ -95,6 +97,7 @@ jobs:
           curl -s -u "$AUTH" "localhost:9000/api/issues/search?componentKeys=casa_campo&ps=500" | python3 -m json.tool > reportes/sonar/issues.json
           curl -s -u "$AUTH" "localhost:9000/api/qualitygates/project_status?projectKey=casa_campo" | python3 -m json.tool > reportes/sonar/quality_gate.json
           cat reportes/sonar/medidas.json | head -100
+          true
 
       - name: Capturas de SonarQube
         continue-on-error: true
